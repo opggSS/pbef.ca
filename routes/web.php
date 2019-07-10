@@ -26,4 +26,7 @@ Route::get('/gallery', function () {
 Route::get('/public_info', function () {
     return view('public_info');
 });
+Route::get('/projects', function () {
+    return view('projects');
+});
 

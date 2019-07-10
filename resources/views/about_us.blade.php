@@ -44,13 +44,7 @@
         </ul>
     </div>
 </div>
-<div id="socialmedia">
-    <ul>
-        <li><a href=""><img src="image/foundation-ins-logo.png" alt="ins logo"></a></li>
-        <li><a href=""><img src="image/foundation-fb-logo.png" alt="facebook logo"></a></li>
-        <li><a href=""><img src="image/foundation-twitter-logo.png" alt="twitter logo"></a></li>
-    </ul>
-</div>
+@include('shared.social_media')
 <div id="fullpage" class="aboutuspage">
     <!--Our Journey Page-->
     <div class="section grow-path">
@@ -64,7 +58,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="grow-path-middleimg">
-                        <img src="image/ref-images/aboutus-s1-1.jpg" alt="" width="100%">
+                        <img src="{{url('/image/ref-images/aboutus-s1-1.jpg')}}" alt="" width="100%">
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -72,7 +66,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p>
                     <div class="president-image-container">
-                        <img src="image/ref-images/aboutus-s1-2.jpg" alt="" width="100%">
+                        <img src="{{url('/image/ref-images/aboutus-s1-2.jpg')}}" alt="" width="100%">
                     </div>
                 </div>
             </div>
@@ -87,9 +81,9 @@
                 <div class="offset-md-2 col-md-4">
                     <h1><span class="letter-bold">C</span>ONTACT</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p>
-                    <div class="contact-info"><img src="image/pos-logo.png">2231 Kingsway Ave., Burnaby, B.C.</div>
-                    <div class="contact-info"><img src="image/phone-logo.png">+1(778)-778-7788</div>
-                    <div class="contact-info"><img src="image/email-logo.png">info@prosperousbef.com</div>
+                    <div class="contact-info"><img src="{{url('/image/pos-logo.png')}}">2231 Kingsway Ave., Burnaby, B.C.</div>
+                    <div class="contact-info"><img src="{{url('/image/phone-logo.png')}}">+1(778)-778-7788</div>
+                    <div class="contact-info"><img src="{{url('/image/email-logo.png')}}">info@prosperousbef.com</div>
                 </div>
                 <div class="col-md-5">
                     <div id="map"></div>

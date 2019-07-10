@@ -21,41 +21,42 @@
 <body>
     <div id="menubar" class="row">
         <div class="col-md-2" id="menu-logo">
-            <a href="index.html">
-
-                <img src="{{asset('storage/images/foundation-logo.png')}}" alt="logo" width="200">
+            <a href="/">
+                <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="200">
             </a>
         </div>
         <div class="col-10 d-none d-lg-inline-block">
             <ul class="nav nav-tabs">
-                <li><a id="menu-active" href="index.html">HOME</a></li>
-                <li class="dropdown"><a data-toggle="dropdown" href="#">ABOUT US</a>
+                <li><a id="menu-active" href="/">HOME</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="{{url('about_us')}}">ABOUT US</a>
                     <ul class="dropdown-menu">
-                        <li><a href="aboutus.html">OUR JOURNEY</a></li>
-                        <li><a href="aboutus.html">CONTACT US</a></li>
+                        <li><a href="">OUR JOURNEY</a></li>
+                        <li><a href="">CONTACT US</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a data-toggle="dropdown" href="#">PROJECTS</a>
+                <li class="dropdown"><a data-toggle="dropdown" href="{{url('projects')}}">PROJECTS</a>
                     <ul class="dropdown-menu">
-                        <li><a href="projects.html">SCHOOL</a></li>
-                        <li><a href="projects.html">COMMUNITY</a></li>
+                        <li><a href="
+                            ">SCHOOL</a></li>
+                        <li><a href="
+                            ">COMMUNITY</a></li>
                     </ul>
                 </li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="publicinfo.html">PUBLIC INFO</a></li>
-                <li><a id="menu-donate" href="donate.html">DONATE</a></li>
+                <li><a href="{{url('gallery')}}">GALLERY</a></li>
+                <li><a href="{{url('public_info')}}">PUBLIC INFO</a></li>
+                <li><a id="menu-donate" href="{{url('donate')}}">DONATE</a></li>
             </ul>
         </div>
         <div class="col-1 offset-9 d-block d-lg-none">
           <nav class="navbar pt-4">
             <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-collapse" width="30">
-              <img src="{{asset('storage/images/nav-hamburger.png')}}" alt="btn" width="30">
+              <img src="{{url('/images/nav-hamburger.png')}}" alt="btn" width="30">
             </button>
           </nav>
         </div>
         <div class="col-4 offset-8 d-block d-lg-none">
           <ul class="collapse" id="mobile-nav-collapse">
-            <li><a id="menu-active" href="index.html">HOME</a></li>
+            <li><a id="menu-active" href="/">HOME</a></li>
             <li class="dropdown"><a data-toggle="dropdown" href="#">ABOUT US</a>
                 <ul class="dropdown-menu">
                     <li><a href="aboutus.html">OUR JOURNEY</a></li>
@@ -74,19 +75,14 @@
           </ul>
         </div>
     </div>
-    <div id="socialmedia">
-        <ul>
-            <li><a href=""><img src="{{asset('storage/images/foundation-ins-logo.png')}}" alt="ins logo"></a></li>
-            <li><a href=""><img src="{{asset('storage/images/foundation-fb-logo.png')}}" alt="facebook logo"></a></li>
-            <li><a href=""><img src="{{asset('storage/images/foundation-twitter-logo.png')}}" alt="twitter logo"></a></li>
-        </ul>
-    </div>
+    @include('shared.social_media')
+    
     <div id="fullpage" class="homepage">
         <!--First Page-->
         <div class="section home-section-1">
             <div class="bg">
-                <img src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background">
-                <img src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
+                <img src="{{url('/images/foundation-home-bg1.png')}}" alt="particle background">
+                <img src="{{url('/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
             </div>
             <div class="title">
                 <div class="row">
@@ -110,7 +106,7 @@
                     </div>
                     <div class="offset-md-1 col-md-4">
                         <div class="img-container">
-                            <img src="{{asset('storage/images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
+                            <img src="{{url('/images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
                         </div>
                     </div>
                 </div>
@@ -119,11 +115,11 @@
                 <div class="grey-square"></div>
                 <div class="video-container">
                     <video width="280" height="240" controls>
-                        <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
+                        <!-- <source data-src="{{url('/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
                     </video>
                 </div>
                 <div class="image-container">
-                    <img src="{{asset('storage/images/ref-images/home-s2-2.jpg')}}" alt="sample-img">
+                    <img src="{{url('/images/ref-images/home-s2-2.jpg')}}" alt="sample-img">
                 </div>
             </div>
         </div>
@@ -142,17 +138,17 @@
                         <a href="" class="news-more">MORE</a>
                     </div>
                     <div class="col-md-6" id="top-news-image-container">
-                        <img src="{{asset('storage/images/ref-images/home-s3-1.jpg')}}" alt="">
+                        <img src="{{url('/images/ref-images/home-s3-1.jpg')}}" alt="">
                     </div>
                 </div>
                 <div class="row bot-news">
                     <div class="offset-md-2 col-md-1">
-                        <img src="{{asset('storage/images/foundation-badminton-shadow.png')}}" id="badminton-shadow">
-                        <img src="{{asset('storage/images/foundation-badminton.png')}}" id="badminton">
+                        <img src="{{url('/images/foundation-badminton-shadow.png')}}" id="badminton-shadow">
+                        <img src="{{url('/images/foundation-badminton.png')}}" id="badminton">
                     </div>
                     <div class="col-md-2">
                         <div class="image-container">
-                            <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
+                            <img src="{{url('/images/ref-images/home-s3-2.jpg')}}" alt="">
                         </div>
                         <div class="city-anchor">VANCOUVER, B.C.</div>
                         <div class="news-type">Video</div>
@@ -161,7 +157,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="image-container">
-                            <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
+                            <img src="{{url('/images/ref-images/home-s3-3.jpeg')}}" alt="">
                         </div>
                         <div class="city-anchor">VANCOUVER, B.C.</div>
                         <div class="news-type">Video</div>
@@ -170,7 +166,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="image-container">
-                            <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
+                            <img src="{{url('/images/ref-images/home-s3-2.jpg')}}" alt="">
                         </div>
                         <div class="city-anchor">VANCOUVER, B.C.</div>
                         <div class="news-type">Video</div>
@@ -179,7 +175,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="image-container">
-                            <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
+                            <img src="{{url('/images/ref-images/home-s3-3.jpeg')}}" alt="">
                         </div>
                         <div class="city-anchor">VANCOUVER, B.C.</div>
                         <div class="news-type">Video</div>
@@ -215,8 +211,8 @@
                     <div class="offset-md-2 col-md-9">
                         <h3>Our Partners</h3>
                         <div class="partner-logo">
-                            <img src="{{asset('storage/images/ref-images/bwf-sample-logo.png')}}" alt="">
-                            <img src="{{asset('storage/images/ref-images/vancouver-sample-logo.png')}}" alt="">
+                            <img src="{{url('/images/ref-images/bwf-sample-logo.png')}}" alt="">
+                            <img src="{{url('/images/ref-images/vancouver-sample-logo.png')}}" alt="">
                         </div>
                     </div>
                 </div>
