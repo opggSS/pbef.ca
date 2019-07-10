@@ -14,4 +14,16 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/about_us', function () {
+    return view('about_us');
+});
+Route::get('/donate', function () {
+    return view('donate');
+});
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+Route::get('/public_info', function () {
+    return view('public_info');
+});
 
