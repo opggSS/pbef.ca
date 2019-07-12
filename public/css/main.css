@@ -21,7 +21,9 @@ body .letter-bold {
 body p {
   font-family: 'Raleway-Light';
   color: #666666;
-  font-size: 12px; }
+  font-size: 12px; 
+  background: white;
+}
 
 #menubar {
   position: fixed;
