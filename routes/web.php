@@ -31,7 +31,7 @@ Route::get('/projects', function () {
 });
 
 Route::get('/admins', function () {
-    return view('admins/index');
+    return view('admins/pages/index');
 });
 
 Route::get('/admins-login', function () {
@@ -39,7 +39,8 @@ Route::get('/admins-login', function () {
 });
 
 Route::get('/admins-add_news', function () {
-    return view('admins/add_news');
+    return view('admins/pages/add_news');
 });
+
 
 
