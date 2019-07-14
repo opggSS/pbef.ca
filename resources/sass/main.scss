@@ -1,0 +1,1130 @@
+$main-color-r : #d9352c;
+$main-color-b : #000000;
+$main-color-text : #666666;
+$light-grey: #e3e3e3;
+$bright-grey: #bbbbbb;
+$col-sm: 768px;
+$col-md: 992px;
+$col-lg: 1200px;
+
+@font-face{
+  font-family: 'Raleway-Light';
+  src : url('../font/Raleway-Light.ttf');
+}
+
+@font-face{
+  font-family: 'Raleway-Regular';
+  src : url('../font/Raleway-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Raleway-Bold';
+  src : url('../font/Raleway-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'Raleway-Black';
+  src : url('../font/Raleway-Black.ttf');
+}
+
+//******************************************************************************
+//                              Global CSS
+//******************************************************************************
+
+body{
+  h1{
+    font-family: 'Raleway-Light';
+    color: $main-color-b;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: 0;
+  }
+
+  .letter-bold{
+    font-size: 90px;
+  }
+
+  p{
+    font-family: 'Raleway-Light';
+    color: $main-color-text;
+    font-size: 12px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+#menubar{
+
+  position: fixed;
+  z-index: 1000;
+  font-family: Raleway-Light;
+  font-size: 1.3em;
+  text-align: center;
+  width: 104%;
+  padding: 1% 3% 0 3%;
+  align-items: center;
+  left: 0;
+  background: #fff;
+  height: 100px;
+
+  #menu-logo{
+    text-align: left;
+
+    img{
+      width: 140px;
+
+      @media screen and (max-width: $col-sm) {
+        width: 100px;
+      }
+    }
+  }
+
+  #menu-donate-mobile {
+    color: #fff;
+    background: $main-color-r;
+    padding: 7px 18px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  ul{
+    border: none;
+
+    a{
+      color: $main-color-b;
+      font-size: 1rem;
+      transition: all .2s ease-in;
+
+      &.active{
+        color: $main-color-r;
+      }
+      &:hover {
+        color: $main-color-r;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #dropdown-menu {
+    li {
+      a {
+        color: #666;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    background: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .nav-tabs{
+    display: flex;
+
+    li{
+      flex: 1;
+    }
+  }
+
+  #menu-active{
+    color: $main-color-r;
+  }
+
+  #menu-donate{
+    background-color: $main-color-r;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 12px;
+  }
+}
+
+#mobile-menubar {
+  top: 98px;
+  z-index: 1001;
+
+  ul {
+
+    li {
+      list-style: none;
+
+      a {
+        font-weight: 100;
+        color: #000;
+
+        &.active {
+          color: $main-color-r;
+        }
+      }
+    }
+
+    .sub-collapse {
+
+      li {
+        a {
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+
+#socialmedia{
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  left: 4vw;
+  text-align: left;
+
+  ul{
+    list-style: none;
+    padding: 0;
+
+    li{
+      text-decoration: none;
+      margin-top: 25px;
+
+      img{
+        // width: 100%;
+        width: 45px;
+
+        @media screen and (max-width: $col-sm) {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+/*Full page js style pagination*/
+#fp-nav{
+  left: 3.5vw!important;
+  margin-left: 10px;
+  margin-top: -110px !important;
+
+  @media screen and (max-width: $col-sm) {
+    margin-left: 0px;
+  }
+}
+
+
+//******************************************************************************
+//                          Home Page CSS
+//******************************************************************************
+.homepage{
+  //Slider 1
+  .home-section-1{
+    .fp-tableCell{
+      vertical-align: top;
+      padding-top: 180px;
+    }
+    .title{
+      h1 {
+        @media screen and (max-width: $col-sm) {
+          font-size: 1.2rem;
+        }
+      }
+      p{
+        margin: 35px 0 45px 0;
+      }
+    }
+    .bg{
+      .row {
+        bottom: 0;
+        right: 0;
+
+        img {
+          max-width:1256px;
+        }
+      }
+    }
+  }
+  //Slider 2
+  .home-section-2{
+    .fp-tableCell{
+      vertical-align: top;
+      padding-top: 180px;
+
+      @media screen and (max-width: $col-sm) {
+        padding-top: 140px;
+      }
+    }
+    .title{
+      h1 {
+        @media screen and (max-width: $col-md) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        span {
+          @media screen and (max-width: $col-md) {
+            font-size: 1rem;
+          }
+        }
+      }
+      p{
+        margin: 35px 0 65px 0;
+
+        @media screen and (max-width: $col-sm) {
+          line-height: 1rem;
+        }
+      }
+      a{
+        border: $main-color-r solid 1px;
+        border-radius: 20px;
+        color: $main-color-r;
+        font-family: Raleway-Light;
+        letter-spacing: 2px;
+        padding: 8px 30px;
+
+        &:hover{
+          background-color: $main-color-r;
+          color: white;
+          text-decoration: none;
+        }
+
+        @media screen and (max-width: $col-md) {
+          font-size: .8rem;
+        }
+      }
+
+      .img-container{
+        width: 400px;
+        overflow:hidden;
+        height: 200px;
+
+        @media screen and (max-width: $col-md) {
+          width: 300px;
+        }
+
+        img{
+          width: 100%;
+        }
+      }
+
+      .video-container {
+        video {
+          @media screen and (max-width: $col-md) {
+            width: 300px;
+          }
+          @media screen and (max-width: $col-sm) {
+            width: 250px;
+            height: 160px;
+          }
+        }
+      }
+    }
+    .video{
+      .grey-square{
+        position: absolute;
+        width: 280px;
+        height: 180px;
+        top: 340px;
+        right: 250px;
+        background-color: $light-grey;
+      }
+      .video-container{
+        position: absolute;
+        right: 350px;
+        top: 300px;
+      }
+      .image-container{
+        position: absolute;
+        width: 280px;
+        height: 220px;
+        top: 300px;
+        right: 40px;
+        overflow: hidden;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //slider3
+  .home-section-3{
+    .fp-tableCell{
+      vertical-align: top;
+      padding-top: 120px;
+
+      @media screen and (max-width: $col-sm) {
+        padding-top: 100px;
+      }
+    }
+    .title{
+      h1{
+        width: 60px;
+        word-wrap: break-word;
+
+        @media screen and (max-width: $col-sm) {
+          font-size: 1.2rem;
+          max-width: 1.6rem;
+        }
+      }
+      .city-anchor{
+        color: $bright-grey;
+        font-size: 10px;
+
+        @media screen and (max-width: $col-sm) {
+          max-width: 3.5rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: .5rem;
+        }
+      }
+      .news-type{
+        font-size: 10px;
+        color: white;
+        background-color: $main-color-r;
+        display: inline-block;
+        padding: 1px 4px;
+      }
+      #top-title-block {
+        height: 250px;
+
+        @media screen and (max-width: $col-sm) {
+          height: 80px;
+        }
+
+        #top-news-title{
+          color: $main-color-text;
+          margin: 20px 0;
+          font-size: 14px;
+          max-height: 145px;
+          overflow-y: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 7;
+          -webkit-box-orient: vertical;
+
+          @media screen and (max-width: $col-sm) {
+            -webkit-line-clamp: 2;
+            margin: 6px 0;
+            line-height: 1rem;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .news-more{
+        color: $main-color-r;
+        border: $main-color-r solid 1px;
+        border-radius: 50px;
+        padding: 5px 20px;
+        font-size: 10px;
+
+        @media screen and (max-width: $col-sm) {
+          padding: 0px 12px;
+          opacity: .7;
+        }
+
+        &:hover{
+          background-color: $main-color-r;
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .top-news{
+        max-height: 310px;
+
+        #top-news-image-container{
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+
+          img{
+            height: 100%;
+          }
+
+          @media screen and (max-width: $col-sm) {
+            height: 80px;
+          }
+        }
+      }
+      .bot-news{
+        max-height: 310px;
+        margin-top: 40px;
+
+        @media screen and (max-width: $col-sm) {
+          margin-top: 15px;
+          font-size: 12px;
+        }
+
+        .city-anchor{
+          display: inline-block;
+          margin-top: 20px;
+
+          @media screen and (max-width: $col-sm) {
+            margin-top: 8px;
+            font-size: .5rem;
+          }
+        }
+
+        .news-type{
+          float: right;
+          margin-top: 20px;
+
+          @media screen and (max-width: $col-sm) {
+            margin-top: 5px;
+          }
+        }
+
+        .news-more{
+          float: right;
+
+          @media screen and (max-width: $col-sm) {
+            margin-bottom: 10px;
+            opacity: .7;
+          }
+        }
+
+        p{
+          color: $main-color-text;
+          margin: 10px 0 20px 0;
+          font-size: 14px;
+          overflow-y: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+
+          @media screen and (max-width: $col-sm) {
+            line-height: 1rem;
+            margin: 5px 0 5px 0;
+            font-size: 12px;
+          }
+        }
+
+        .image-container{
+          width: 100%;
+          height: 150px;
+          overflow: hidden;
+          object-fit: fill;
+
+          @media screen and (max-width: $col-lg) {
+            height: 120px;
+          }
+
+          @media screen and (max-width: $col-md) {
+            height: 100px;
+          }
+
+          @media screen and (max-width: $col-sm) {
+            height: 70px;
+          }
+
+          img{
+            height: 100%;
+          }
+        }
+
+        #badminton{
+          width: 100%;
+          position: absolute;
+          top: 20px;
+        }
+
+        #badminton-shadow{
+          margin-top: 60px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //slider4
+  .home-section-4 {
+    .fp-tableCell {
+      vertical-align: top;
+      padding-top: 140px;
+    }
+
+    .title{
+      h1 {
+        @media screen and (max-width: $col-md) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        span {
+          @media screen and (max-width: $col-md) {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      p{
+        max-width: 460px;
+        overflow-y: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+      }
+
+      .donate-button{
+        background-color:  $main-color-r;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        letter-spacing: 4px;
+        font-family: Raleway-Light;
+
+        &:hover{
+          opacity: 0.5;
+          text-decoration: none;
+        }
+
+        @media screen and (max-width: $col-sm) {
+          font-size: .8rem;
+        }
+      }
+
+      .donate-card{
+        box-shadow: $light-grey 2px 2px 5px;
+        margin-top: 40px;
+        padding: 35px 0 40px 35px;
+        font-family: Raleway-Light;
+
+        @media screen and (max-width: $col-md) {
+          font-size: 1rem;
+          padding: 30px 0 15px 30px;
+          margin-top: 25px;
+        }
+
+        @media screen and (max-width: $col-sm) {
+          font-size: 1rem;
+          padding: 25px 0 25px 20px;
+          margin-top: 25px;
+        }
+
+        .donate-number{
+          font-size: 45px;
+
+          @media screen and (max-width: $col-sm) {
+            font-size: 1.3rem;
+          }
+        }
+
+        .donate-title{
+          color: $main-color-r;
+          font-size: 20px;
+
+          @media screen and (max-width: $col-sm) {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      h3{
+        font-family: Raleway-Light;
+        color: $main-color-text;
+      }
+
+      .partner-logo{
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+
+        img{
+          max-width: 100px;
+          margin-right: 50px;
+        }
+      }
+    }
+
+    #backtotop{
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      a{
+        font-family: Raleway-Light;
+        font-size: 25px;
+        color: $main-color-r;
+      }
+    }
+  }
+}
+
+//******************************************************************************
+//                       About Us Page CSS
+//******************************************************************************
+.nonhome-menubar{
+  margin-top: 25px !important;
+
+  a{
+    color: $main-color-b;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.aboutuspage{
+  .grow-path{
+    .fp-tableCell {
+      vertical-align: top;
+      padding-top: 180px;
+    }
+
+    h4{
+      font-family: Raleway-Light;
+      font-size: 25px;
+      color: $main-color-text;
+    }
+
+    p{
+      margin-top: 45px;
+    }
+
+    .grow-path-middleimg{
+      padding: 0 30px;
+    }
+
+    .president-image-container{
+      overflow: hidden;
+      width: 100%;
+      height: 120px;
+      margin-top: 40px;
+    }
+
+    #toNextSlide{
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      a{
+        font-family: Raleway-Light;
+        font-size: 25px;
+        color: $main-color-r;
+      }
+    }
+  }
+  .contact-us{
+    .fp-tableCell {
+      vertical-align: top;
+      padding-top: 140px;
+    }
+
+    .title{
+      p{
+        color: $main-color-text;
+        margin: 30px 0 40px 0;
+      }
+
+      .contact-info{
+        color: $main-color-text;
+        font-family: Raleway-Light;
+        font-size: 12px;
+        margin-bottom: 25px;
+
+        img{
+          width: 25px;
+          margin-right: 25px;
+        }
+      }
+    }
+
+    #map{
+      margin-left: 10%;
+      width: 90%;
+      height: 400px;
+      margin-top: 30px;
+    }
+
+    #backtotop{
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      a{
+        font-family: Raleway-Light;
+        font-size: 25px;
+        color: $main-color-r;
+      }
+    }
+  }
+}
+
+//******************************************************************************
+//                       About Us Page CSS
+//******************************************************************************
+.aboutuspage{
+
+  .school-project{
+    .fp-tableCell {
+      vertical-align: top;
+      padding-top: 140px;
+    }
+    .school-title{
+      border-bottom: 1px solid black;
+
+      h1{
+        padding-bottom: 20px;
+      }
+    }
+    .content-process{
+      .content-process-container{
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+
+        div{
+          display: inline-block;
+        }
+
+        .progress-expanded{
+          margin: 40px 0 0 80px;
+
+          .progress-expanded-number{
+            background-color: $main-color-r;
+            color: white;
+            padding: 5px 100px 5px 20px;
+            display: inline-block;
+            font-family: Raleway-Regular;
+            font-size: 50px;
+            position: absolute;
+            top: 120px;
+            left: 0;
+          }
+          .progress-expanded-image{
+            width: 300px;
+            height: 225px;
+            overflow: hidden;
+
+            img{
+              max-width: 100%;
+            }
+          }
+          h5{
+            font-family: Raleway-Light;
+            color: $main-color-b;
+            font-size: 20px;
+            margin: 15px 0;
+          }
+          p{
+            width: 300px;
+          }
+        }
+
+        .progress-middle-bar{
+          width: 120px;
+          height: 1px;
+          border: 1px solid $main-color-b;
+          background-color: $main-color-b;
+          margin: 0 25px;
+        }
+        .progress-nonexpanded{
+          h5{
+            color: $main-color-text;
+            font-family: Raleway-Light;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    #toNextSlide{
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      a{
+        font-family: Raleway-Light;
+        font-size: 25px;
+        color: $main-color-r;
+      }
+    }
+  }
+
+  .community-project{
+    .fp-tableCell {
+      vertical-align: top;
+      padding-top: 120px;
+    }
+
+    .community-title{
+      background-image: url("../image/ref-images/home-s3-1.jpg");
+      background-size: cover;
+      padding: 0;
+      margin-bottom: 30px;
+
+      h1{
+        color: white;
+        background-color: black;
+        opacity: 0.5;
+        padding: 45px 15px;
+      }
+    }
+
+    .main-content{
+      margin-top: 20px;
+
+      p{
+        color: $main-color-text;
+        font-family: Raleway-Light;
+      }
+
+      h5{
+        color: $main-color-r;
+        font-family: Raleway-Regular;
+        font-size: 16px;
+      }
+
+      .content-to-right{
+        text-align: right;
+      }
+      .content-to-left{
+        text-align: left;
+        margin-left: 30px;
+      }
+    }
+
+    #backtotop{
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+      a{
+        font-family: Raleway-Light;
+        font-size: 25px;
+        color: $main-color-r;
+      }
+    }
+  }
+}
+
+//******************************************************************************
+//                       Gallery Page CSS
+//******************************************************************************
+.gallery-menubar{
+  background-color: white;
+  padding-top: 3% !important;
+  padding-bottom: 1% !important;
+  margin-top: 0 !important;
+}
+
+.gallerypage{
+  overflow: scroll;
+
+  .fp-tableCell {
+    vertical-align: top;
+    padding-top: 120px;
+  }
+
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+    padding: 5px;
+  }
+
+  .grid-item {
+    float: left;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+}
+
+
+
+
+//******************************************************************************
+//                       Public Info Page CSS
+//******************************************************************************
+.publicinfopage{
+  .fp-tableCell {
+    vertical-align: top;
+    padding-top: 180px;
+  }
+
+  h5{
+    font-family: Raleway-Light;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .donate-card-container{
+    padding: 0 30px 0 0;
+    margin-bottom: 70px;
+
+    .donate-card{
+      box-shadow: $light-grey 2px 2px 5px;
+      padding: 20px 0 25px 35px;
+      font-family: Raleway-Light;
+
+      .donate-number{
+        font-size: 22px;
+      }
+
+      .donate-type{
+        color: $main-color-r;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .total-donate-data{
+    margin-bottom: 100px;
+
+    h4{
+      font-family: Raleway-Light;
+      font-size: 45px;
+
+      span{
+        font-size: 20px;
+        color: $main-color-r;
+      }
+    }
+  }
+
+  .final-donate-data{
+    padding: 0;
+    font-family: Raleway-Light;
+
+    div{
+      padding: 0;
+
+      h4{
+        span{
+          font-size: 45px;
+        }
+        #money-unit{
+          font-family: Raleway-Bold;
+          color: $main-color-r;
+          font-size: 14px;
+        }
+      }
+
+      a{
+        color: white;
+        background-color: $main-color-r;
+        padding: 10px 30px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+//******************************************************************************
+//                       Donate Page CSS
+//******************************************************************************
+.donatepage{
+  .fp-tableCell {
+    vertical-align: top;
+    padding-top: 180px;
+  }
+
+  font-family: Raleway-Light;
+
+  h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  p{
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  a{
+    color: white;
+    background-color: $main-color-r;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+    padding: 8px 0;
+    letter-spacing: 5px;
+    margin-top: 50px;
+  }
+
+  .form-bg{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    height: 400px;
+    top: 0;
+    left: 0;
+  }
+
+  .form-volunteer{
+    color: white;
+    padding: 30px 20px;
+
+    .title{
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button{
+      border-radius: 15px;
+      border: $main-color-r 1px solid;
+      color:$main-color-r;
+      background-color: transparent;
+      padding: 3px 0;
+      margin-top: 20px;
+
+      &:hover{
+        text-decoration: none;
+        background-color: $main-color-r;
+        color: white;
+      }
+    }
+    input{
+      width: 100% !important;
+      margin-bottom: 25px;
+    }
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("../image/donating-bg.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.donate-menubar{
+  margin-top: 25px !important;
+
+  div{
+    color: white;
+  }
+
+  a{
+    color: white;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
