@@ -27,7 +27,7 @@
   <div id="wrapper">
 
      <!-- Sidebar -->
-     @include('shared.admin_nav_bar')
+     @include('admins.includes._nav_bar')
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -37,5 +37,5 @@
       <div id="content">
 
         <!-- Topbar -->
-         @include('shared.admin_topbar')
+         @include('admins.includes._topbar')
         <!-- End of Topbar -->
