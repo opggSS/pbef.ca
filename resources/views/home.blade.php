@@ -1,22 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Meta tags reserved for SEO -->
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords"  content="" />
+@extends('layout.layout')
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Full page slider CSS -->
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Prosperous Badminton Education Foundation</title>
-</head>
+@section('content')
 <body>
     <div id="menubar" class="row">
         <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
@@ -246,14 +230,9 @@
             <div id="backtotop" class="d-none d-sm-block" data-menuanchor="firstPage"><a href="#firstPage">&#x22C0; Back to top</a></div>
         </div>
     </div>
+@stop
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/fullpage.js"></script>
-<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+@section('js')
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -291,5 +270,5 @@
           // $('.sub-collapse').removeClass('show');
         }
     </script>
-</body>
-</html>
+
+@stop
