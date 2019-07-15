@@ -38,18 +38,12 @@ body a:hover {
   background: #fff;
   height: 100px; }
   #menubar #menu-logo {
-    text-align: left;
-    font-size: 1rem; }
-    #menubar #menu-logo a {
-      font-size: 1rem; }
+    text-align: left; }
     #menubar #menu-logo img {
       width: 140px; }
       @media screen and (max-width: 768px) {
         #menubar #menu-logo img {
           width: 100px; } }
-    @media screen and (max-width: 992px) {
-      #menubar #menu-logo #back-btn {
-        font-size: 1.5rem; } }
   #menubar #menu-donate-mobile {
     color: #fff;
     background: #d9352c;
@@ -418,36 +412,24 @@ body a:hover {
     font-size: 25px;
     color: #d9352c; }
 
-.nonhome-menubar a {
-  color: #000000; }
-  .nonhome-menubar a:hover {
-    text-decoration: none; }
+.nonhome-menubar {
+  margin-top: 25px !important; }
+  .nonhome-menubar a {
+    color: #000000; }
+    .nonhome-menubar a:hover {
+      text-decoration: none; }
 
 .aboutuspage .grow-path .fp-tableCell {
   vertical-align: top;
   padding-top: 180px; }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .grow-path .fp-tableCell {
-      padding-top: 120px; } }
 .aboutuspage .grow-path h4 {
   font-family: Raleway-Light;
   font-size: 25px;
   color: #666666; }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .grow-path h4 {
-      font-size: 1rem; } }
 .aboutuspage .grow-path p {
-  overflow-y: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical; }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .grow-path p {
-      -webkit-line-clamp: 4;
-      line-height: 1rem; } }
+  margin-top: 45px; }
 .aboutuspage .grow-path .grow-path-middleimg {
-  overflow-x: hidden;
-  height: 500px; }
+  padding: 0 30px; }
 .aboutuspage .grow-path .president-image-container {
   overflow: hidden;
   width: 100%;
@@ -464,31 +446,14 @@ body a:hover {
 .aboutuspage .contact-us .fp-tableCell {
   vertical-align: top;
   padding-top: 140px; }
-@media screen and (max-width: 992px) {
-  .aboutuspage .contact-us .title h1 .letter-bold {
-    font-size: 1.2rem; } }
-@media screen and (max-width: 992px) {
-  .aboutuspage .contact-us .title h1 {
-    font-size: 1.2rem; } }
 .aboutuspage .contact-us .title p {
   color: #666666;
   margin: 30px 0 40px 0; }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .contact-us .title p {
-      line-height: 1rem;
-      margin: 10px 0 20px 0;
-      overflow-y: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical; } }
 .aboutuspage .contact-us .title .contact-info {
   color: #666666;
   font-family: Raleway-Light;
   font-size: 12px;
   margin-bottom: 25px; }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .contact-us .title .contact-info {
-      margin-bottom: 10px; } }
   .aboutuspage .contact-us .title .contact-info img {
     width: 25px;
     margin-right: 25px; }
@@ -497,16 +462,6 @@ body a:hover {
   width: 90%;
   height: 400px;
   margin-top: 30px; }
-  @media screen and (max-width: 992px) {
-    .aboutuspage .contact-us #map {
-      margin-top: 0px;
-      height: 300px; } }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .contact-us #map {
-      margin-top: 20px;
-      width: 100%;
-      height: 200px;
-      margin-left: 0; } }
 .aboutuspage .contact-us #backtotop {
   position: absolute;
   right: 50px;
@@ -519,11 +474,10 @@ body a:hover {
 .aboutuspage .school-project .fp-tableCell {
   vertical-align: top;
   padding-top: 140px; }
-.aboutuspage .school-project .school-title h1 {
-  padding-bottom: 20px; }
-  @media screen and (max-width: 992px) {
-    .aboutuspage .school-project .school-title h1 {
-      font-size: 1.2rem; } }
+.aboutuspage .school-project .school-title {
+  border-bottom: 1px solid black; }
+  .aboutuspage .school-project .school-title h1 {
+    padding-bottom: 20px; }
 .aboutuspage .school-project .content-process .content-process-container {
   align-items: center;
   justify-content: flex-start;
@@ -531,13 +485,7 @@ body a:hover {
   .aboutuspage .school-project .content-process .content-process-container div {
     display: inline-block; }
   .aboutuspage .school-project .content-process .content-process-container .progress-expanded {
-    margin: 30px 0 0 80px; }
-    @media screen and (max-width: 1200px) {
-      .aboutuspage .school-project .content-process .content-process-container .progress-expanded {
-        margin: 20px 0 0 80px; } }
-    @media screen and (max-width: 992px) {
-      .aboutuspage .school-project .content-process .content-process-container .progress-expanded {
-        margin: 0px 0 0 80px; } }
+    margin: 40px 0 0 80px; }
     .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-number {
       background-color: #d9352c;
       color: white;
@@ -548,47 +496,19 @@ body a:hover {
       position: absolute;
       top: 120px;
       left: 0; }
-      @media screen and (max-width: 1200px) {
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-number {
-          top: 100px; } }
-      @media screen and (max-width: 992px) {
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-number {
-          top: 40px; } }
-      @media screen and (max-width: 768px) {
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-number {
-          top: 40px; } }
     .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-image {
       width: 300px;
       height: 225px;
       overflow: hidden; }
-      @media screen and (max-width: 992px) {
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-image {
-          width: 200px;
-          height: 180px; } }
-      @media screen and (max-width: 768px) {
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-image {
-          width: 200px;
-          height: 150px; } }
       .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-image img {
-        height: 100%;
-        display: none;
-        transform-origin: center; }
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded .progress-expanded-image img.active {
-          display: block; }
+        max-width: 100%; }
     .aboutuspage .school-project .content-process .content-process-container .progress-expanded h5 {
       font-family: Raleway-Light;
       color: #000000;
       font-size: 20px;
       margin: 15px 0; }
-      @media screen and (max-width: 768px) {
-        .aboutuspage .school-project .content-process .content-process-container .progress-expanded h5 {
-          margin: 5px 0; } }
-    @media screen and (max-width: 992px) {
-      .aboutuspage .school-project .content-process .content-process-container .progress-expanded p {
-        overflow-y: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical; } }
+    .aboutuspage .school-project .content-process .content-process-container .progress-expanded p {
+      width: 300px; }
   .aboutuspage .school-project .content-process .content-process-container .progress-middle-bar {
     width: 120px;
     height: 1px;
@@ -599,28 +519,6 @@ body a:hover {
     color: #666666;
     font-family: Raleway-Light;
     font-size: 20px; }
-.aboutuspage .school-project .content-process .step-trigger {
-  height: 20vh; }
-  .aboutuspage .school-project .content-process .step-trigger .col {
-    background: #fff;
-    box-shadow: #e3e3e3 2px 2px 5px;
-    height: 100%;
-    overflow: hidden;
-    transition: all .3s ease-in; }
-    @media screen and (max-width: 992px) {
-      .aboutuspage .school-project .content-process .step-trigger .col p {
-        overflow: hidden;
-        display: -webkit-box !important;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical; } }
-    .aboutuspage .school-project .content-process .step-trigger .col:hover {
-      cursor: pointer; }
-    .aboutuspage .school-project .content-process .step-trigger .col.active {
-      background: #d9352c; }
-      .aboutuspage .school-project .content-process .step-trigger .col.active h5 {
-        color: #fff; }
-      .aboutuspage .school-project .content-process .step-trigger .col.active p {
-        color: #fff; }
 .aboutuspage .school-project #toNextSlide {
   position: absolute;
   right: 50px;
@@ -633,51 +531,29 @@ body a:hover {
   vertical-align: top;
   padding-top: 120px; }
 .aboutuspage .community-project .community-title {
-  background-image: url("../images/ref-images/home-s3-1.jpg");
+  background-image: url("../image/ref-images/home-s3-1.jpg");
   background-size: cover;
   padding: 0;
-  height: 20vh;
-  overflow-y: hidden;
-  filter: grayscale(2); }
-  @media screen and (max-width: 992px) {
-    .aboutuspage .community-project .community-title {
-      height: 15vh; } }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .community-project .community-title {
-      height: 10vh; } }
+  margin-bottom: 30px; }
   .aboutuspage .community-project .community-title h1 {
     color: white;
-    padding-top: 5vh;
-    padding-left: 5vw; }
-    @media screen and (max-width: 992px) {
-      .aboutuspage .community-project .community-title h1 {
-        padding-top: 7vh;
-        font-size: 1.2rem; } }
-    @media screen and (max-width: 768px) {
-      .aboutuspage .community-project .community-title h1 {
-        padding-top: 3.5vh; } }
-.aboutuspage .community-project .main-content p {
-  color: #666666;
-  font-family: Raleway-Light;
-  overflow: hidden;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical; }
-  @media screen and (max-width: 992px) {
-    .aboutuspage .community-project .main-content p {
-      -webkit-line-clamp: 4;
-      line-height: 1rem; } }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .community-project .main-content p {
-      -webkit-line-clamp: 3;
-      line-height: 1rem; } }
-.aboutuspage .community-project .main-content h5 {
-  color: #d9352c;
-  font-family: Raleway-bold;
-  font-size: 16px; }
-  @media screen and (max-width: 768px) {
-    .aboutuspage .community-project .main-content h5 {
-      font-size: .8rem; } }
+    background-color: black;
+    opacity: 0.5;
+    padding: 45px 15px; }
+.aboutuspage .community-project .main-content {
+  margin-top: 20px; }
+  .aboutuspage .community-project .main-content p {
+    color: #666666;
+    font-family: Raleway-Light; }
+  .aboutuspage .community-project .main-content h5 {
+    color: #d9352c;
+    font-family: Raleway-Regular;
+    font-size: 16px; }
+  .aboutuspage .community-project .main-content .content-to-right {
+    text-align: right; }
+  .aboutuspage .community-project .main-content .content-to-left {
+    text-align: left;
+    margin-left: 30px; }
 .aboutuspage .community-project #backtotop {
   position: absolute;
   right: 50px;

@@ -31,7 +31,8 @@ Route::get('/public_info', function () {
     return view('public_info', compact('current_page'));
 });
 Route::get('/projects', function () {
-    return view('projects');
+	 $current_page = 'projects';
+    return view('projects',compact('current_page'));
 });
 
 Route::get('/admins', 'NewsController@index'
