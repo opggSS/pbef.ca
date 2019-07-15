@@ -1,88 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Meta tags reserved for SEO -->
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords"  content="" />
+@extends('layout.layout')
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Full page slider CSS -->
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Prosperous Badminton Education Foundation</title>
-</head>
-<body>
-    <div id="menubar" class="row">
-        <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
-            <a href="index.html">
-
-                <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">
-            </a>
-        </div>
-        <div class="col-10 d-none d-lg-inline-block">
-            <ul class="nav nav-tabs">
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li class="dropdown"><a data-toggle="dropdown" href="#" onclick="switchActive(this)">ABOUT US</a>
-                    <ul class="dropdown-menu">
-                        <li class="mt-2"><a href="aboutus.html">OUR JOURNEY</a></li>
-                        <li class="mt-2"><a href="aboutus.html">CONTACT US</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a data-toggle="dropdown" href="#" onclick="switchActive(this)">PROJECTS</a>
-                    <ul class="dropdown-menu">
-                        <li class="mt-2"><a href="projects.html">SCHOOL</a></li>
-                        <li class="mt-2"><a href="projects.html">COMMUNITY</a></li>
-                    </ul>
-                </li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="publicinfo.html">PUBLIC INFO</a></li>
-                <li><a id="menu-donate" href="donate.html">DONATE</a></li>
-            </ul>
-        </div>
-        <div class="offset-4 offset-sm-6 col-2 d-inline-block d-lg-none mt-3">
-          <a id="menu-donate-mobile" href="donate.html">DONATE</a>
-        </div>
-        <div class="col-2 offset-1 offset-sm-0 d-inline-block d-lg-none">
-          <nav class="navbar pt-4">
-            <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-collapse" width="30">
-              <img src="{{url('/images/nav-hamburger.png')}}" alt="btn" width="30">
-            </button>
-          </nav>
-        </div>
-    </div>
-    <div id="mobile-menubar" class="container position-fixed w-100 bg-white">
-      <div class="col-12 d-block d-lg-none text-center d-lg-none">
-        <ul class="collapse d-lg-none p-0" id="mobile-nav-collapse">
-          <li class="p-3"><a id="menu-active" href="index.html">HOME</a></li>
-          <li class="p-3"><a class="toggle-btn" data-toggle="collapse" data-target="#about-collapse" href="#" onclick="addActive(this)">ABOUT US</a></li>
-          <ul class="collapse sub-collapse p-0" id="about-collapse">
-              <li class="p-3"><a href="aboutus.html">OUR JOURNEY</a></li>
-              <li class="p-3"><a href="aboutus.html">CONTACT US</a></li>
-          </ul>
-          <li class="toggle-btn p-3"><a class="toggle-btn" data-toggle="collapse" data-target="#projects-collapse" href="#" onclick="addActive(this)">PROJECTS</a></li>
-          <ul class="collapse sub-collapse p-0" id="projects-collapse">
-              <li class="p-3"><a href="projects.html">SCHOOL</a></li>
-              <li class="p-3"><a href="projects.html">COMMUNITY</a></li>
-          </ul>
-          <li class="p-3"><a href="gallery.html">GALLERY</a></li>
-          <li class="p-3"><a href="publicinfo.html">PUBLIC INFO</a></li>
-          <!-- <li class="p-3"><a id="menu-donate" href="donate.html">DONATE</a></li> -->
-        </ul>
-      </div>
-    </div>
-    <div id="socialmedia">
-        <ul>
-            <li><a href=""><img src="{{url('/images/foundation-ins-logo.png')}}" alt="ins logo"></a></li>
-            <li><a href=""><img src="{{url('/images/foundation-fb-logo.png')}}" alt="facebook logo"></a></li>
-            <li><a href=""><img src="{{url('/images/foundation-twitter-logo.png')}}" alt="twitter logo"></a></li>
-        </ul>
-    </div>
+@section('content')
     <div id="fullpage" class="homepage">
         <!--First Page-->
         <div class="section home-section-1">
@@ -246,14 +164,9 @@
             <div id="backtotop" class="d-none d-sm-block" data-menuanchor="firstPage"><a href="#firstPage">&#x22C0; Back to top</a></div>
         </div>
     </div>
+@stop
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/fullpage.js"></script>
-<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+@section('js')
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -291,5 +204,5 @@
           // $('.sub-collapse').removeClass('show');
         }
     </script>
-</body>
-</html>
+
+@stop
