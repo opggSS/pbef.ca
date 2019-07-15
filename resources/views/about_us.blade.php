@@ -66,7 +66,7 @@
         $.fn.fullpage.setAllowScrolling(true);
     });
 </script>
-<script>
+<script type="text/javascript">
     function initMap() {
         // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -260,7 +260,7 @@
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5t6_aIK7rJiDO0_7fO6OoRguMnQiPbhY&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDzUPjL397PFZXselPKp5AquxpSum4Lgw&callback=initMap"
         async defer></script>
 @stop
 
