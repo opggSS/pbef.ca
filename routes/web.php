@@ -20,7 +20,8 @@ Route::get('/about_us', function () {
     return view('about_us', compact('current_page'));
 });
 Route::get('/donate', function () {
-    return view('donate');
+    $current_page = 'donate';
+    return view('donate', compact('current_page'));
 });
 Route::get('/gallery', function () {
     $current_page = 'gallery';

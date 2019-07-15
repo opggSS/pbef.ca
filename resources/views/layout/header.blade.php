@@ -15,23 +15,37 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/fullpage.css')}}" />
     <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+    @yield('css')
     <title>
         @if($current_page=='home')
         @elseif($current_page=='aboutus')About Us -
         @elseif($current_page=='projects')Projects -
         @elseif($current_page=='gallery')Gallery -
         @elseif($current_page=='publicinfo')Public Info -
+        @elseif($current_page=='donate')Donate -
         @endif Prosperous Badminton Education Foundation
     </title>
 </head>
 <body>
 <div id="menubar" class="row">
     <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
+        @if($current_page=='home')
         <a href="{{url('/')}}">
-
             <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">
         </a>
+        @elseif($current_page=='aboutus')
+            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| About Us</span>
+        @elseif($current_page=='projects')
+            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Projects</span>
+        @elseif($current_page=='gallery')
+            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Gallery</span>
+        @elseif($current_page=='publicinfo')
+            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Public Info</span>
+        @elseif($current_page=='donate')
+            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Donate</span>
+        @endif
     </div>
+    @if($current_page !='donate')
     <div class="col-10 d-none d-lg-inline-block">
         <ul class="nav nav-tabs">
             <li><a @if($current_page=='home') class="active" @endif href="{{url('/')}}">HOME</a></li>
@@ -55,6 +69,10 @@
     <div class="offset-4 offset-sm-6 col-2 d-inline-block d-lg-none mt-3">
         <a id="menu-donate-mobile" href="{{url('/donate')}}">DONATE</a>
     </div>
+    @else
+        <div class="col-10 d-none d-lg-inline-block"></div>
+        <div class="offset-4 offset-sm-6 col-2 d-inline-block d-lg-none mt-3"></div>
+    @endif
     <div class="col-2 offset-1 offset-sm-0 d-inline-block d-lg-none">
         <nav class="navbar pt-4">
             <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-collapse" width="30">

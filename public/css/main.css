@@ -739,7 +739,7 @@ body a:hover {
       margin-bottom: 25px; }
   .donatepage .bg {
     /* The image used */
-    background-image: url("../image/donating-bg.png");
+    background-image: url("../images/donating-bg.png");
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
