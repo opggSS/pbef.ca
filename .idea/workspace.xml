@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f29edc7-1a64-4b5f-a553-79f0021c8384" name="Default" comment="" />
+    <list default="true" id="0f29edc7-1a64-4b5f-a553-79f0021c8384" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/about_us.blade.php" afterPath="$PROJECT_DIR$/resources/views/about_us.blade.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +19,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-              <folding />
+              <folding>
+                <marker date="1563166923901" expanded="true" signature="1150:1215" ph="..." />
+                <marker date="1563166923901" expanded="true" signature="1180:1214" ph="..." />
+                <marker date="1563166923901" expanded="true" signature="1230:1307" ph="..." />
+                <marker date="1563166923901" expanded="true" signature="1263:1306" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,8 +52,8 @@
       <file leaf-file-name="about_us.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/about_us.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="325">
+              <caret line="262" column="96" lean-forward="false" selection-start-line="262" selection-start-column="96" selection-end-line="262" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -94,11 +101,11 @@
         <option value="$PROJECT_DIR$/resources/views/layout/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/about_us.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/gallery.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/public_info.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/about_us.blade.php" />
       </list>
     </option>
   </component>
@@ -112,7 +119,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
@@ -420,15 +427,15 @@
       <option name="presentableId" value="Default" />
       <updated>1562811374533</updated>
       <workItem from="1562811377221" duration="1887000" />
-      <workItem from="1563146493816" duration="8211000" />
+      <workItem from="1563146493816" duration="8622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10098000" />
+    <option name="totallyTimeSpent" value="10509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="811" extended-state="1" />
+    <frame x="0" y="24" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -544,7 +551,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding />
+          <folding>
+            <marker date="1563166923901" expanded="true" signature="1150:1215" ph="..." />
+            <marker date="1563166923901" expanded="true" signature="1180:1214" ph="..." />
+            <marker date="1563166923901" expanded="true" signature="1230:1307" ph="..." />
+            <marker date="1563166923901" expanded="true" signature="1263:1306" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -566,8 +578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/about_us.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="325">
+          <caret line="262" column="96" lean-forward="false" selection-start-line="262" selection-start-column="96" selection-end-line="262" selection-end-column="96" />
           <folding />
         </state>
       </provider>
