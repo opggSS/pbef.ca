@@ -34,9 +34,10 @@ Route::get('/projects', function () {
     return view('projects');
 });
 
-Route::get('/admins', function () {
-    return view('admins/pages/index');
-});
+Route::get('/admins', 'NewsController@index'
+	// function () {
+ //    return view('admins/pages/index');
+);
 
 Route::get('/admins-login', function () {
     return view('admins/login');
