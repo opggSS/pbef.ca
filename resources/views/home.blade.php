@@ -1,6 +1,5 @@
 @extends('layout.layout')
 
-{{ var_dump($data)}}
 @section('content')
     <div id="fullpage" class="homepage">
         <!--First Page-->
