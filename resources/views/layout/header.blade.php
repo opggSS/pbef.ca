@@ -15,7 +15,14 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/fullpage.css')}}" />
     <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
-    <title>Prosperous Badminton Education Foundation</title>
+    <title>
+        @if($current_page=='home')
+        @elseif($current_page=='aboutus')About Us -
+        @elseif($current_page=='projects')Projects -
+        @elseif($current_page=='gallery')Gallery -
+        @elseif($current_page=='publicinfo')Public Info -
+        @endif Prosperous Badminton Education Foundation
+    </title>
 </head>
 <body>
 <div id="menubar" class="row">
@@ -27,8 +34,8 @@
     </div>
     <div class="col-10 d-none d-lg-inline-block">
         <ul class="nav nav-tabs">
-            <li><a class="active" href="{{url('/')}}">HOME</a></li>
-            <li class="dropdown"><a data-toggle="dropdown" href="#" onclick="switchActive(this)">ABOUT US</a>
+            <li><a @if($current_page=='home') class="active" @endif href="{{url('/')}}">HOME</a></li>
+            <li class="dropdown"><a @if($current_page=='aboutus') class="active" @endif data-toggle="dropdown" href="#" onclick="switchActive(this)">ABOUT US</a>
                 <ul class="dropdown-menu">
                     <li class="mt-2"><a href="{{url('/about_us')}}">OUR JOURNEY</a></li>
                     <li class="mt-2"><a href="{{url('/about_us')}}">CONTACT US</a></li>
@@ -40,8 +47,8 @@
                     <li class="mt-2"><a href="{{url('/projects')}}">COMMUNITY</a></li>
                 </ul>
             </li>
-            <li><a href="{{url('/gallery')}}">GALLERY</a></li>
-            <li><a href="{{url('/public_info')}}">PUBLIC INFO</a></li>
+            <li><a @if($current_page=='gallery') class="active" @endif href="{{url('/gallery')}}">GALLERY</a></li>
+            <li><a @if($current_page=='publicinfo') class="active" @endif href="{{url('/public_info')}}">PUBLIC INFO</a></li>
             <li><a id="menu-donate" href="{{url('/donate')}}">DONATE</a></li>
         </ul>
     </div>
