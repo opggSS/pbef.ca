@@ -1,5 +1,6 @@
 @extends('layout.layout')
 
+@section('title', 'About Us')
 @section('content')
 <div id="fullpage" class="aboutuspage">
     <!--Our Journey Page-->

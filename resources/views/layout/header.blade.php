@@ -17,39 +17,25 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
     @yield('css')
     <title>
-        @if($current_page=='home')
-        @elseif($current_page=='aboutus')About Us -
-        @elseif($current_page=='projects')Projects -
-        @elseif($current_page=='gallery')Gallery -
-        @elseif($current_page=='publicinfo')Public Info -
-        @elseif($current_page=='donate')Donate -
-        @endif Prosperous Badminton Education Foundation
+     @yield('title') | Prosperous Badminton Education Foundation 
     </title>
 </head>
 <body>
 <div id="menubar" class="row">
     <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
-        @if($current_page=='home')
-        <a href="{{url('/')}}">
+        @if (Request::is('/') )
+            <a href="{{url('/')}}">
             <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">
         </a>
-        @elseif($current_page=='aboutus')
-            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| About Us</span>
-        @elseif($current_page=='projects')
-            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Projects</span>
-        @elseif($current_page=='gallery')
-            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Gallery</span>
-        @elseif($current_page=='publicinfo')
-            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Public Info</span>
-        @elseif($current_page=='donate')
-            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">| Donate</span>
+        @else
+            <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="#">< </a><a class="d-none d-lg-inline-block" href="{{url('/')}}">Home</a > <span class="d-none d-lg-inline-block">@yield('title') </span>
         @endif
     </div>
-    @if($current_page !='donate')
+    @if (!Request::is('donate') )
     <div class="col-10 d-none d-lg-inline-block">
         <ul class="nav nav-tabs">
-            <li><a @if($current_page=='home') class="active" @endif href="{{url('/')}}">HOME</a></li>
-            <li class="dropdown"><a @if($current_page=='aboutus') class="active" @endif data-toggle="dropdown" href="#" onclick="switchActive(this)">ABOUT US</a>
+            <li><a class="{{Request::is('home') ? 'active' : ''}}" href="{{url('/')}}">HOME</a></li>
+            <li class="dropdown"><a class="{{Request::is('about_us') ? 'active' : ''}}" data-toggle="dropdown" href="#" onclick="switchActive(this)">ABOUT US</a>
                 <ul class="dropdown-menu">
                     <li class="mt-2"><a href="{{url('/about_us')}}">OUR JOURNEY</a></li>
                     <li class="mt-2"><a href="{{url('/about_us')}}">CONTACT US</a></li>
@@ -61,8 +47,8 @@
                     <li class="mt-2"><a href="{{url('/projects')}}">COMMUNITY</a></li>
                 </ul>
             </li>
-            <li><a @if($current_page=='gallery') class="active" @endif href="{{url('/gallery')}}">GALLERY</a></li>
-            <li><a @if($current_page=='publicinfo') class="active" @endif href="{{url('/public_info')}}">PUBLIC INFO</a></li>
+            <li><a class="{{Request::is('gallery') ? 'active' : ''}}" href="{{url('/gallery')}}">GALLERY</a></li>
+            <li><a class="{{Request::is('public_info') ? 'active' : ''}}" href="{{url('/public_info')}}">PUBLIC INFO</a></li>
             <li><a id="menu-donate" href="{{url('/donate')}}">DONATE</a></li>
         </ul>
     </div>

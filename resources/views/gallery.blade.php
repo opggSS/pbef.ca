@@ -1,5 +1,5 @@
 @extends('layout.layout')
-
+@section('title', 'Gallery')
 @section('content')
 <div id="fullpage" class="gallerypage">
 

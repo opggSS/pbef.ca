@@ -6,7 +6,7 @@
 <script type="text/javascript" src="{{asset('js/fullpage.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/fullpage.extensions.min.js')}}"></script>
 
-@yield('js')
+@yield('js') 
 
 </body>
 </html>

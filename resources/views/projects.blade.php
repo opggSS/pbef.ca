@@ -1,5 +1,5 @@
 @extends('layout.layout')
-
+@section('title', 'Projects')
 @section('content')
 
 <div id="fullpage" class="aboutuspage">
