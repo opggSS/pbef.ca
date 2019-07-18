@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0f29edc7-1a64-4b5f-a553-79f0021c8384" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/donate.blade.php" afterPath="$PROJECT_DIR$/resources/views/donate.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +13,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,7 +37,7 @@
       <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
+            <state relative-caret-position="15">
               <caret line="73" column="84" lean-forward="false" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
               <folding />
             </state>
@@ -51,7 +47,7 @@
       <file leaf-file-name="donate.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/Lightcube/Web Develope/ProsperousBadmintonEducationFundation/donate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="375">
               <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding />
             </state>
@@ -61,7 +57,7 @@
       <file leaf-file-name="about-us.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/about-us.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="345">
               <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
@@ -82,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/donate.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -91,7 +87,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
+            <state relative-caret-position="11160">
               <caret line="744" column="38" lean-forward="false" selection-start-line="744" selection-start-column="38" selection-end-line="744" selection-end-column="38" />
               <folding />
             </state>
@@ -102,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/layout/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -150,7 +146,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
@@ -172,7 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -381,7 +377,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,6 +442,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -480,35 +482,35 @@
       <option name="presentableId" value="Default" />
       <updated>1562811374533</updated>
       <workItem from="1562811377221" duration="1887000" />
-      <workItem from="1563146493816" duration="10793000" />
+      <workItem from="1563146493816" duration="10852000" />
+      <workItem from="1563478342558" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12680000" />
+    <option name="totallyTimeSpent" value="12740000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="811" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26108727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27121" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27121" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,6 +524,86 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/public_info.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Lightcube/Web Develope/ProsperousBadmintonEducationFundation/donate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/about-us.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/about_us.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/donate.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11160">
+          <caret line="744" column="38" lean-forward="false" selection-start-line="744" selection-start-column="38" selection-end-line="744" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="84" lean-forward="false" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
@@ -536,19 +618,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/admin.blade.php" />
     <entry file="file://$PROJECT_DIR$/public/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -556,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,14 +645,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -594,7 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
+        <state relative-caret-position="11160">
           <caret line="744" column="38" lean-forward="false" selection-start-line="744" selection-start-column="38" selection-end-line="744" selection-end-column="38" />
           <folding />
         </state>
@@ -610,7 +682,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/about-us.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="345">
           <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
@@ -626,7 +698,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/Lightcube/Web Develope/ProsperousBadmintonEducationFundation/donate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="375">
           <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
@@ -635,14 +707,14 @@
     <entry file="file://$PROJECT_DIR$/resources/views/donate.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
+        <state relative-caret-position="15">
           <caret line="73" column="84" lean-forward="false" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
           <folding />
         </state>
