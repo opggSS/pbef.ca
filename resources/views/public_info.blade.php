@@ -1,5 +1,5 @@
 @extends('layout.layout')
-
+@section('title', 'Public Info')
 @section('content')
 <div id="fullpage" class="publicinfopage">
 

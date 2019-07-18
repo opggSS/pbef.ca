@@ -12,24 +12,19 @@
 */
 
 Route::get('/', function () {
-    $current_page = 'home';
-    return view('home', compact('current_page'));
+    return view('home');
 });
 Route::get('/about_us', function () {
-    $current_page = 'aboutus';
-    return view('about_us', compact('current_page'));
+    return view('about_us');
 });
 Route::get('/donate', function () {
-    $current_page = 'donate';
-    return view('donate', compact('current_page'));
+    return view('donate');
 });
 Route::get('/gallery', function () {
-    $current_page = 'gallery';
-    return view('gallery', compact('current_page'));
+    return view('gallery');
 });
 Route::get('/public_info', function () {
-    $current_page = 'publicinfo';
-    return view('public_info', compact('current_page'));
+    return view('public_info');
 });
 Route::get('/projects', function () {
     return view('projects');

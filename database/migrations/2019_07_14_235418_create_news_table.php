@@ -21,7 +21,11 @@ class CreateNewsTable extends Migration
             $table->string('category')->nullable();
             $table->longtext('description');
             $table->string('image');
+            $table->string('image_title')->nullable();
+            $table->string('image_alt')->nullable();
             $table->string('featured_img');
+            $table->string('featured_img_title')->nullable();
+            $table->string('featured_img_alt')->nullable();
             $table->string('video')->nullable();
             $table->datetime('posted_at');
             $table->datetime('edited_at')->nullable();

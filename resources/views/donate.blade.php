@@ -1,5 +1,5 @@
 @extends('layout.layout')
-
+@section('title', 'Donate')
 @section('css')
     <style type="text/css">
         #menubar{
