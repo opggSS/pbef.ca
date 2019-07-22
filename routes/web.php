@@ -11,37 +11,38 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/about_us', function () {
-    return view('about_us');
-});
-Route::get('/donate', function () {
-    return view('donate');
-});
-Route::get('/gallery', function () {
-    return view('gallery');
-});
-Route::get('/public_info', function () {
-    return view('public_info');
-});
-Route::get('/projects', function () {
-    return view('projects');
+Route::group(['middleware' => ['web']], function () {
+	Route::get('/', function () {
+    	return view('home');
+	});
+	Route::get('/about_us', function () {
+	    return view('about_us');
+	});
+	Route::get('/donate', function () {
+	    return view('donate');
+	});
+	Route::get('/gallery', function () {
+	    return view('gallery');
+	});
+	Route::get('/public_info', function () {
+	    return view('public_info');
+	});
+	Route::get('/projects', function(){
+	    return view('projects');
+	});
+	Route::get('admin' , function () {
+	    return view('admins.pages.index');
+	});
+
+	// Route::get('/login', 'UserController@index');
+	// Route::get('admins/login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
+	// Route::post('admins/login', 'Auth\AuthController@postLogin');
+	// Route::get('admins/logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
+
 });
 
-Route::get('/admins', 'NewsController@index'
-	// function () {
- //    return view('admins/pages/index');
-);
+// Route::group(['middleware' => 'admin'], function () {
 
-Route::get('/admins-login', function () {
-    return view('admins/login');
-});
-
-Route::get('/admins-add_news', function () {
-    return view('admins/pages/add_news');
-});
-
-
-
+	// Route::get('/add_news', 'PostController@create');
+	Route::resource('admin/news' , 'PostController');
+	Route::resource('admin/categories' , 'CategoryController');

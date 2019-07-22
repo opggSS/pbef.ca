@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\News;
+use App\Event;
 
 class NewsController extends Controller
 {
@@ -12,4 +12,3 @@ class NewsController extends Controller
     	return view('admin.page.index', compact('data'));
     }
 }
-

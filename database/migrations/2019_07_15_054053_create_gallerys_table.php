@@ -16,7 +16,7 @@ class CreateGallerysTable extends Migration
         Schema::create('gallerys', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('url');
-            $table->integar('display_order')->nullable();
+            $table->integer('display_order')->nullable();
             $table->string('alt_text')->nullable();
             $table->string('title')->nullable();
             $table->timestamps();
