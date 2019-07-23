@@ -46,3 +46,4 @@ Route::group(['middleware' => ['web']], function () {
 	// Route::get('/add_news', 'PostController@create');
 	Route::resource('admin/news' , 'PostController');
 	Route::resource('admin/categories' , 'CategoryController');
+	Route::resource('admin/galleries' , 'GalleryController');

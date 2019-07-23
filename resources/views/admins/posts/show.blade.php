@@ -18,7 +18,9 @@
 
 				<dl class="dl-horizontal">
 					<label>Category:</label>
-					<p>{{ $post->category->name }}</p>
+					<p>
+						{{ $post->category->name }}
+					</p>
 				</dl>
 
 				<dl class="dl-horizontal">

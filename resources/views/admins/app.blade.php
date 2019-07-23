@@ -13,7 +13,7 @@
       <div id="content">
 
         @include('admins.includes._topbar')
-
+        @include('admins.includes._message')
 		@yield('content')
 		@include('admins.includes._footer')
 

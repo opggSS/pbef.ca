@@ -50,12 +50,12 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index');
     }
-
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
+
      */
     public function show($id)
     {
@@ -92,7 +92,18 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
+
     {
-        
+        $category = Category::find($id);
+        $posts = Post::where('category_id' , $id)->get();
+
+        foreach($posts as $post){
+            $post->category_id = '';     
+        }
+
+        $category_name = $category->name;
+        $category->delete();
+        Session::flash('success', '已成功删除类型');
+        return redirect()->route('categories.index');    
     }
 }

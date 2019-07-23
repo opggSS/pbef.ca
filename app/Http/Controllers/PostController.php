@@ -51,7 +51,7 @@ class PostController extends Controller
         $this->validate($request, array(
                 'title'         => 'required|max:255',
                 // 'slug'          => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
-                'category_id'   => 'required|integer',
+       
                 'content'       => 'required',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',  
@@ -158,7 +158,6 @@ class PostController extends Controller
             $this->validate($request, array(
                 'title'         => 'required|max:255',
                 // 'slug'          => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
-                'category_id'   => 'required|integer',
                 'content'       => 'required',
                 'video'          => 'max:255',
                 'meta_title'       => 'max:255',
