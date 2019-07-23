@@ -1,104 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Meta tags reserved for SEO -->
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords"  content="" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Full page slider CSS -->
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-    <title>Prosperous Badminton Education Foundation</title>
-</head>
-<body>
-    <div id="menubar" class="row position-fixed">
-        <div class="col-2 col-sm-2 offset-1 mt-2 mt-sm-0" id="menu-logo">
-            <a href="index.html">
-                <img src="{{asset('storage/images/foundation-logo.png')}}" alt="logo" width="150">
-            </a>
-        </div>
-        <div class="col-9 d-none d-lg-inline-block">
-            <ul class="nav nav-tabs">
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li class="dropdown"><a data-toggle="dropdown" href="" onclick="switchActive(this)">ABOUT US</a>
-                    <ul class="dropdown-menu">
-                        <li class="mt-2"><a href="/about-us">OUR JOURNEY</a></li>
-                        <li class="mt-2"><a href="/about-us.html">CONTACT US</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a data-toggle="dropdown" href="#" onclick="switchActive(this)">PROJECTS</a>
-                    <ul class="dropdown-menu">
-                        <li class="mt-2"><a href="/projects">SCHOOL</a></li>
-                        <li class="mt-2"><a href="/projects">COMMUNITY</a></li>
-                    </ul>
-                </li>
-                <li><a href="gallery">GALLERY</a></li>
-                <li><a href="publicinfo">PUBLIC INFO</a></li>
-                <li><a id="menu-donate" href="donate.html">DONATE</a></li>
-            </ul>
-        </div>
-        <div class="offset-3 offset-sm-5 col-2 d-inline-block d-lg-none mt-3">
-          <a id="menu-donate-mobile" href="donate.html">DONATE</a>
-        </div>
-        <div class="col-2 offset-1 offset-sm-0 d-inline-block d-lg-none">
-          <nav class="navbar pt-4">
-            <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-collapse" width="30">
-              <img src="{{asset('storage/images/nav-hamburger.png')}}" alt="btn" width="30">
-            </button>
-          </nav>
-        </div>
-    </div>
-    <div id="mobile-menubar" class="container position-fixed w-100 bg-white">
-      <div class="col-12 d-block d-lg-none text-center d-lg-none">
-        <ul class="collapse d-lg-none p-0" id="mobile-nav-collapse">
-          <li class="p-3"><a id="menu-active" href="index.html">HOME</a></li>
-          <li class="p-3"><a class="toggle-btn" data-toggle="collapse" data-target="#about-collapse" href="#" onclick="addActive(this)">ABOUT US</a></li>
-          <ul class="collapse sub-collapse p-0" id="about-collapse">
-              <li class="p-3"><a href="aboutus.html">OUR JOURNEY</a></li>
-              <li class="p-3"><a href="aboutus.html">CONTACT US</a></li>
-          </ul>
-          <li class="toggle-btn p-3"><a class="toggle-btn" data-toggle="collapse" data-target="#projects-collapse" href="#" onclick="addActive(this)">PROJECTS</a></li>
-          <ul class="collapse sub-collapse p-0" id="projects-collapse">
-              <li class="p-3"><a href="projects.html">SCHOOL</a></li>
-              <li class="p-3"><a href="projects.html">COMMUNITY</a></li>
-          </ul>
-          <li class="p-3"><a href="gallery.html">GALLERY</a></li>
-          <li class="p-3"><a href="publicinfo.html">PUBLIC INFO</a></li>
-          <!-- <li class="p-3"><a id="menu-donate" href="donate.html">DONATE</a></li> -->
-        </ul>
-      </div>
-    </div>
-    <!-- <div id="socialmedia">
-        <ul>
-            <li><a href=""><img src="{{asset('storage/images/foundation-ins-logo.png')}}" alt="ins logo"></a></li>
-            <li><a href=""><img src="{{asset('storage/images/foundation-fb-logo.png')}}" alt="facebook logo"></a></li>
-            <li><a href=""><img src="{{asset('storage/images/foundation-twitter-logo.png')}}" alt="twitter logo"></a></li>
-        </ul>
-    </div> -->
+@extends('layout.layout')
+@section('title', 'Home')
+@section('content')
     <div id="fullpage" class="homepage">
         <!--First Page-->
         <div class="section home-section-1">
             <div class="bg">
-              <div class="row position-absolute">
-                <div class="col-7 offset-5">
-                  <img class="w-100" src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background">
-                  <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing"> -->
+                <div class="row position-absolute">
+                    <div class="col-7 offset-5">
+                        <img class="w-100" src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background">
+                    <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing"> -->
+                    </div>
                 </div>
-              </div>
-              <div class="row position-absolute">
-                <div class="col-7 offset-5">
-                  <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background"> -->
-                  <img class="w-100" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
+                <div class="row position-absolute">
+                    <div class="col-7 offset-5">
+                    <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background"> -->
+                        <img class="w-100" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="title">
                 <div class="row">
@@ -118,8 +36,8 @@
                     <div class="offset-2 col-8 offset-md-2 col-md-4">
                         <h1><span class="letter-bold">A</span>BOUT US</h1>
                         <p class="mt-2 mt-md-3 mb-4 mb-md-5">We are a non-profit foundation located in Richmond, British Columbia. We
-support sporting community and programs in their endeavours to provide equal
-opportunities to everyone who wishes to participate in sports.</p>
+                            support sporting community and programs in their endeavours to provide equal
+                            opportunities to everyone who wishes to participate in sports.</p>
                         <a href="">EXPLORE</a>
                     </div>
                     <div class="offset-lg-1 col-lg-4 d-none d-xl-block align-top">
@@ -128,14 +46,14 @@ opportunities to everyone who wishes to participate in sports.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-block d-xl-none align-bottom">
-                      <div class="img-container d-none d-md-block">
-                          <img src="{{asset('storage/images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
-                      </div>
-                      <div class="video-container mt-5 offset-2 offset-md-0 mt-md-3 text-left text-md-left">
-                          <video width="400" height="200" controls>
-                              <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
-                          </video>
-                      </div>
+                        <div class="img-container d-none d-md-block">
+                            <img src="{{asset('storage/images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
+                        </div>
+                        <div class="video-container mt-5 offset-2 offset-md-0 mt-md-3 text-left text-md-left">
+                            <video width="400" height="200" controls>
+                            <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,7 +61,7 @@ opportunities to everyone who wishes to participate in sports.</p>
                 <div class="grey-square col d-none d-xl-block"></div>
                 <div class="video-container">
                     <video width="280" height="187" controls>
-                        <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
+                    <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
                     </video>
                 </div>
                 <div class="image-container col d-none d-xl-block">
@@ -160,9 +78,9 @@ opportunities to everyone who wishes to participate in sports.</p>
                         <h1>NEWS</h1>
                     </div>
                     <div class="offset-2 offset-md-0 col-8 col-md-6 mt-2 mt-md-0">
-                      <div  id="top-news-image-container">
-                        <img src="{{asset('storage/images/ref-images/home-s3-1.jpg')}}" alt="">
-                      </div>
+                        <div  id="top-news-image-container">
+                            <img src="{{asset('storage/images/ref-images/home-s3-1.jpg')}}" alt="">
+                        </div>
                     </div>
                     <div id="top-title-block" class="offset-2 offset-md-0 col-8 col-md-2">
                         <div class="d-inline-block d-md-block city-anchor">VANCOUVER, B.C.</div>
@@ -172,48 +90,48 @@ opportunities to everyone who wishes to participate in sports.</p>
                     </div>
                 </div>
                 <div class="horizontal-slider">
-                  <div class="row bot-news">
-                      <div class="d-none d-md-block offset-md-2 col-md-1">
-                          <img src="{{asset('storage/images/foundation-badminton-shadow.png')}}" id="badminton-shadow">
-                          <img src="{{asset('storage/images/foundation-badminton.png')}}" id="badminton">
-                      </div>
-                      <div class="col col-2 col-md-2 offset-1 offset-md-0">
-                          <div class="image-container">
-                              <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
-                          </div>
-                          <div class="city-anchor">VANCOUVER, B.C.</div>
-                          <div class="news-type">Video</div>
-                          <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                          <a href="" class="news-more">MORE</a>
-                      </div>
-                      <div class="col col-2 col-md-2">
-                          <div class="image-container">
-                              <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
-                          </div>
-                          <div class="city-anchor">VANCOUVER, B.C.</div>
-                          <div class="news-type">Video</div>
-                          <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                          <a href="" class="news-more">MORE</a>
-                      </div>
-                      <div class="col col-2 col-md-2 offset-0 offset-md-0">
-                          <div class="image-container">
-                              <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
-                          </div>
-                          <div class="city-anchor">VANCOUVER, B.C.</div>
-                          <div class="news-type">Video</div>
-                          <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                          <a href="" class="news-more">MORE</a>
-                      </div>
-                      <div class="col col-2 col-md-2">
-                          <div class="image-container">
-                              <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
-                          </div>
-                          <div class="city-anchor">VANCOUVER, B.C.</div>
-                          <div class="news-type">Video</div>
-                          <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                          <a href="" class="news-more">MORE</a>
-                      </div>
-                  </div>
+                    <div class="row bot-news">
+                        <div class="d-none d-md-block offset-md-2 col-md-1">
+                            <img src="{{asset('storage/images/foundation-badminton-shadow.png')}}" id="badminton-shadow">
+                            <img src="{{asset('storage/images/foundation-badminton.png')}}" id="badminton">
+                        </div>
+                        <div class="col col-2 col-md-2 offset-1 offset-md-0">
+                            <div class="image-container">
+                                <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
+                            </div>
+                            <div class="city-anchor">VANCOUVER, B.C.</div>
+                            <div class="news-type">Video</div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                            <a href="" class="news-more">MORE</a>
+                        </div>
+                        <div class="col col-2 col-md-2">
+                            <div class="image-container">
+                                <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
+                            </div>
+                            <div class="city-anchor">VANCOUVER, B.C.</div>
+                            <div class="news-type">Video</div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                            <a href="" class="news-more">MORE</a>
+                        </div>
+                        <div class="col col-2 col-md-2 offset-0 offset-md-0">
+                            <div class="image-container">
+                                <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
+                            </div>
+                            <div class="city-anchor">VANCOUVER, B.C.</div>
+                            <div class="news-type">Video</div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                            <a href="" class="news-more">MORE</a>
+                        </div>
+                        <div class="col col-2 col-md-2">
+                            <div class="image-container">
+                                <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
+                            </div>
+                            <div class="city-anchor">VANCOUVER, B.C.</div>
+                            <div class="news-type">Video</div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                            <a href="" class="news-more">MORE</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -253,14 +171,9 @@ opportunities to everyone who wishes to participate in sports.</p>
             <div id="backtotop" class="d-none d-sm-block" data-menuanchor="firstPage"><a href="#firstPage">&#x22C0; Back to top</a></div>
         </div>
     </div>
+@stop
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/fullpage.js"></script>
-<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+@section('js')
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -279,25 +192,24 @@ opportunities to everyone who wishes to participate in sports.</p>
         });
 
         function switchActive(el) {
-          var siblings = $(el).parents().siblings();
-          if ($(el).hasClass('active')) {
-            $(el).removeClass('active');
-          } else {
-            $(el).addClass('active');
-          }
-          siblings.find('a').removeClass('active');
+            var siblings = $(el).parents().siblings();
+            if ($(el).hasClass('active')) {
+                $(el).removeClass('active');
+            } else {
+                $(el).addClass('active');
+            }
+            siblings.find('a').removeClass('active');
         }
 
         function addActive(el) {
-          if ($(el).hasClass('active')) {
-            $(el).removeClass('active');
-          } else {
-            $(el).addClass('active');
-          }
-          // siblings.find('a').removeClass('active');
-          // siblings.find('.toggle-btn').addClass('collapsed');
-          // $('.sub-collapse').removeClass('show');
+            if ($(el).hasClass('active')) {
+                $(el).removeClass('active');
+            } else {
+                $(el).addClass('active');
+            }
+            // siblings.find('a').removeClass('active');
+            // siblings.find('.toggle-btn').addClass('collapsed');
+            // $('.sub-collapse').removeClass('show');
         }
     </script>
-</body>
-</html>
+@stop
