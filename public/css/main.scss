@@ -30,8 +30,12 @@ $col-lg: 1200px;
 //******************************************************************************
 //                              Global CSS
 //******************************************************************************
-
+.fp-enabled,body,html {
+  overflow-x: hidden!important;
+  // overflow-y: visible!important;
+}
 body{
+
   h1{
     font-family: 'Raleway-Light';
     color: $main-color-b;
@@ -65,12 +69,16 @@ body{
   font-family: Raleway-Light;
   font-size: 1.3em;
   text-align: center;
-  width: 104%;
-  padding: 1% 3% 0 3%;
+  width: 102%;
+  // padding: 1% 3% 0 3%;
   align-items: center;
-  left: 0;
+  top: 0;
   background: #fff;
   height: 100px;
+
+  @media screen and (max-width: $col-sm) {
+    width: 104%;
+  }
 
   #menu-logo{
     text-align: left;
@@ -81,7 +89,7 @@ body{
     }
 
     img{
-      width: 140px;
+      width: 150px;
 
       @media screen and (max-width: $col-sm) {
         width: 100px;
@@ -261,12 +269,19 @@ body{
   }
   //Slider 2
   .home-section-2{
+    @media screen and (max-width: $col-sm) {
+      height: auto!important;
+      background: #f3f3f3;
+    }
+
     .fp-tableCell{
       vertical-align: top;
       padding-top: 180px;
 
       @media screen and (max-width: $col-sm) {
-        padding-top: 140px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto!important;
       }
     }
     .title{
@@ -364,23 +379,29 @@ body{
   }
 
   //slider3
-  .home-section-3{
+  .home-section-3 {
+    @media screen and (max-width: $col-sm) {
+      height: auto!important;
+    }
+
     .fp-tableCell{
       vertical-align: top;
-      padding-top: 120px;
+      padding-top: 140px;
 
       @media screen and (max-width: $col-sm) {
         padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto!important;
       }
     }
     .title{
       h1{
-        width: 60px;
+        width: 100%;
         word-wrap: break-word;
 
         @media screen and (max-width: $col-sm) {
           font-size: 1.2rem;
-          max-width: 1.6rem;
+          font-weight: 500;
         }
       }
       .city-anchor{
@@ -454,23 +475,45 @@ body{
           width: 100%;
           height: 250px;
           overflow: hidden;
+          border-radius: 10px;
+          box-shadow: #e3e3e3 0 10px 13px;
+          padding: 0;
 
           img{
             height: 100%;
           }
 
           @media screen and (max-width: $col-sm) {
-            height: 80px;
+            height: 150px;
           }
         }
       }
+      .horizontal-slider {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+          width: 0px;
+          background: transparent; /* make scrollbar transparent */
+        }
+      }
       .bot-news{
-        max-height: 310px;
+        height: 310px;
         margin-top: 40px;
+        overflow-x: scroll;
+        min-width: 800px;
+
+        @media screen and (max-width: $col-md) {
+          height: auto!important;
+        }
 
         @media screen and (max-width: $col-sm) {
           margin-top: 15px;
           font-size: 12px;
+        }
+
+        .col {
+          min-width: 150px;
+          max-width: 160px;
         }
 
         .city-anchor{
@@ -519,21 +562,23 @@ body{
 
         .image-container{
           width: 100%;
-          height: 150px;
+          height: 15vh;
           overflow: hidden;
           object-fit: fill;
+          border-radius: 10px;
+          box-shadow: #e3e3e3 0 10px 13px;
 
-          @media screen and (max-width: $col-lg) {
-            height: 120px;
-          }
-
-          @media screen and (max-width: $col-md) {
-            height: 100px;
-          }
-
-          @media screen and (max-width: $col-sm) {
-            height: 70px;
-          }
+          // @media screen and (max-width: $col-lg) {
+          //   height: 120px;
+          // }
+          //
+          // @media screen and (max-width: $col-md) {
+          //   height: 100px;
+          // }
+          //
+          // @media screen and (max-width: $col-sm) {
+          //   height: 70px;
+          // }
 
           img{
             height: 100%;
@@ -556,9 +601,19 @@ body{
 
   //slider4
   .home-section-4 {
+    @media screen and (max-width: $col-sm) {
+      height: auto!important;
+    }
+
     .fp-tableCell {
       vertical-align: top;
       padding-top: 140px;
+
+      @media screen and (max-width: $col-sm) {
+        height: auto!important;
+        padding-top: 0px;
+        padding-bottom: 100px;
+      }
     }
 
     .title{
@@ -607,6 +662,8 @@ body{
         margin-top: 40px;
         padding: 35px 0 40px 35px;
         font-family: Raleway-Light;
+        box-shadow: $light-grey 0 10px 13px;
+        border-radius: 10px;
 
         @media screen and (max-width: $col-md) {
           font-size: 1rem;
@@ -1138,6 +1195,10 @@ body{
   .fp-tableCell {
     vertical-align: top;
     padding-top: 180px;
+
+    @media screen and (max-width: $col-sm) {
+      padding-top: 100px;
+    }
   }
 
   h5{
@@ -1146,14 +1207,32 @@ body{
     margin-bottom: 30px;
   }
 
+  .horizontal-slider {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+
+    .row {
+      min-width: 900px;
+      overflow-x: scroll;
+
+      .col {
+        min-width: 170px;
+      }
+    }
+  }
+
   .donate-card-container{
     padding: 0 30px 0 0;
-    margin-bottom: 70px;
 
     .donate-card{
-      box-shadow: $light-grey 2px 2px 5px;
+      box-shadow: $light-grey 0px 10px 13px;
       padding: 20px 0 25px 35px;
       font-family: Raleway-Light;
+      border-radius: 10px;
 
       .donate-number{
         font-size: 22px;
@@ -1167,7 +1246,6 @@ body{
   }
 
   .total-donate-data{
-    margin-bottom: 100px;
 
     h4{
       font-family: Raleway-Light;
@@ -1187,22 +1265,27 @@ body{
     div{
       padding: 0;
 
-      h4{
         span{
-          font-size: 45px;
+          font-size: 1.6rem;
+          line-height: 1.6rem;
         }
         #money-unit{
           font-family: Raleway-Bold;
           color: $main-color-r;
           font-size: 14px;
         }
-      }
 
       a{
         color: white;
         background-color: $main-color-r;
+        box-shadow: rgba($main-color-r, .25) 0 10px 13px;
         padding: 10px 30px;
-        border-radius: 15px;
+        border-radius: 5rem;
+
+        @media screen and (max-width: $col-sm) {
+          padding: 10px 10px;
+          font-size: .8rem;
+        }
       }
     }
   }

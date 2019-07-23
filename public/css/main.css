@@ -10,6 +10,9 @@
 @font-face {
   font-family: 'Raleway-Black';
   src: url("../font/Raleway-Black.ttf"); }
+.fp-enabled, body, html {
+  overflow-x: hidden !important; }
+
 body h1 {
   font-family: 'Raleway-Light';
   color: #000000;
@@ -31,19 +34,21 @@ body a:hover {
   font-family: Raleway-Light;
   font-size: 1.3em;
   text-align: center;
-  width: 104%;
-  padding: 1% 3% 0 3%;
+  width: 102%;
   align-items: center;
-  left: 0;
+  top: 0;
   background: #fff;
   height: 100px; }
+  @media screen and (max-width: 768px) {
+    #menubar {
+      width: 104%; } }
   #menubar #menu-logo {
     text-align: left;
     font-size: 1rem; }
     #menubar #menu-logo a {
       font-size: 1rem; }
     #menubar #menu-logo img {
-      width: 140px; }
+      width: 150px; }
       @media screen and (max-width: 768px) {
         #menubar #menu-logo img {
           width: 100px; } }
@@ -139,12 +144,18 @@ body a:hover {
   right: 0; }
   .homepage .home-section-1 .bg .row img {
     max-width: 1256px; }
+@media screen and (max-width: 768px) {
+  .homepage .home-section-2 {
+    height: auto !important;
+    background: #f3f3f3; } }
 .homepage .home-section-2 .fp-tableCell {
   vertical-align: top;
   padding-top: 180px; }
   @media screen and (max-width: 768px) {
     .homepage .home-section-2 .fp-tableCell {
-      padding-top: 140px; } }
+      padding-top: 100px;
+      padding-bottom: 100px;
+      height: auto !important; } }
 @media screen and (max-width: 992px) {
   .homepage .home-section-2 .title h1 {
     font-size: 1rem;
@@ -207,19 +218,24 @@ body a:hover {
   overflow: hidden; }
   .homepage .home-section-2 .video .image-container img {
     width: 100%; }
+@media screen and (max-width: 768px) {
+  .homepage .home-section-3 {
+    height: auto !important; } }
 .homepage .home-section-3 .fp-tableCell {
   vertical-align: top;
-  padding-top: 120px; }
+  padding-top: 140px; }
   @media screen and (max-width: 768px) {
     .homepage .home-section-3 .fp-tableCell {
-      padding-top: 100px; } }
+      padding-top: 100px;
+      padding-bottom: 100px;
+      height: auto !important; } }
 .homepage .home-section-3 .title h1 {
-  width: 60px;
+  width: 100%;
   word-wrap: break-word; }
   @media screen and (max-width: 768px) {
     .homepage .home-section-3 .title h1 {
       font-size: 1.2rem;
-      max-width: 1.6rem; } }
+      font-weight: 500; } }
 .homepage .home-section-3 .title .city-anchor {
   color: #bbbbbb;
   font-size: 10px; }
@@ -275,19 +291,36 @@ body a:hover {
   .homepage .home-section-3 .title .top-news #top-news-image-container {
     width: 100%;
     height: 250px;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: #e3e3e3 0 10px 13px;
+    padding: 0; }
     .homepage .home-section-3 .title .top-news #top-news-image-container img {
       height: 100%; }
     @media screen and (max-width: 768px) {
       .homepage .home-section-3 .title .top-news #top-news-image-container {
-        height: 80px; } }
+        height: 150px; } }
+.homepage .home-section-3 .title .horizontal-slider {
+  overflow-x: auto; }
+  .homepage .home-section-3 .title .horizontal-slider::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */ }
 .homepage .home-section-3 .title .bot-news {
-  max-height: 310px;
-  margin-top: 40px; }
+  height: 310px;
+  margin-top: 40px;
+  overflow-x: scroll;
+  min-width: 800px; }
+  @media screen and (max-width: 992px) {
+    .homepage .home-section-3 .title .bot-news {
+      height: auto !important; } }
   @media screen and (max-width: 768px) {
     .homepage .home-section-3 .title .bot-news {
       margin-top: 15px;
       font-size: 12px; } }
+  .homepage .home-section-3 .title .bot-news .col {
+    min-width: 150px;
+    max-width: 160px; }
   .homepage .home-section-3 .title .bot-news .city-anchor {
     display: inline-block;
     margin-top: 20px; }
@@ -322,18 +355,11 @@ body a:hover {
         font-size: 12px; } }
   .homepage .home-section-3 .title .bot-news .image-container {
     width: 100%;
-    height: 150px;
+    height: 15vh;
     overflow: hidden;
-    object-fit: fill; }
-    @media screen and (max-width: 1200px) {
-      .homepage .home-section-3 .title .bot-news .image-container {
-        height: 120px; } }
-    @media screen and (max-width: 992px) {
-      .homepage .home-section-3 .title .bot-news .image-container {
-        height: 100px; } }
-    @media screen and (max-width: 768px) {
-      .homepage .home-section-3 .title .bot-news .image-container {
-        height: 70px; } }
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: #e3e3e3 0 10px 13px; }
     .homepage .home-section-3 .title .bot-news .image-container img {
       height: 100%; }
   .homepage .home-section-3 .title .bot-news #badminton {
@@ -343,9 +369,17 @@ body a:hover {
   .homepage .home-section-3 .title .bot-news #badminton-shadow {
     margin-top: 60px;
     width: 100%; }
+@media screen and (max-width: 768px) {
+  .homepage .home-section-4 {
+    height: auto !important; } }
 .homepage .home-section-4 .fp-tableCell {
   vertical-align: top;
   padding-top: 140px; }
+  @media screen and (max-width: 768px) {
+    .homepage .home-section-4 .fp-tableCell {
+      height: auto !important;
+      padding-top: 0px;
+      padding-bottom: 100px; } }
 @media screen and (max-width: 992px) {
   .homepage .home-section-4 .title h1 {
     font-size: 1rem;
@@ -377,7 +411,9 @@ body a:hover {
   box-shadow: #e3e3e3 2px 2px 5px;
   margin-top: 40px;
   padding: 35px 0 40px 35px;
-  font-family: Raleway-Light; }
+  font-family: Raleway-Light;
+  box-shadow: #e3e3e3 0 10px 13px;
+  border-radius: 10px; }
   @media screen and (max-width: 992px) {
     .homepage .home-section-4 .title .donate-card {
       font-size: 1rem;
@@ -717,46 +753,63 @@ body a:hover {
 .publicinfopage .fp-tableCell {
   vertical-align: top;
   padding-top: 180px; }
+  @media screen and (max-width: 768px) {
+    .publicinfopage .fp-tableCell {
+      padding-top: 100px; } }
 .publicinfopage h5 {
   font-family: Raleway-Light;
   font-size: 20px;
   margin-bottom: 30px; }
+.publicinfopage .horizontal-slider {
+  overflow-x: scroll; }
+  .publicinfopage .horizontal-slider::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; }
+  .publicinfopage .horizontal-slider .row {
+    min-width: 900px;
+    overflow-x: scroll; }
+    .publicinfopage .horizontal-slider .row .col {
+      min-width: 170px; }
 .publicinfopage .donate-card-container {
-  padding: 0 30px 0 0;
-  margin-bottom: 70px; }
+  padding: 0 30px 0 0; }
   .publicinfopage .donate-card-container .donate-card {
-    box-shadow: #e3e3e3 2px 2px 5px;
+    box-shadow: #e3e3e3 0px 10px 13px;
     padding: 20px 0 25px 35px;
-    font-family: Raleway-Light; }
+    font-family: Raleway-Light;
+    border-radius: 10px; }
     .publicinfopage .donate-card-container .donate-card .donate-number {
       font-size: 22px; }
     .publicinfopage .donate-card-container .donate-card .donate-type {
       color: #d9352c;
       font-size: 12px; }
-.publicinfopage .total-donate-data {
-  margin-bottom: 100px; }
-  .publicinfopage .total-donate-data h4 {
-    font-family: Raleway-Light;
-    font-size: 45px; }
-    .publicinfopage .total-donate-data h4 span {
-      font-size: 20px;
-      color: #d9352c; }
+.publicinfopage .total-donate-data h4 {
+  font-family: Raleway-Light;
+  font-size: 45px; }
+  .publicinfopage .total-donate-data h4 span {
+    font-size: 20px;
+    color: #d9352c; }
 .publicinfopage .final-donate-data {
   padding: 0;
   font-family: Raleway-Light; }
   .publicinfopage .final-donate-data div {
     padding: 0; }
-    .publicinfopage .final-donate-data div h4 span {
-      font-size: 45px; }
-    .publicinfopage .final-donate-data div h4 #money-unit {
+    .publicinfopage .final-donate-data div span {
+      font-size: 1.6rem;
+      line-height: 1.6rem; }
+    .publicinfopage .final-donate-data div #money-unit {
       font-family: Raleway-Bold;
       color: #d9352c;
       font-size: 14px; }
     .publicinfopage .final-donate-data div a {
       color: white;
       background-color: #d9352c;
+      box-shadow: rgba(217, 53, 44, 0.25) 0 10px 13px;
       padding: 10px 30px;
-      border-radius: 15px; }
+      border-radius: 5rem; }
+      @media screen and (max-width: 768px) {
+        .publicinfopage .final-donate-data div a {
+          padding: 10px 10px;
+          font-size: .8rem; } }
 
 .donatepage {
   font-family: Raleway-Light; }
