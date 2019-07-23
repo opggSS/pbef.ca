@@ -61,6 +61,8 @@
         $.fn.fullpage.setAllowScrolling(true);
 
 
+    });
+    $(window).on('load', function() {
         //grid layout
         $('.grid').masonry({
             // set itemSelector so .grid-sizer is not used in layout
