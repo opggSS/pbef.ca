@@ -7,14 +7,14 @@
             <div class="bg">
                 <div class="row position-absolute">
                     <div class="col-7 offset-5">
-                        <img class="w-100" src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background">
+                        <img class="w-100" src="{{asset('images/foundation-home-bg1.png')}}" alt="particle background">
                     <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing"> -->
                     </div>
                 </div>
                 <div class="row position-absolute">
                     <div class="col-7 offset-5">
-                    <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1.png')}}" alt="particle background"> -->
-                        <img class="w-100" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
+                    <!-- <img class="w-100 position-absolute" src="{{asset('images/foundation-home-bg1.png')}}" alt="particle background"> -->
+                        <img class="w-100" src="{{asset('images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
                     </div>
                 </div>
             </div>
@@ -42,16 +42,16 @@
                     </div>
                     <div class="offset-lg-1 col-lg-4 d-none d-xl-block align-top">
                         <div class="img-container" width="500">
-                            <img src="{{asset('storage/images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
+                            <img src="{{asset('images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-block d-xl-none align-bottom">
                         <div class="img-container d-none d-md-block">
-                            <img src="{{asset('storage/images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
+                            <img src="{{asset('images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
                         </div>
                         <div class="video-container mt-5 offset-2 offset-md-0 mt-md-3 text-left text-md-left">
                             <video width="400" height="200" controls>
-                            <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
+                            <!-- <source data-src="{{asset('images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
                             </video>
                         </div>
                     </div>
@@ -61,11 +61,11 @@
                 <div class="grey-square col d-none d-xl-block"></div>
                 <div class="video-container">
                     <video width="280" height="187" controls>
-                    <!-- <source data-src="{{asset('storage/images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
+                    <!-- <source data-src="{{asset('images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
                     </video>
                 </div>
                 <div class="image-container col d-none d-xl-block">
-                    <img src="{{asset('storage/images/ref-images/home-s2-2.jpg')}}" alt="sample-img">
+                    <img src="{{asset('images/ref-images/home-s2-2.jpg')}}" alt="sample-img">
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="offset-2 offset-md-0 col-8 col-md-6 mt-2 mt-md-0">
                         <div  id="top-news-image-container">
-                            <img src="{{asset('storage/images/ref-images/home-s3-1.jpg')}}" alt="">
+                            <img src="{{asset('images/ref-images/home-s3-1.jpg')}}" alt="">
                         </div>
                     </div>
                     <div id="top-title-block" class="offset-2 offset-md-0 col-8 col-md-2">
@@ -92,12 +92,12 @@
                 <div class="horizontal-slider">
                     <div class="row bot-news">
                         <div class="d-none d-md-block offset-md-2 col-md-1">
-                            <img src="{{asset('storage/images/foundation-badminton-shadow.png')}}" id="badminton-shadow">
-                            <img src="{{asset('storage/images/foundation-badminton.png')}}" id="badminton">
+                            <img src="{{asset('images/foundation-badminton-shadow.png')}}" id="badminton-shadow">
+                            <img src="{{asset('images/foundation-badminton.png')}}" id="badminton">
                         </div>
                         <div class="col col-2 col-md-2 offset-1 offset-md-0">
                             <div class="image-container">
-                                <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
+                                <img src="{{asset('images/ref-images/home-s3-2.jpg')}}" alt="">
                             </div>
                             <div class="city-anchor">VANCOUVER, B.C.</div>
                             <div class="news-type">Video</div>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="col col-2 col-md-2">
                             <div class="image-container">
-                                <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
+                                <img src="{{asset('images/ref-images/home-s3-3.jpeg')}}" alt="">
                             </div>
                             <div class="city-anchor">VANCOUVER, B.C.</div>
                             <div class="news-type">Video</div>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="col col-2 col-md-2 offset-0 offset-md-0">
                             <div class="image-container">
-                                <img src="{{asset('storage/images/ref-images/home-s3-2.jpg')}}" alt="">
+                                <img src="{{asset('images/ref-images/home-s3-2.jpg')}}" alt="">
                             </div>
                             <div class="city-anchor">VANCOUVER, B.C.</div>
                             <div class="news-type">Video</div>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="col col-2 col-md-2">
                             <div class="image-container">
-                                <img src="{{asset('storage/images/ref-images/home-s3-3.jpeg')}}" alt="">
+                                <img src="{{asset('images/ref-images/home-s3-3.jpeg')}}" alt="">
                             </div>
                             <div class="city-anchor">VANCOUVER, B.C.</div>
                             <div class="news-type">Video</div>
@@ -162,8 +162,8 @@
                     <div class="offset-2 col-8 offset-md-2 col-md-9">
                         <h3>Our Partners</h3>
                         <div class="partner-logo">
-                            <img src="{{asset('storage/images/ref-images/bwf-sample-logo.png')}}" alt="">
-                            <img src="{{asset('storage/images/ref-images/vancouver-sample-logo.png')}}" alt="">
+                            <img src="{{asset('images/ref-images/bwf-sample-logo.png')}}" alt="">
+                            <img src="{{asset('images/ref-images/vancouver-sample-logo.png')}}" alt="">
                         </div>
                     </div>
                 </div>
