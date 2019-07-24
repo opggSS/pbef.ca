@@ -4,7 +4,7 @@
     <div class="container-fluid">
     <div class="row">
         <div class="col-md-11">
-            <h1>Gallery</h1>
+            <h1>Partners</h1>
             <table class="table">
                 <thead>
                     <tr>
@@ -17,37 +17,37 @@
                 </thead>
                 <tbody>
 
-                    @foreach ($galleries as $gallery)
-                    <form method="post" action="{{route('galleries.update',$gallery->id)}}" enctype="multipart/form-data"  >
+                    @foreach ($partners as $partner)
+                    <form method="post" action="{{route('partners.update',$partner->id)}}" enctype="multipart/form-data"  >
                         @method('PUT')
                         {{ csrf_field() }}
                         <tr>
                             <td colspan="1">
-                                <input class="form-control" name="title" value="{{ $gallery->title }}" placeholder="required">
+                                <input class="form-control" name="title" value="{{ $partner->title }}" placeholder="required">
                             </td>
                             <td colspan="1" >
-                                <input class="form-control" name="alt" value="{{ $gallery->alt }}" placeholder="required">
+                                <input class="form-control" name="alt" value="{{ $partner->alt }}" placeholder="required">
                             </td>
                             <td colspan="1">
-                                <input class="form-control" name="description" value="{{ $gallery->description }}">
+                                <input class="form-control" name="description" value="{{ $partner->description }}">
                             </td>
                             <td colspan="5">
-                                <img src="/images/{{$gallery->image}}" style="width: 100%">
+                                <img src="/images/{{$partner->image}}" style="width: 100%">
                                 <input type="file" name="image" class="form-control" accept="image/*">
                             </td>
                             <td colspan="1">
                                 <input type="submit"  value="Update" class="btn btn-primary btn-block btn-h1-spacing" style="margin-bottom: 20px"> 
-                                <form method="post" action="{{route('galleries.update',$gallery->id)}}" enctype="multipart/form-data"  >
+                                <form method="post" action="{{route('partners.update',$partner->id)}}" enctype="multipart/form-data"  >
                                     @method('delete')
                                     {{ csrf_field() }}
-                                    <input type="submit" value="Delete" class="btn btn-danger btn-block btn-h1-spacing" action="{{route('galleries.destroy',$gallery->id)}}">
+                                    <input type="submit" value="Delete" class="btn btn-danger btn-block btn-h1-spacing" action="{{route('partners.destroy',$partner->id)}}">
                                 </form>
                                 
                             </td>
                         </tr>
                     </form>
                     @endforeach
-                    <form method="post" action="{{route('galleries.store')}}" enctype="multipart/form-data" >
+                    <form method="post" action="{{route('partners.store')}}" enctype="multipart/form-data" >
                         {{ csrf_field() }}
                         <tr>
                             <td colspan="1">
@@ -70,23 +70,7 @@
                 </tbody>
             </table>
         </div> <!-- end of .col-md-8 -->
-  <!--  <div class="col-md-2">
-            <div class="well">
-                <form method="post" action="{{route('galleries.store')}}">
-                    {{ csrf_field() }}
-                    <h2>Add Image</h2>
-                    <label for="name">Name:</label>
-                    <input name="name" class="form-control" style="margin-bottom: 20px">
-                    <input type="submit" name="" value="添加新类别" class="btn btn-primary btn-block btn-h1-spacing"> 
-                </form>
-               {{--  {!! Form::open(['route' => 'categories.store', 'method' => 'POST']) !!}
-                    <h2>New gallery</h2>
-                    {{ Form::label('name', 'Name:') }}
-                    {{ Form::text('name', null, ['class' => 'form-control']) }}
-                    {{ Form::submit('Create New gallery', ['class' => 'btn btn-primary btn-block btn-h1-spacing']) }}
-                {!! Form::close() !!} --}}
-            </div>
-        </div>. -->
+ 
     </div>
 
 @endsection

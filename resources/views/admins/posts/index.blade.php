@@ -7,11 +7,11 @@
 
     <div class="row">
       <div class="col-md-10">
-        <h1>新闻列表</h1>
+        <h1>News Lists</h1>
        </div>
 
       <div class="col-md-2">
-        <a href="{{ route('news.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">添加新闻</a>
+        <a href="{{ route('news.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">Add News</a>
       </div>
       <div class="col-md-12">
         <hr>

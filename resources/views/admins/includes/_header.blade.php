@@ -17,6 +17,14 @@
   <!-- Custom styles for this template-->
   <link href="/css/admins/sb-admin-2.min.css" rel="stylesheet">
   <link href="/css/admins/styles.css" rel="stylesheet">
+
+<!-- admin global css -->
+  <style type="text/css">
+  .required:after{
+      content:"*";
+      color:red;
+  }
+  </style>
   @yield('styles')
 
 </head>
