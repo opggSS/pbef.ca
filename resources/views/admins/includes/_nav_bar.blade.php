@@ -46,9 +46,17 @@
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('galleries.index')}}" >
-          <span>Gallery</span>
+          <span>Galleries</span>
         </a>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{route('partners.index')}}" >
+          <span>Partners</span>
+        </a>
+      </li>
+
+
 
       <!-- Divider -->
       <hr class="sidebar-divider">

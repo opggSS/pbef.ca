@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Gallery;
+use App\Partner;
 use Image;
 use Session;
 
-class GalleryController extends Controller
+class PartnerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,16 +16,14 @@ class GalleryController extends Controller
      */
     public function index()
     {
-
-        $galleries = Gallery::all();
-        if($galleries){
-            return view('admins.galleries.index')->withGalleries($galleries);
+        $partners = Partner::all();
+        if($partners){
+            return view('admins.partners.index')->withPartners($partners);
         }
         else{
-            return view('admins.galleries.index');
+            return view('admins.partners.index');
         }
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -39,23 +37,23 @@ class GalleryController extends Controller
             'alt' => 'required|max:255',
             'description' => 'max:255',
             ));
-        $gallery = new Gallery;
+        $partner = new Partner;
 
-        $gallery->title = $request->title;
-        $gallery->alt = $request->alt;
-        $gallery->description = $request->description;
+        $partner->title = $request->title;
+        $partner->alt = $request->alt;
+        $partner->description = $request->description;
 
         if ($request->hasFile('image')) {
           $image = $request->file('image');
           $filename = time() . '.' . $image->getClientOriginalExtension();
           $location = public_path('images/' . $filename);
           Image::make($image)->resize(500, 300)->save($location);
-          $gallery->image = $filename;
+          $partner->image = $filename;
         }
 
-        $gallery->save();
-        Session::flash('success', 'New gallery has been created');
-        return redirect()->route('galleries.index');
+        $partner->save();
+        Session::flash('success', 'New Partner has been created');
+        return redirect()->route('partners.index');
     }
 
     /**
@@ -105,24 +103,24 @@ class GalleryController extends Controller
             'alt' => 'max:255',
             'description' => 'max:255',
             ));
-        $gallery = Gallery::find($id);
-        $gallery->title = $request->title;
-        $gallery->alt = $request->alt;
-        $gallery->description = $request->description;
+        $partner = Partner::find($id);
+        $partner->title = $request->title;
+        $partner->alt = $request->alt;
+        $partner->description = $request->description;
 
         if ($request->hasFile('image')) {
           $image = $request->file('image');
           $filename = time() . '.' . $image->getClientOriginalExtension();
           $location = public_path('images/' . $filename);
           Image::make($image)->resize(500, 300)->save($location);
-          $gallery->image = $filename;
+          $partner->image = $filename;
         }
 
-        $gallery->save();
+        $partner->save();
 
-        Session::flash('success', 'Gallery has been updated');
+        Session::flash('success', 'Partner has been updated');
 
-        return redirect()->route('galleries.index');
+        return redirect()->route('partners.index');
     }
 
     /**
@@ -133,9 +131,9 @@ class GalleryController extends Controller
      */
     public function destroy($id)
     {
-        $gallery = gallery::find($id);
-        $gallery->delete();
-        Session::flash('success', 'Gallery has been removed');
-        return redirect()->route('galleries.index');   
+        $partner = Partner::find($id);
+        $partner->delete();
+        Session::flash('success', 'Partner has been removed');
+        return redirect()->route('partners.index');   
     }
 }

@@ -21,9 +21,14 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/donate', function () {
 	    return view('donate');
 	});
+
+	Route::post('/donate', 'MessageController@store');
+
+
 	Route::get('/gallery', function () {
 	    return view('gallery');
 	});
+
 	Route::get('/public_info', function () {
 	    return view('public_info');
 	});
@@ -47,3 +52,15 @@ Route::group(['middleware' => ['web']], function () {
 	Route::resource('admin/news' , 'PostController');
 	Route::resource('admin/categories' , 'CategoryController');
 	Route::resource('admin/galleries' , 'GalleryController');
+	Route::resource('admin/partners' , 'PartnerController');
+
+	Route::get('admin/messages', 'MessageController@index');
+	Route::get('admin/reply/{id}', 'MessageController@reply');
+	Route::post('admin/reply/{id}', 'MessageController@sendEmail');
+
+
+
+
+
+
+
