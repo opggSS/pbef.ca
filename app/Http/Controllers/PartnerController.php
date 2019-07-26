@@ -47,7 +47,11 @@ class PartnerController extends Controller
           $image = $request->file('image');
           $filename = time() . '.' . $image->getClientOriginalExtension();
           $location = public_path('images/' . $filename);
-          Image::make($image)->resize(500, 300)->save($location);
+          Image::make($image)->resize(150, null, function ($constraint) {
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            })->save($location);
+
           $partner->image = $filename;
         }
 

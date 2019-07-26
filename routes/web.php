@@ -12,9 +12,7 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-	Route::get('/', function () {
-    	return view('home');
-	});
+	Route::get('/' ,'PageController@index');
 	Route::get('/about_us', function () {
 	    return view('about_us');
 	});
@@ -39,6 +37,8 @@ Route::group(['middleware' => ['web']], function () {
 	    return view('admins.pages.index');
 	});
 
+
+
 	// Route::get('/login', 'UserController@index');
 	// Route::get('admins/login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
 	// Route::post('admins/login', 'Auth\AuthController@postLogin');
@@ -54,13 +54,13 @@ Route::group(['middleware' => ['web']], function () {
 	Route::resource('admin/galleries' , 'GalleryController');
 	Route::resource('admin/partners' , 'PartnerController');
 
+	Route::get('admin/pageContents/{slug}' , 'PageContentController@pages');
+	Route::resource('admin/pageContents' , 'PageContentController');
+
 	Route::get('admin/messages', 'MessageController@index');
-	Route::get('admin/reply/{id}', 'MessageController@reply');
+	Route::get('admin/messages/unread', 'MessageController@unread');
+	Route::get('admin/messages/view/{id}', 'MessageController@view');
 	Route::post('admin/reply/{id}', 'MessageController@sendEmail');
-
-
-
-
 
 
 
