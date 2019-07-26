@@ -1,5 +1,6 @@
 @extends('layout.layout')
 @section('title', 'Home')
+
 @section('content')
     <div id="fullpage" class="homepage">
         <!--First Page-->

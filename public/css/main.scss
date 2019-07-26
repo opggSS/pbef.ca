@@ -8,27 +8,27 @@ $col-md: 992px;
 $col-lg: 1200px;
 
 @font-face{
-  font-family: 'Raleway-Light';
-  src : url('../font/Raleway-Light.ttf');
+  font-family: 'raleway-light';
+  src : url('../font/raleway-light.ttf');
 }
 
 @font-face{
-  font-family: 'Raleway-Regular';
-  src : url('../font/Raleway-Regular.ttf');
+  font-family: 'raleway-regular';
+  src : url('../font/raleway-regular.ttf');
 }
 
 @font-face{
-  font-family: 'Raleway-Bold';
-  src : url('../font/Raleway-Bold.ttf');
+  font-family: 'raleway-bold';
+  src : url('../font/raleway-bold.ttf');
 }
 
 @font-face{
-  font-family: 'Raleway-Black';
-  src : url('../font/Raleway-Black.ttf');
+  font-family: 'raleway-black';
+  src : url('../font/raleway-black.ttf');
 }
 
 //******************************************************************************
-//                              Global CSS
+//                              global css
 //******************************************************************************
 .fp-enabled,body,html {
   overflow-x: hidden!important;
@@ -37,7 +37,7 @@ $col-lg: 1200px;
 body{
 
   h1{
-    font-family: 'Raleway-Light';
+    font-family: 'raleway-light';
     color: $main-color-b;
     font-size: 60px;
     letter-spacing: 8px;
@@ -49,7 +49,7 @@ body{
   }
 
   p{
-    font-family: 'Raleway-Light';
+    font-family: 'raleway-light';
     color: $main-color-text;
     font-size: 12px;
   }
@@ -66,7 +66,7 @@ body{
 
   position: fixed;
   z-index: 1000;
-  font-family: Raleway-Light;
+  font-family: raleway-light;
   font-size: 1.3em;
   text-align: center;
   width: 102%;
@@ -224,7 +224,7 @@ body{
   }
 }
 
-/*Full page js style pagination*/
+/*full page js style pagination*/
 #fp-nav{
   left: 3.5vw!important;
   margin-left: 10px;
@@ -237,12 +237,12 @@ body{
 
 
 //******************************************************************************
-//                          Home Page CSS
+//                          home page css
 //******************************************************************************
 .homepage{
-  //Slider 1
+  //slider 1
   .home-section-1{
-    .fp-tableCell{
+    .fp-tablecell{
       vertical-align: top;
       padding-top: 180px;
     }
@@ -267,14 +267,14 @@ body{
       }
     }
   }
-  //Slider 2
+  //slider 2
   .home-section-2{
     @media screen and (max-width: $col-sm) {
       height: auto!important;
       background: #f3f3f3;
     }
 
-    .fp-tableCell{
+    .fp-tablecell{
       vertical-align: top;
       padding-top: 180px;
 
@@ -308,7 +308,7 @@ body{
         border: $main-color-r solid 1px;
         border-radius: 20px;
         color: $main-color-r;
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         letter-spacing: 2px;
         padding: 8px 30px;
 
@@ -384,7 +384,7 @@ body{
       height: auto!important;
     }
 
-    .fp-tableCell{
+    .fp-tablecell{
       vertical-align: top;
       padding-top: 140px;
 
@@ -605,7 +605,7 @@ body{
       height: auto!important;
     }
 
-    .fp-tableCell {
+    .fp-tablecell {
       vertical-align: top;
       padding-top: 140px;
 
@@ -645,7 +645,7 @@ body{
         padding: 10px 20px;
         border-radius: 20px;
         letter-spacing: 4px;
-        font-family: Raleway-Light;
+        font-family: raleway-light;
 
         &:hover{
           opacity: 0.5;
@@ -661,7 +661,7 @@ body{
         box-shadow: $light-grey 2px 2px 5px;
         margin-top: 40px;
         padding: 35px 0 40px 35px;
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         box-shadow: $light-grey 0 10px 13px;
         border-radius: 10px;
 
@@ -696,7 +696,7 @@ body{
       }
 
       h3{
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         color: $main-color-text;
       }
 
@@ -717,7 +717,7 @@ body{
       right: 50px;
       bottom: 20px;
       a{
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -726,7 +726,7 @@ body{
 }
 
 //******************************************************************************
-//                       About Us Page CSS
+//                       about us page css
 //******************************************************************************
 .nonhome-menubar{
   // margin-top: 25px !important;
@@ -741,7 +741,7 @@ body{
 }
 .aboutuspage{
   .grow-path{
-    .fp-tableCell {
+    .fp-tablecell {
       vertical-align: top;
       padding-top: 180px;
 
@@ -751,7 +751,7 @@ body{
     }
 
     h4{
-      font-family: Raleway-Light;
+      font-family: raleway-light;
       font-size: 25px;
       color: $main-color-text;
 
@@ -784,19 +784,19 @@ body{
       margin-top: 40px;
     }
 
-    #toNextSlide{
+    #tonextslide{
       position: absolute;
       right: 50px;
       bottom: 20px;
       a{
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         font-size: 25px;
         color: $main-color-r;
       }
     }
   }
   .contact-us{
-    .fp-tableCell {
+    .fp-tablecell {
       vertical-align: top;
       padding-top: 140px;
     }
@@ -828,7 +828,7 @@ body{
 
       .contact-info{
         color: $main-color-text;
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         font-size: 12px;
         margin-bottom: 25px;
 
@@ -867,7 +867,7 @@ body{
       right: 50px;
       bottom: 20px;
       a{
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -876,12 +876,12 @@ body{
 }
 
 //******************************************************************************
-//                       School Page CSS
+//                       school page css
 //******************************************************************************
 .aboutuspage{
 
   .school-project{
-    .fp-tableCell {
+    .fp-tablecell {
       vertical-align: top;
       padding-top: 140px;
     }
@@ -921,7 +921,7 @@ body{
             color: white;
             padding: 5px 100px 5px 20px;
             display: inline-block;
-            font-family: Raleway-Regular;
+            font-family: raleway-regular;
             font-size: 50px;
             position: absolute;
             top: 120px;
@@ -965,7 +965,7 @@ body{
             }
           }
           h5{
-            font-family: Raleway-Light;
+            font-family: raleway-light;
             color: $main-color-b;
             font-size: 20px;
             margin: 15px 0;
@@ -996,7 +996,7 @@ body{
         .progress-nonexpanded{
           h5{
             color: $main-color-text;
-            font-family: Raleway-Light;
+            font-family: raleway-light;
             font-size: 20px;
           }
         }
@@ -1043,12 +1043,12 @@ body{
         }
       }
     }
-    #toNextSlide{
+    #tonextslide{
       position: absolute;
       right: 50px;
       bottom: 20px;
       a{
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -1056,7 +1056,7 @@ body{
   }
 
   .community-project{
-    .fp-tableCell {
+    .fp-tablecell {
       vertical-align: top;
       padding-top: 120px;
     }
@@ -1099,7 +1099,7 @@ body{
 
       p{
         color: $main-color-text;
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         overflow: hidden;
         display: -webkit-box!important;
         -webkit-line-clamp: 5;
@@ -1118,7 +1118,7 @@ body{
 
       h5{
         color: $main-color-r;
-        font-family: Raleway-bold;
+        font-family: raleway-bold;
         font-size: 16px;
 
         @media screen and (max-width: $col-sm) {
@@ -1132,7 +1132,7 @@ body{
       right: 50px;
       bottom: 20px;
       a{
-        font-family: Raleway-Light;
+        font-family: raleway-light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -1141,7 +1141,7 @@ body{
 }
 
 //******************************************************************************
-//                       Gallery Page CSS
+//                       gallery page css
 //******************************************************************************
 .gallery-menubar{
   background-color: white;
@@ -1153,7 +1153,7 @@ body{
 .gallerypage{
   overflow: scroll;
 
-  .fp-tableCell {
+  .fp-tablecell {
     vertical-align: top;
     padding-top: 120px;
   }
@@ -1189,10 +1189,10 @@ body{
 
 
 //******************************************************************************
-//                       Public Info Page CSS
+//                       public info page css
 //******************************************************************************
 .publicinfopage{
-  .fp-tableCell {
+  .fp-tablecell {
     vertical-align: top;
     padding-top: 180px;
 
@@ -1202,7 +1202,7 @@ body{
   }
 
   h5{
-    font-family: Raleway-Light;
+    font-family: raleway-light;
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -1231,7 +1231,7 @@ body{
     .donate-card{
       box-shadow: $light-grey 0px 10px 13px;
       padding: 20px 0 25px 35px;
-      font-family: Raleway-Light;
+      font-family: raleway-light;
       border-radius: 10px;
 
       .donate-number{
@@ -1248,7 +1248,7 @@ body{
   .total-donate-data{
 
     h4{
-      font-family: Raleway-Light;
+      font-family: raleway-light;
       font-size: 45px;
 
       span{
@@ -1260,7 +1260,7 @@ body{
 
   .final-donate-data{
     padding: 0;
-    font-family: Raleway-Light;
+    font-family: raleway-light;
 
     div{
       padding: 0;
@@ -1270,7 +1270,7 @@ body{
           line-height: 1.6rem;
         }
         #money-unit{
-          font-family: Raleway-Bold;
+          font-family: raleway-bold;
           color: $main-color-r;
           font-size: 14px;
         }
@@ -1292,15 +1292,15 @@ body{
 }
 
 //******************************************************************************
-//                       Donate Page CSS
+//                       donate page css
 //******************************************************************************
 .donatepage{
-  .fp-tableCell {
+  .fp-tablecell {
     vertical-align: top;
     padding-top: 180px;
   }
 
-  font-family: Raleway-Light;
+  font-family: raleway-light;
 
   h2{
     color: white;
@@ -1366,13 +1366,13 @@ body{
   }
 
   .bg {
-    /* The image used */
+    /* the image used */
     background-image: url("../image/donating-bg.png");
 
-    /* Full height */
+    /* full height */
     height: 100%;
 
-    /* Center and scale the image nicely */
+    /* center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1394,3 +1394,31 @@ body{
     }
   }
 }
+
+
+
+//******************************************************************************
+//                           loader css
+//******************************************************************************
+
+.loader{
+
+  .loader-container{
+
+    .loader-content{
+
+      .loader-logo-image{
+        img{
+          width: 200px !important;
+        }
+
+      }
+
+      .loader-green-tail{
+        position: absolute;
+
+      }
+    }
+  }
+}
+

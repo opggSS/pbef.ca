@@ -21,6 +21,30 @@
     </title>
 </head>
 <body>
+{{--****************************************** Loader **************************************************--}}
+<div class="loader">
+    <div class="loader-container">
+        <div class="loader-content">
+            <div class="loader-logo-image">
+                <img src="{{asset('images/foundation-logo.png')}}">
+            </div>
+        </div>
+        <div class="loader-green-tail">
+            <img src="{{asset('images/logo-green-tail.png')}}">
+        </div>
+        <div class="loader-purple-tail">
+            <img src="{{asset('images/logo-purple-tail.png')}}">
+        </div>
+        <div class="loader-blue-tail">
+            <img src="{{asset('images/logo-blue-tail.png')}}">
+        </div>
+        <div class="loader-yellow-tail">
+            <img src="{{asset('images/logo-yellow-tail.png')}}">
+        </div>
+    </div>
+</div>
+
+{{--****************************************** Content **************************************************--}}
 <div id="menubar" class="row">
     <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
         @if (Request::is('/') )
