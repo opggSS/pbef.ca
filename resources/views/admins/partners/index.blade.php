@@ -1,7 +1,7 @@
 @extends('admins.app')
     <!-- Begin Page Content -->
   @section('content')
-    <div class="container-fluid">
+    <div class="container">
     <div class="row">
         <div class="col-md-11">
             <h1>Partners</h1>

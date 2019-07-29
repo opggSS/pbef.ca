@@ -25,7 +25,7 @@
                         <h1><span class="letter-bold">E</span>DUCATIONAL</h1>
                         <h1>FOUNDATION</h1>
                         <p>
-                        {{$pageContents['home_content1']}}</p>
+                        {{$pc['home_content1']}}</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 <div class="row">
                     <div class="offset-md-2 col-md-4">
                         <h1><span class="letter-bold">A</span>BOUT US</h1>
-                        <p class="mt-2 mt-md-3 mb-4 mb-md-5">{{$pageContents['home_content2']}}</p>
+                        <p class="mt-2 mt-md-3 mb-4 mb-md-5">{{$pc['home_content2']}}</p>
                         <a href="">EXPLORE</a>
                     </div>
                     <div class="offset-lg-1 col-lg-4 d-none d-xl-block align-top">
@@ -148,16 +148,16 @@
                     <div class="offset-2 col-8 offset-md-2 col-md-6">
                         <h1><span class="letter-bold">W</span>E APPRECIATE</h1>
                         <h1>YOUR HELP</h1>
-                        <p class="mt-2 mt-md-3 mb-4 mb-md-5">{{$pageContents['home_content3']}}</p>
+                        <p class="mt-2 mt-md-3 mb-4 mb-md-5">{{$pc['home_content3']}}</p>
                         <a href="" class="donate-button">DONATE</a>
                     </div>
                     <div class="offset-2 col-8 offset-md-0 col-md-3 mt-3 mt-md-0">
                         <div class="donate-card">
-                            <div class="donate-number">{{$pageContents['people_donated']}}</div>
+                            <div class="donate-number">{{$pc['people_donated']}}</div>
                             <div class="donate-title">People Donated</div>
                         </div>
                         <div class="donate-card">
-                            <div class="donate-number">{{$pageContents['joined_us']}}</div>
+                            <div class="donate-number">{{$pc['joined_us']}}</div>
                             <div class="donate-title">Joined Us</div>
                         </div>
                     </div>

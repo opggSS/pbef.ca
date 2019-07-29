@@ -84,47 +84,25 @@ class PageContentsTableSeeder extends Seeder
 
 	        //projects
 	        [
-	            'varname' => 'step1_left',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	            'varname' => 'step1',
+	            'value' => ' ipsum dolor sit amet, consectetur adipiscing elit.',
 	            'pageType_id' => '3'
 	        ],
 
 	        [
-	            'varname' => 'step1_right',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	            'pageType_id' => '3'
-	        ],
-
-
-	        [
-	            'varname' => 'step2_left',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	            'varname' => 'step2',
+	            'value' => ' dolor sit amet, consectetur adipiscing elit.',
 	            'pageType_id' => '3'
 	        ],
 
 	        [
-	            'varname' => 'step2_right',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	            'varname' => 'step3',
+	            'value' => 'sit amet, consectetur adipiscing elit.',
 	            'pageType_id' => '3'
 	        ],
 
 	        [
-	            'varname' => 'step3_left',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	            'pageType_id' => '3'
-	        ],
-	        [
-	            'varname' => 'step3_right',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	            'pageType_id' => '3'
-	        ],
-	        [
-	            'varname' => 'step4_left',
-	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	            'pageType_id' => '3'
-	        ],
-	        [
-	            'varname' => 'step4_right',
+	            'varname' => 'step4',
 	            'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	            'pageType_id' => '3'
 	        ],
@@ -167,33 +145,33 @@ class PageContentsTableSeeder extends Seeder
 
 	        [
 	            'varname' => 'title_left1',
-	            'value' => 'Title',
+	            'value' => 'Title1',
 	            'pageType_id' => '3'
 	        ],
 
 	        [
 	            'varname' => 'title_left2',
-	            'value' => 'Title',
+	            'value' => 'Title2',
 	            'pageType_id' => '3'
 	        ],
 	        [
 	            'varname' => 'title_left3',
-	            'value' => 'Title',
+	            'value' => 'Title3',
 	            'pageType_id' => '3'
 	        ],
 	        [
 	            'varname' => 'title_right1',
-	            'value' => 'Title',
+	            'value' => 'Title4',
 	            'pageType_id' => '3'
 	        ],
 	        [
-	            'varname' => 'title_right1',
-	            'value' => 'Title',
+	            'varname' => 'title_right2',
+	            'value' => 'Title5',
 	            'pageType_id' => '3'
 	        ],
 	        [
-	            'varname' => 'title_right1',
-	            'value' => 'Title',
+	            'varname' => 'title_right3',
+	            'value' => 'Title6',
 	            'pageType_id' => '3'
 	        ],
 

@@ -9,17 +9,17 @@
             <div class="row">
                 <div class="offset-2 col-8 col-md-3">
                     <h4>Grow Path</h4>
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['grow_path_p1']}}</p >
+                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['grow_path_p2']}}</p >
+                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['grow_path_p3']}}</p >
                 </div>
                 <div class="col-md-3 grow-path-middleimg d-none d-md-block mr-md-3">
                     <img class="h-100" src="{{url('/images/ref-images/aboutus-s1-1.jpg')}}" alt="">
                 </div>
                 <div class="offset-2 offset-md-0 col-8 col-md-3 mt-2 mt-sm-0">
                     <h4>Message from President</h4>
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['president_p1']}}</p >
+                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['president_p2']}}</p >
                     <div class="president-image-container d-none d-md-block">
                         <img src="{{url('/images/ref-images/aboutus-s1-2.jpg')}}" alt="" width="100%">
                     </div>
@@ -35,10 +35,10 @@
             <div class="row">
                 <div class="offset-2 col-md-4 col-8">
                     <h1><span class="letter-bold">C</span>ONTACT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
-                    <div class="contact-info"><img src="{{url('/images/pos-logo.png')}}">2231 Kingsway Ave., Burnaby, B.C.</div>
-                    <div class="contact-info"><img src="{{url('/images/phone-logo.png')}}">+1(778)-778-7788</div>
-                    <div class="contact-info"><img src="{{url('/images/email-logo.png')}}">info@prosperousbef.com</div>
+                    <p>{{$pc['contact_p']}}</p>
+                    <div class="contact-info"><img src="{{url('/images/pos-logo.png')}}">{{$pc['location']}}</div>
+                    <div class="contact-info"><img src="{{url('/images/phone-logo.png')}}">{{$pc['phone']}}</div>
+                    <div class="contact-info"><img src="{{url('/images/email-logo.png')}}">{{$pc['email']}}</div>
                 </div>
                 <div class="offset-2 offset-md-0 col-8 col-md-5">
                     <div id="map"></div>

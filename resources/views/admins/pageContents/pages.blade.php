@@ -16,7 +16,7 @@
             <th scope="col">Action</th>
           </thead>
          	<tbody>
-            <form method="post" action="{{route('pageContents.store')}}" >
+        {{--     <form method="post" action="{{route('pageContents.store')}}" >
               {{ csrf_field() }}
               <tr>
                 <td><input name="varname" class="form-control"></td>
@@ -30,7 +30,8 @@
                 </td>	                  
                 <td><input type="submit" value="Create" class="btn btn-success btn-h1-spacing"> </td>
               </tr>
-            </form>
+            </form> --}}
+
         @if (sizeof($pageContents) != 0)
             @foreach ($pageContents as $pageContent)
             <tr>
@@ -38,6 +39,7 @@
                  @method('PUT')
                 {{ csrf_field() }}
                 	<input name="pageType_id" type="hidden" value="{{$typeid}}" >
+                  <input type="hidden" name="varname" value="{{ $pageContent->varname }}">
                   <td> <input class="form-control" name="varname" value="{{ $pageContent->varname }}"  disabled=""></td>
                   <td> <input class="form-control" name="info" value="{{ $pageContent->info }}"></td>
                   <td> 

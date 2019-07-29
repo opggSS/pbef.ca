@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use App\PageType;
 use App\PageContent;
 use View;
+use App\Message;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -34,10 +35,15 @@ class AppServiceProvider extends ServiceProvider
             $contents[$pageContent->varname] = $pageContent->value;
         }
 
+        $unread_count = Message::getUnread();
+
         View::share([
             'pageTypes'=> $pageTypes,
-            'pageContents'=> $contents,
+            'pc'=> $contents,
+            'unread_count'=> $unread_count,
         ]);
     }
+
+
 
 }

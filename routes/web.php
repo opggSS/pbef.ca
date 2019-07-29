@@ -23,9 +23,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::post('/donate', 'MessageController@store');
 
 
-	Route::get('/gallery', function () {
-	    return view('gallery');
-	});
+	Route::get('/gallery' ,'PageController@getGallery');
 
 	Route::get('/public_info', function () {
 	    return view('public_info');
@@ -33,11 +31,12 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/projects', function(){
 	    return view('projects');
 	});
-	Route::get('admin' , function () {
-	    return view('admins.pages.index');
-	});
 
 
+
+	
+	//     return view('admins.pages.index');
+	// });
 
 	// Route::get('/login', 'UserController@index');
 	// Route::get('admins/login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
@@ -64,3 +63,15 @@ Route::group(['middleware' => ['web']], function () {
 
 
 
+// Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('admin')->group(function(){
+	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+	// Route::get('/' ,'AdminController@index')->name('admin.dashboard');
+	Route::get('/' , function(){
+		return view('admins.pages.index');
+	});
+
+
+});

@@ -22,25 +22,25 @@
                           <img class="img-4" src="{{url('/images/ref-images/home-s2-2.jpg')}}">
                         </div>
                         <h5>Step 1</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                        <p>{{$pc['step1']}}</p >
                     </div>
                 </div>
                 <div class="row step-trigger offset-1 col-10 col-sm-6 col-md-5 card-group mt-2 mt-lg-4">
                   <div class="col col-4 col-md-5 offset-1 offset-sm-1 col-lg-5 mb-3 pt-3 active" id="1">
                     <h5 class="title">Step 1</h5>
-                    <p class="d-none d-sm-block sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="d-none d-sm-block sub-title">{{$pc['step1']}}</p>
                   </div>
                   <div class="col col-4 col-md-5 offset-1 offset-sm-1 col-lg-5 mb-3 pt-3" id="2">
                     <h5 class="title">Step 2</h5>
-                    <p class="d-none d-sm-block sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="d-none d-sm-block sub-title">{{$pc['step2']}}</p>
                   </div>
                   <div class="col col-4 col-md-5 offset-0 offset-sm-1 col-lg-5 mb-3 pt-3" id="3">
                     <h5 class="title">Step 3</h5>
-                    <p class="d-none d-sm-block sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="d-none d-sm-block sub-title">{{$pc['step3']}}</p>
                   </div>
                   <div class="col col-4 col-md-5 offset-0 offset-sm-1 col-lg-5 mb-3 pt-3" id="4">
                     <h5 class="title">Step 4</h5>
-                    <p class="d-none d-sm-block sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="d-none d-sm-block sub-title">{{$pc['step4']}}</p>
                   </div>
                 </div>
             </div>
@@ -58,44 +58,35 @@
             </div>
             <div class="row main-content mt-5 mt-md-3">
               <div class="offset-2 col-9 offset-md-2 col-md-4 text-right">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">TITLE</h5>
-                  <p class="d-inline-block d-md-block float-md-none">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.
-                    Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique.
-                    Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus.
-                    Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left1']}}</h5>
+                  <p class="d-inline-block d-md-block float-md-none">{{$pc['community_left1']}}</p >
               </div>
               <div class="offset-2 col-9 offset-md-1 col-md-4 text-right text-md-left">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">TITLE</h5>
-                  <p class="d-inline-block d-md-block float-md-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left2']}}</h5>
+                  <p class="d-inline-block d-md-block float-md-none">{{$pc['community_right1']}}</p >
               </div>
             </div>
+
+
             <div class="row main-content">
               <div class="offset-2 col-9 offset-md-2 col-md-4 text-right">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">TITLE</h5>
-                  <p class="d-inline-block d-md-block float-md-none">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.
-                    Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique.
-                    Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus.
-                    Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left3']}}</h5>
+                  <p class="d-inline-block d-md-block float-md-none">{{$pc['community_left2']}}</p >
               </div>
               <div class="offset-2 col-9 offset-md-1 col-md-4 text-right text-md-left">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">TITLE</h5>
-                  <p class="d-inline-block d-md-block float-md-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right1']}}</h5>
+                  <p class="d-inline-block d-md-block float-md-none">{{$pc['community_right2']}}</p >
               </div>
             </div>
+
             <div class="row main-content">
               <div class="offset-2 col-9 offset-md-2 col-md-4 text-right">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">TITLE</h5>
-                  <p class="d-inline-block d-md-block float-md-none">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.
-                    Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique.
-                    Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus.
-                    Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right2']}}</h5>
+                  <p class="d-inline-block d-md-block float-md-none">{{$pc['community_left3']}}</p >
               </div>
               <div class="offset-2 col-9 offset-md-1 col-md-4 text-right text-md-left">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">TITLE</h5>
-                  <p class="d-inline-block d-md-block float-md-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p >
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right3']}}</h5>
+                  <p class="d-inline-block d-md-block float-md-none">{{$pc['community_right3']}}</p >
               </div>
             </div>
         </div>

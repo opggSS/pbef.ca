@@ -17,7 +17,7 @@ class GalleryController extends Controller
     public function index()
     {
 
-        $galleries = Gallery::all();
+        $galleries = Gallery::orderby('created_at', 'desc')->get();
         if($galleries){
             return view('admins.galleries.index')->withGalleries($galleries);
         }
@@ -57,7 +57,6 @@ class GalleryController extends Controller
         Session::flash('success', 'New gallery has been created');
         return redirect()->route('galleries.index');
     }
-
     /**
      * Store a newly created resource in storage.
      *
