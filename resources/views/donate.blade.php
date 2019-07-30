@@ -8,6 +8,12 @@
         #mobile-menubar{
             height: 0;
         }
+        #menu-logo a, span{
+            color: white !important;
+        }
+        #menu-logo a:hover{
+            color: white !important;
+        }
     </style>
 @stop
 
