@@ -1240,12 +1240,14 @@ body a:hover {
 }
 .loader .loader-container .loader-yellow-tail {
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: -100px;
+  bottom: -80px;
   width: 6%;
   transform: rotate(180deg);
   -webkit-animation: yellowTailMoveX 1.4s forwards linear, yellowTailMoveY 1.4s forwards linear;
           animation: yellowTailMoveX 1.4s forwards linear, yellowTailMoveY 1.4s forwards linear;
+  -webkit-animation-delay: 75ms;
+          animation-delay: 75ms;
 }
 .loader .loader-container .loader-yellow-tail img {
   width: 100%;
@@ -1427,7 +1429,7 @@ body a:hover {
   }
 }
 @-webkit-keyframes logoIn {
-  50% {
+  55% {
     opacity: 0;
   }
   100% {
@@ -1435,7 +1437,7 @@ body a:hover {
   }
 }
 @keyframes logoIn {
-  50% {
+  55% {
     opacity: 0;
   }
   100% {
