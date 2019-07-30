@@ -2,6 +2,8 @@
 @section('title', 'Home')
 
 @section('content')
+
+
     <div id="fullpage" class="homepage">
         <!--First Page-->
         <div class="section home-section-1">
@@ -25,6 +27,7 @@
                         <h1><span class="letter-bold">E</span>DUCATIONAL</h1>
                         <h1>FOUNDATION</h1>
                         <p>
+
                         {{$pc['home_content1']}}</p>
                     </div>
                 </div>

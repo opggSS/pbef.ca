@@ -48,6 +48,7 @@
                   <td>  <span class="form-control"> {{$slug}} </span> </td>
                   <td> <input type="submit" value="Save" class="btn btn-success btn-h1-spacing mb-2" >                  
               </form> 
+              
               <form method="post" action="{{route('pageContents.destroy',$pageContent->id)}}" enctype="multipart/form-data"  >
                   {{ csrf_field() }}
                   @method('delete')
