@@ -38,6 +38,7 @@ class PageContentController extends Controller
      */
     public function store(Request $request)
     {
+
         $this->validate($request, array(
                 'varname'         => 'required|max:255',
                 'info'         => 'max:255',
@@ -52,25 +53,23 @@ class PageContentController extends Controller
         $pageContent->save();
         return back();       
     }
-
   
     public function update(Request $request, $id)
     {
         $pageContent = PageContent::find($id);
-
         $this->validate($request, array(
             'varname'         => 'required|max:255',
             'info'         => 'max:255',
             'value'         => 'required|max:2048',       
             'pageType_id'         => 'required|max:255',       
         ));
-
         $pageContent->varname = $request->varname;
         $pageContent->info = $request->info;
         $pageContent->value = $request->value;
         $pageContent->pageType_id = $request->pageType_id;
         $pageContent->save();
         return back();  
+
     }
 
     /**
