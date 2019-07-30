@@ -78,10 +78,10 @@
         <div class="section home-section-3 container">
             <div class="title">
                 <div class="row top-news">
-                    <div class="col-6 col-md-1">
+                    <div class="col-6 col-md-1 offset-md-2">
                         <h1>NEWS</h1>
                     </div>
-                    <div class="offset-md-0 col-12 col-md-6 mt-2 mt-md-0">
+                    <div class="offset-md-0 col-12 col-md-4 mt-2 mt-md-0">
                         <div  id="top-news-image-container">
                             <img src="{{asset('images/ref-images/home-s3-1.jpg')}}" alt="">
                         </div>
@@ -102,7 +102,7 @@
                             <img src="{{asset('images/foundation-badminton.png')}}" id="badminton">
                         </div> --}}
 
-                        <div class="col col-6 col-md-3  offset-md-0">
+                        <div class="col col-6 col-md-3  offset-md-2">
                             <div class="image-container" style="background:url('{{asset('images/ref-images/home-s3-2.jpg')}}'); background-size:cover; background-position: center ;">
                             </div>
 
@@ -145,16 +145,16 @@
         </div>
 
         <!--Fourth Page-->
-        <div class="section home-section-4">
+        <div class="section home-section-4 container">
             <div class="title">
                 <div class="row">
-                    <div class="offset-2 col-8 offset-md-2 col-md-6">
+                    <div class="offset-0 col-12 offset-md-2 col-md-6">
                         <h1><span class="letter-bold">W</span>E APPRECIATE</h1>
                         <h1>YOUR HELP</h1>
                         <p class="mt-2 mt-md-3 mb-4 mb-md-5">{{$pc['home_content3']}}</p>
                         <a href="" class="donate-button">DONATE</a>
                     </div>
-                    <div class="offset-2 col-8 offset-md-0 col-md-3 mt-3 mt-md-0">
+                    <div class="offset-0 col-12 offset-md-0 col-md-3 mt-3 mt-md-0">
                         <div class="donate-card">
                             <div class="donate-number">{{$pc['people_donated']}}</div>
                             <div class="donate-title">People Donated</div>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="row d-none d-sm-block mt-5">
-                    <div class="offset-2 col-8 offset-md-2 col-md-9">
+                    <div class="offset-0 col-12 offset-md-2 col-md-9">
                         <h3>Our Partners</h3>
                         <div class="partner-logo">
                             @foreach($partners as $partner)
