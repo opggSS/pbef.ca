@@ -1,7 +1,7 @@
 @extends('admins.app')
     <!-- Begin Page Content -->
   @section('content')
-    <div class="container-fluid">
+    <div class="container">
     <div class="row">
         <div class="col-md-11">
             <h1>Gallery</h1>
@@ -16,7 +16,26 @@
                     </tr>
                 </thead>
                 <tbody>
-
+                    <form method="post" action="{{route('galleries.store')}}" enctype="multipart/form-data" >
+                        {{ csrf_field() }}
+                        <tr>
+                            <td colspan="1">
+                                <input class="form-control" name="title" placeholder="required">
+                            </td>
+                            <td colspan="1"> 
+                                <input class="form-control" name="alt" placeholder="required">
+                            </td>
+                            <td colspan="1">
+                                <input class="form-control" name="description" >
+                            </td>
+                            <td colspan="5">
+                                <input type="file" name="image" class="form-control" accept="image/*">
+                            </td>
+                            <td colspan="1">
+                                <input type="submit"  value="Add" class="btn btn-primary btn-block btn-h1-spacing"> 
+                            </td>
+                        </tr>
+                    </form>
                     @foreach ($galleries as $gallery)
                     <form method="post" action="{{route('galleries.update',$gallery->id)}}" enctype="multipart/form-data"  >
                         @method('PUT')
@@ -47,26 +66,7 @@
                         </tr>
                     </form>
                     @endforeach
-                    <form method="post" action="{{route('galleries.store')}}" enctype="multipart/form-data" >
-                        {{ csrf_field() }}
-                        <tr>
-                            <td colspan="1">
-                                <input class="form-control" name="title" placeholder="required">
-                            </td>
-                            <td colspan="1"> 
-                                <input class="form-control" name="alt" placeholder="required">
-                            </td>
-                            <td colspan="1">
-                                <input class="form-control" name="description" >
-                            </td>
-                            <td colspan="5">
-                                <input type="file" name="image" class="form-control" accept="image/*">
-                            </td>
-                            <td colspan="1">
-                                <input type="submit"  value="Add" class="btn btn-primary btn-block btn-h1-spacing"> 
-                            </td>
-                        </tr>
-                    </form>
+                    
                 </tbody>
             </table>
         </div> <!-- end of .col-md-8 -->

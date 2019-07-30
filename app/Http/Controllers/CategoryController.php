@@ -103,7 +103,7 @@ class CategoryController extends Controller
 
         $category_name = $category->name;
         $category->delete();
-        Session::flash('success', '已成功删除类型');
+        Session::flash('success', 'The category has been successfully deleted');
         return redirect()->route('categories.index');    
     }
 }

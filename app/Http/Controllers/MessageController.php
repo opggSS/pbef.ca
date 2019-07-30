@@ -13,7 +13,19 @@ class MessageController extends Controller
     public function index()
     {
         $messages = Message::orderBy('id', 'desc')->paginate(10);
-        return view('admins.messages.index')->withMessages($messages);
+        return view('admins.messages.index')->withMessages($messages)->withStatus('1');
+    }
+    public function unread()
+    {
+        $messages = Message::orderBy('id', 'desc')->where('status',0)->paginate(10);
+        return view('admins.messages.index')->withMessages($messages)->withStatus('-1');
+    }
+
+    public function view($id){
+        $message = Message::find($id);
+        $message->status = 1;
+        $message->save();
+        return view('admins.messages.view')->withMessage($message);
     }
 
     public function store(Request $request)
@@ -22,7 +34,7 @@ class MessageController extends Controller
                 'firstName'         => 'required|max:127',
                 'lastName'       => 'required|max:127',
                 'email' => 'required|email',
-                'message' => 'required|max:511'
+                'message' => 'required|max:255'
         ));
         // store in the database
         $message = new Message;

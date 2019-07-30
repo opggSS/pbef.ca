@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@yield('styles')
 <head>
 @include('admins.includes._header')
 <body id="page-top">

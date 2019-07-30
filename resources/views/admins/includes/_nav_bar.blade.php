@@ -30,11 +30,11 @@
       <!-- Nav Item - Pages Collapse Menu -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{route('news.index')}}" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
+        <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
          <!--  <i class="fas fa-fw fa-cog"></i> -->
           <span>News</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="{{route('news.index')}}">News List</a>
             <a class="collapse-item" href="{{route('news.create')}}">Create News</a>
@@ -42,6 +42,21 @@
           </div>
         </div>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
+         <!--  <i class="fas fa-fw fa-cog"></i> -->
+          <span>Page Content</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            @foreach($pageTypes as $pageType)
+            <a class="collapse-item" href="{{url('admin/pageContents/'.$pageType->name)}}">{{$pageType->name}}</a>
+            @endforeach
+          </div>
+        </div>
+      </li>
+
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
@@ -53,6 +68,12 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('partners.index')}}" >
           <span>Partners</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url('admin/messages')}}" >
+          <span>Messages</span>
         </a>
       </li>
 

@@ -9,22 +9,22 @@ $col-lg: 1200px;
 
 @font-face{
   font-family: 'raleway-light';
-  src : url('../font/raleway-light.ttf');
+  src : url('../fonts/raleway-light.ttf');
 }
 
 @font-face{
   font-family: 'raleway-regular';
-  src : url('../font/raleway-regular.ttf');
+  src : url('../fonts/raleway-regular.ttf');
 }
 
 @font-face{
   font-family: 'raleway-bold';
-  src : url('../font/raleway-bold.ttf');
+  src : url('../fonts/raleway-bold.ttf');
 }
 
 @font-face{
   font-family: 'raleway-black';
-  src : url('../font/raleway-black.ttf');
+  src : url('../fonts/raleway-black.ttf');
 }
 
 //******************************************************************************
@@ -82,11 +82,16 @@ body{
   }
 
   #menu-logo{
-    text-align: left;
     font-size: 1rem;
+    text-align: center;
 
     a {
       font-size: 1rem;
+      color: black;
+
+      &:hover{
+        color: black;
+      }
     }
 
     img{
@@ -471,6 +476,7 @@ body{
 
       .top-news{
         max-height: 310px;
+        margin-top: 100px;
 
         #top-news-image-container{
           width: 100%;
@@ -1044,7 +1050,7 @@ body{
         }
       }
     }
-    #tonextslide{
+    #toNextSlide{
       position: absolute;
       right: 50px;
       bottom: 20px;

@@ -12,9 +12,7 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-	Route::get('/', function () {
-    	return view('home');
-	});
+	Route::get('/' ,'PageController@index');
 	Route::get('/about_us', function () {
 	    return view('about_us');
 	});
@@ -25,9 +23,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::post('/donate', 'MessageController@store');
 
 
-	Route::get('/gallery', function () {
-	    return view('gallery');
-	});
+	Route::get('/gallery' ,'PageController@getGallery');
 
 	Route::get('/public_info', function () {
 	    return view('public_info');
@@ -35,9 +31,12 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/projects', function(){
 	    return view('projects');
 	});
-	Route::get('admin' , function () {
-	    return view('admins.pages.index');
-	});
+
+
+
+	
+	//     return view('admins.pages.index');
+	// });
 
 	// Route::get('/login', 'UserController@index');
 	// Route::get('admins/login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
@@ -54,13 +53,25 @@ Route::group(['middleware' => ['web']], function () {
 	Route::resource('admin/galleries' , 'GalleryController');
 	Route::resource('admin/partners' , 'PartnerController');
 
+	Route::get('admin/pageContents/{slug}' , 'PageContentController@pages');
+	Route::resource('admin/pageContents' , 'PageContentController');
+
 	Route::get('admin/messages', 'MessageController@index');
-	Route::get('admin/reply/{id}', 'MessageController@reply');
+	Route::get('admin/messages/unread', 'MessageController@unread');
+	Route::get('admin/messages/view/{id}', 'MessageController@view');
 	Route::post('admin/reply/{id}', 'MessageController@sendEmail');
 
 
 
+// Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('admin')->group(function(){
+	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+	// Route::get('/' ,'AdminController@index')->name('admin.dashboard');
+	Route::get('/' , function(){
+		return view('admins.pages.index');
+	});
 
 
-
-
+});
