@@ -4,19 +4,21 @@ namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-// use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class AdminLoginController extends Controller
 {
+
+    protected $redirectTo = '/';
 	public function __construct(){
-		$this->middleware('guest:admin');
+		$this->middleware('guest:admin',['except' => 'logout']);
 	}
 
     public function showLoginForm(){
     	return view('auth.admin-login'); 
     }
 
-    public function login(){
+    public function login(Request $request){
     	//validate data
 
     	$this->validate($request, [
@@ -24,16 +26,22 @@ class AdminLoginController extends Controller
     		'password'=> 'required|min:6|max:127',
 
     	]);
-   		// dd(Auth::guard('admin'));
-
+     
     	//atempt to login user 
     	if(Auth::guard('admin')->attempt(['username'=> $request->username, 'password'=>$request->password],$request->remember))
     	{
     		return redirect()->intended(route('admin.dashboard'));
     	}
-
     	return redirect()->back()->withInput($request->only('username','remember'));
+        Session::flash('Failed', 'User name and password do not match');
+    }
 
-    	//if not redirect mqseries_back(hconn, compCode, reason)
+    public function logout(){
+
+        Auth::guard('admin')->logout();
+        session()->flush();
+        return redirect(route('admin.login')); 
+
     }
 }
+

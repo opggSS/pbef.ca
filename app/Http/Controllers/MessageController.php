@@ -10,6 +10,11 @@ use Mail;
 
 class MessageController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+    
     public function index()
     {
         $messages = Message::orderBy('id', 'desc')->paginate(10);

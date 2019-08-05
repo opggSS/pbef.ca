@@ -19,6 +19,11 @@ class PageContentController extends Controller
     // Route::get('admin/pageContents/projects' ,'PageContentController@projects');
     // Route::get('admin/pageContents/public_info', 'PageContentController@public_info');
 
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+    
     public function show(){
 
     }

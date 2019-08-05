@@ -77,6 +77,12 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url('admin/users')}}" >
+          <span>Admin Management</span>
+        </a>
+      </li>
+
 
 
       <!-- Divider -->

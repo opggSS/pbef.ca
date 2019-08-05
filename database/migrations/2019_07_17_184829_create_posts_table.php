@@ -18,6 +18,8 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('category_id')->nullable();
             $table->string('user_id')->nullable();
+            $table->string('location')->nullable();
+            
             $table->text('content');
             $table->string('meta_title')->nullable();
             $table->string('slug');
@@ -33,6 +35,7 @@ class CreatePostsTable extends Migration
             $table->string('video')->nullable();
             $table->datetime('published_at')->nullable();
             $table->boolean('is_published')->default(1);
+            $table->boolean('ishot')->default(0);
             $table->timestamps();
         });
     }
