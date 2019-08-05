@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f29edc7-1a64-4b5f-a553-79f0021c8384" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/animate.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/main.scss" afterPath="$PROJECT_DIR$/resources/sass/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout/_footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout/_footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout/_header.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout/_header.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,32 +22,28 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="60">
               <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
-                <marker date="1564449895447" expanded="true" signature="404:460" ph="..." />
-                <marker date="1564449895447" expanded="true" signature="444:460" ph="..." />
-                <marker date="1564449895447" expanded="true" signature="457:460" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_header.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layout/_header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            <state relative-caret-position="155">
+              <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding>
-                <marker date="1564449895427" expanded="true" signature="3772:3855" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="4091:4383" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="4125:4372" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="4249:4357" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="4464:5797" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="4529:5790" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="4907:5092" ph="..." />
-                <marker date="1564449895427" expanded="true" signature="5336:5515" ph="..." />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +52,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="91" column="14" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
+            <state relative-caret-position="-860">
+              <caret line="1547" column="7" lean-forward="true" selection-start-line="1547" selection-start-column="7" selection-end-line="1547" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -61,8 +62,8 @@
       <file leaf-file-name="projects.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/projects.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-169">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="90">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -71,20 +72,30 @@
       <file leaf-file-name="_footer.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layout/_footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="75">
+              <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="donate.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="donate.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/donate.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
-                <marker date="1564449854368" expanded="true" signature="3432:3441" ph="..." />
+                <marker date="1565045452170" expanded="true" signature="3499:3508" ph="..." />
               </folding>
             </state>
           </provider>
@@ -128,13 +139,14 @@
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/_header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/_footer.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/sass/main.scss" />
         <option value="$PROJECT_DIR$/resources/views/donate.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/animate.css" />
+        <option value="$PROJECT_DIR$/resources/sass/main.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layout/_header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/_footer.blade.php" />
       </list>
     </option>
   </component>
@@ -172,7 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,31 +379,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Prosperous-badminton-education-foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Prosperous-badminton-education-foundation" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,16 +498,18 @@
       <workItem from="1563922768292" duration="561000" />
       <workItem from="1564075676774" duration="26764000" />
       <workItem from="1564444382204" duration="4828000" />
+      <workItem from="1565045437053" duration="1387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48852000" />
+    <option name="totallyTimeSpent" value="50239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27896994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23493975" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -521,7 +517,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23493975" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23493975" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -564,37 +560,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12240">
-          <caret line="816" column="38" lean-forward="false" selection-start-line="816" selection-start-column="38" selection-end-line="816" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-            <marker date="1564449895447" expanded="true" signature="404:460" ph="..." />
-            <marker date="1564449895447" expanded="true" signature="444:460" ph="..." />
-            <marker date="1564449895447" expanded="true" signature="457:460" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/public_info.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <marker date="1564445241387" expanded="true" signature="2911:2983" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="2911:3132" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="3231:3597" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="3266:3586" ph="{...}" />
-            <marker date="1564445241387" expanded="true" signature="3300:3512" ph="{&quot;licenseKey&quot;: '6A79080F-89914B95-AD134155-6E2D191F'...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,83 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <marker date="1564445241259" expanded="true" signature="2153:2181" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2330" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2345" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2460" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2247:2311" ph="..." />
-            <marker date="1564445241259" expanded="false" signature="2424:2429" ph="∧" />
-            <marker date="1564445241259" expanded="true" signature="2521:2957" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2556:2946" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="2590:2872" ph="{&quot;navigationPosition&quot;: 'left'...}" />
-            <marker date="1564445241259" expanded="true" signature="2989:9150" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="3014:9141" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="3125:9133" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="3218:9123" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3236:3505" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3365:3487" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3391:3465" ph="{&quot;color&quot;: &quot;##d3d3d3&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3523:3843" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3602:3825" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3628:3702" ph="{&quot;color&quot;: &quot;##808080&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3728:3803" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3861:4239" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3999:4221" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4025:4099" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4125:4199" ph="{&quot;color&quot;: &quot;##b3b3b3&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4257:4533" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4393:4515" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4419:4493" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4551:5020" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4685:5002" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4711:4785" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4811:4885" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4911:4980" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="5038:5314" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5174:5296" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5200:5274" ph="{&quot;color&quot;: &quot;##d7d7d7&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5332:5699" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5459:5681" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5485:5559" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5585:5659" ph="{&quot;color&quot;: &quot;##ebebeb&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5717:5990" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5850:5972" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5876:5950" ph="{&quot;color&quot;: &quot;##a7a7a7&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6008:6285" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6145:6267" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6171:6245" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6303:6580" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6440:6562" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6466:6540" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6598:6971" ph="{&quot;featureType&quot;: &quot;landscape&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6731:6953" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6757:6831" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6857:6931" ph="{&quot;color&quot;: &quot;##efefef&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6989:7260" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7120:7242" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7146:7220" ph="{&quot;color&quot;: &quot;##696969&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7278:7659" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7419:7641" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7445:7519" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7545:7619" ph="{&quot;color&quot;: &quot;##737373&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7677:7943" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7802:7925" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7828:7903" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7961:8222" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8081:8204" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8107:8182" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8240:8519" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8379:8501" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8405:8479" ph="{&quot;color&quot;: &quot;##d6d6d6&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8537:8804" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8663:8786" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8689:8764" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8842:9109" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8969:9091" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8995:9069" ph="{&quot;color&quot;: &quot;##dadada&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="9266:9295" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,7 +580,7 @@
         <state relative-caret-position="90">
           <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <marker date="1564449854368" expanded="true" signature="3432:3441" ph="..." />
+            <marker date="1565045452170" expanded="true" signature="3499:3508" ph="..." />
           </folding>
         </state>
       </provider>
@@ -713,9 +605,6 @@
           <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
-            <marker date="1564449895447" expanded="true" signature="404:460" ph="..." />
-            <marker date="1564449895447" expanded="true" signature="444:460" ph="..." />
-            <marker date="1564449895447" expanded="true" signature="457:460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -724,13 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <marker date="1564445241387" expanded="true" signature="2911:2983" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="2911:3132" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="3231:3597" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="3266:3586" ph="{...}" />
-            <marker date="1564445241387" expanded="true" signature="3300:3512" ph="{&quot;licenseKey&quot;: '6A79080F-89914B95-AD134155-6E2D191F'...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,83 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <marker date="1564445241259" expanded="true" signature="2153:2181" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2330" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2345" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2460" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2247:2311" ph="..." />
-            <marker date="1564445241259" expanded="false" signature="2424:2429" ph="∧" />
-            <marker date="1564445241259" expanded="true" signature="2521:2957" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2556:2946" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="2590:2872" ph="{&quot;navigationPosition&quot;: 'left'...}" />
-            <marker date="1564445241259" expanded="true" signature="2989:9150" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="3014:9141" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="3125:9133" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="3218:9123" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3236:3505" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3365:3487" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3391:3465" ph="{&quot;color&quot;: &quot;##d3d3d3&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3523:3843" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3602:3825" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3628:3702" ph="{&quot;color&quot;: &quot;##808080&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3728:3803" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3861:4239" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3999:4221" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4025:4099" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4125:4199" ph="{&quot;color&quot;: &quot;##b3b3b3&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4257:4533" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4393:4515" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4419:4493" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4551:5020" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4685:5002" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4711:4785" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4811:4885" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4911:4980" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="5038:5314" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5174:5296" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5200:5274" ph="{&quot;color&quot;: &quot;##d7d7d7&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5332:5699" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5459:5681" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5485:5559" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5585:5659" ph="{&quot;color&quot;: &quot;##ebebeb&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5717:5990" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5850:5972" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5876:5950" ph="{&quot;color&quot;: &quot;##a7a7a7&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6008:6285" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6145:6267" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6171:6245" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6303:6580" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6440:6562" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6466:6540" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6598:6971" ph="{&quot;featureType&quot;: &quot;landscape&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6731:6953" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6757:6831" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6857:6931" ph="{&quot;color&quot;: &quot;##efefef&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6989:7260" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7120:7242" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7146:7220" ph="{&quot;color&quot;: &quot;##696969&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7278:7659" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7419:7641" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7445:7519" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7545:7619" ph="{&quot;color&quot;: &quot;##737373&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7677:7943" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7802:7925" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7828:7903" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7961:8222" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8081:8204" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8107:8182" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8240:8519" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8379:8501" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8405:8479" ph="{&quot;color&quot;: &quot;##d6d6d6&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8537:8804" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8663:8786" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8689:8764" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8842:9109" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8969:9091" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8995:9069" ph="{&quot;color&quot;: &quot;##dadada&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="9266:9295" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,7 +636,7 @@
         <state relative-caret-position="90">
           <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <marker date="1564449854368" expanded="true" signature="3432:3441" ph="..." />
+            <marker date="1565045452170" expanded="true" signature="3499:3508" ph="..." />
           </folding>
         </state>
       </provider>
@@ -858,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,83 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <marker date="1564445241259" expanded="true" signature="2153:2181" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2330" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2345" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2153:2460" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2247:2311" ph="..." />
-            <marker date="1564445241259" expanded="false" signature="2424:2429" ph="∧" />
-            <marker date="1564445241259" expanded="true" signature="2521:2957" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="2556:2946" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="2590:2872" ph="{&quot;navigationPosition&quot;: 'left'...}" />
-            <marker date="1564445241259" expanded="true" signature="2989:9150" ph="..." />
-            <marker date="1564445241259" expanded="true" signature="3014:9141" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="3125:9133" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="3218:9123" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3236:3505" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3365:3487" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3391:3465" ph="{&quot;color&quot;: &quot;##d3d3d3&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3523:3843" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3602:3825" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="3628:3702" ph="{&quot;color&quot;: &quot;##808080&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3728:3803" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3861:4239" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="3999:4221" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4025:4099" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4125:4199" ph="{&quot;color&quot;: &quot;##b3b3b3&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4257:4533" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4393:4515" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4419:4493" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4551:5020" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4685:5002" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="4711:4785" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4811:4885" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="4911:4980" ph="{...}" />
-            <marker date="1564445241259" expanded="true" signature="5038:5314" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5174:5296" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5200:5274" ph="{&quot;color&quot;: &quot;##d7d7d7&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5332:5699" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5459:5681" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5485:5559" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5585:5659" ph="{&quot;color&quot;: &quot;##ebebeb&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5717:5990" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="5850:5972" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="5876:5950" ph="{&quot;color&quot;: &quot;##a7a7a7&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6008:6285" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6145:6267" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6171:6245" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6303:6580" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6440:6562" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6466:6540" ph="{&quot;color&quot;: &quot;##ffffff&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6598:6971" ph="{&quot;featureType&quot;: &quot;landscape&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6731:6953" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="6757:6831" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6857:6931" ph="{&quot;color&quot;: &quot;##efefef&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="6989:7260" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7120:7242" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7146:7220" ph="{&quot;color&quot;: &quot;##696969&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7278:7659" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7419:7641" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7445:7519" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7545:7619" ph="{&quot;color&quot;: &quot;##737373&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7677:7943" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7802:7925" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="7828:7903" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="7961:8222" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8081:8204" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8107:8182" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8240:8519" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8379:8501" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8405:8479" ph="{&quot;color&quot;: &quot;##d6d6d6&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8537:8804" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8663:8786" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8689:8764" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8842:9109" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="8969:9091" ph="[...]" />
-            <marker date="1564445241259" expanded="true" signature="8995:9069" ph="{&quot;color&quot;: &quot;##dadada&quot;...}" />
-            <marker date="1564445241259" expanded="true" signature="9266:9295" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/gallery.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
@@ -1039,50 +758,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <marker date="1564445241387" expanded="true" signature="2911:2983" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="2911:3132" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="3231:3597" ph="..." />
-            <marker date="1564445241387" expanded="true" signature="3266:3586" ph="{...}" />
-            <marker date="1564445241387" expanded="true" signature="3300:3512" ph="{&quot;licenseKey&quot;: '6A79080F-89914B95-AD134155-6E2D191F'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/_footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding>
-            <marker date="1564449895427" expanded="true" signature="3772:3855" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="4091:4383" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="4125:4372" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="4249:4357" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="4464:5797" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="4529:5790" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="4907:5092" ph="..." />
-            <marker date="1564449895427" expanded="true" signature="5336:5515" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="60">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
-            <marker date="1564449895447" expanded="true" signature="404:460" ph="..." />
-            <marker date="1564449895447" expanded="true" signature="444:460" ph="..." />
-            <marker date="1564449895447" expanded="true" signature="457:460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1091,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,23 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/projects.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="91" column="14" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,7 +829,68 @@
         <state relative-caret-position="195">
           <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
-            <marker date="1564449854368" expanded="true" signature="3432:3441" ph="..." />
+            <marker date="1565045452170" expanded="true" signature="3499:3508" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/logo-animate-01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/_footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/projects.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-860">
+          <caret line="1547" column="7" lean-forward="true" selection-start-line="1547" selection-start-column="7" selection-end-line="1547" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

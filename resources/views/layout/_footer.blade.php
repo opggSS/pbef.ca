@@ -5,15 +5,6 @@
 <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/fullpage.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/fullpage.extensions.min.js')}}"></script>
-<script type="text/javascript">
-    $(window).on('load', function () {
-        $('.loader').delay(2600).fadeOut(300);
-        $.fn.fullpage.setAllowScrolling(false);
-        setTimeout(function(){
-            $.fn.fullpage.setAllowScrolling(true);
-        },2700);
-    });
-</script>
 
 @yield('js') 
 
