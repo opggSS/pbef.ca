@@ -26,7 +26,7 @@
                 <h2>We Appreciate Your Help</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel euismod augue. Aenean feugiat fermentum velit sit amet tristique. Curabitur pharetra augue leo. Ut eu neque id augue hendrerit finibus. Suspendisse interdum rhoncus mattis. Mauris efficitur turpis sed dui feugiat aliquet.</p>
-                <a href="">DONATE</a>
+                <a href="https://secure.e2rm.com/registrant/DonationPage.aspx?eventid=282377">DONATE</a>
             </div>
 
             <div class="offset-md-1 col-md-4">

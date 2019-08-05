@@ -194,7 +194,6 @@
                 licenseKey: '6A79080F-89914B95-AD134155-6E2D191F',
                 responsiveWidth: 900
             });
-
             //methods
             $.fn.fullpage.setAllowScrolling(true);
         });
