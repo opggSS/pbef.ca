@@ -58,7 +58,13 @@
     <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
         @if (Request::is('/') )
         <a href="{{url('/')}}">
-            <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">
+{{--            <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">--}}
+            <img class="img1 logo-anime-img" src="{{asset('images/logo-animate-01.png')}}" width="100%" alt="">
+            <img class="img2 logo-anime-img" src="{{asset('images/logo-animate-02.png')}}" width="100%" alt="">
+            <img class="img3 logo-anime-img" src="{{asset('images/logo-animate-03.png')}}" width="100%" alt="">
+            <img class="img4 logo-anime-img" src="{{asset('images/logo-animate-04.png')}}" width="100%" alt="">
+            <img class="img5 logo-anime-img" src="{{asset('images/logo-animate-05.png')}}" width="100%" alt="">
+            <img class="img6 logo-anime-img" src="{{asset('images/logo-animate-06.png')}}" width="100%" alt="">
         </a>
         @else
             <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="{{url('/')}}">< </a> <a class="d-none d-lg-inline-block" href="{{url('/')}}"> Home</a> <span class="d-none d-lg-inline-block">| @yield('title')</span>
