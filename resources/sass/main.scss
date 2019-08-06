@@ -84,27 +84,27 @@ body{
   }
 
   .img1 {
-    animation: fadeIn .5s ease-in infinite, pulse .5s;
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
     animation-delay: 2.0s;
   }
   .img2 {
-    animation: fadeIn .5s ease-in infinite, pulse .5s;
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
   }
   .img3 {
-    animation: fadeIn .5s ease-in infinite, pulse .5s;
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
     animation-delay: .5s;
   }
   .img4 {
-    animation: fadeIn .5s ease-in infinite, pulse .5s;
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
     animation-delay: 1.0s;
   }
   .img5 {
-    animation: fadeIn .5s ease-in infinite, pulse .5s;
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
     animation-delay: 1.5s;
   }
   .img6 {
-    //animation: fadeIn .5s ease-in infinite, pulse .5s;
-    //animation-delay: 2.0s;
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
+    animation-delay: 3.0s;
   }
 
   @media screen and (max-width: $col-sm) {

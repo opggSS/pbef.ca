@@ -55,32 +55,38 @@ body a:hover {
   top: -40px;
 }
 #menubar .img1 {
-  -webkit-animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
-          animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
+  -webkit-animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+          animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 #menubar .img2 {
-  -webkit-animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
-          animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
+  -webkit-animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+          animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
 }
 #menubar .img3 {
-  -webkit-animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
-          animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
+  -webkit-animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+          animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 #menubar .img4 {
-  -webkit-animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
-          animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
+  -webkit-animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+          animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 #menubar .img5 {
-  -webkit-animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
-          animation: fadeIn 0.5s ease-in infinite, pulse 0.5s;
+  -webkit-animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+          animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+}
+#menubar .img6 {
+  -webkit-animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+          animation: fadeIn 0.5s ease-in forwards, pulse 0.5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 @media screen and (max-width: 768px) {
   #menubar {
