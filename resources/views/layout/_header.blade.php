@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <!-- Full page slider CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/fullpage.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}" />
     <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
     @yield('css')
@@ -22,26 +23,34 @@
 </head>
 <body>
 {{--****************************************** Loader **************************************************--}}
-<div class="loader">
-    <div class="loader-container">
-        <div class="loader-content">
-            <div class="loader-logo-image">
-                <img src="{{asset('images/foundation-logo.png')}}">
-            </div>
-        </div>
-        <div class="loader-green-tail">
-            <img src="{{asset('images/logo-green-tail.png')}}">
-        </div>
-        <div class="loader-purple-tail">
-            <img src="{{asset('images/logo-purple-tail.png')}}">
-        </div>
-        <div class="loader-blue-tail">
-            <img src="{{asset('images/logo-blue-tail.png')}}">
-        </div>
-        <div class="loader-yellow-tail">
-            <img src="{{asset('images/logo-yellow-tail.png')}}">
-        </div>
-    </div>
+{{--<div class="loader">--}}
+    {{--<div class="loader-container">--}}
+        {{--<div class="loader-content">--}}
+            {{--<div class="loader-logo-image">--}}
+                {{--<img src="{{asset('images/foundation-logo.png')}}">--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="loader-green-tail">--}}
+            {{--<img src="{{asset('images/logo-green-tail.png')}}">--}}
+        {{--</div>--}}
+        {{--<div class="loader-purple-tail">--}}
+            {{--<img src="{{asset('images/logo-purple-tail.png')}}">--}}
+        {{--</div>--}}
+        {{--<div class="loader-blue-tail">--}}
+            {{--<img src="{{asset('images/logo-blue-tail.png')}}">--}}
+        {{--</div>--}}
+        {{--<div class="loader-yellow-tail">--}}
+            {{--<img src="{{asset('images/logo-yellow-tail.png')}}">--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</div>--}}
+<div class="preloader position-fixed" style="top:0;left: 0;right:0;bottom:0;z-index:9999;background:#fff;">
+    <img class="img1 position-absolute" src="{{asset('images/logo-animate-01.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
+    <img class="img2 position-absolute" src="{{asset('images/logo-animate-02.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
+    <img class="img3 position-absolute" src="{{asset('images/logo-animate-03.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
+    <img class="img4 position-absolute" src="{{asset('images/logo-animate-04.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
+    <img class="img5 position-absolute" src="{{asset('images/logo-animate-05.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
+    <img class="img6 position-absolute" src="{{asset('images/logo-animate-06.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
 </div>
 
 {{--****************************************** Content **************************************************--}}
@@ -49,7 +58,13 @@
     <div class="col-2 mt-2 mt-sm-0" id="menu-logo">
         @if (Request::is('/') )
         <a href="{{url('/')}}">
-            <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">
+{{--            <img src="{{url('/images/foundation-logo.png')}}" alt="logo" width="150">--}}
+            <img class="img1 logo-anime-img" id="img1" src="{{asset('images/logo-animate-01.png')}}" width="100%" alt="">
+            <img class="img2 logo-anime-img" id="img2" src="{{asset('images/logo-animate-02.png')}}" width="100%" alt="">
+            <img class="img3 logo-anime-img" id="img3" src="{{asset('images/logo-animate-03.png')}}" width="100%" alt="">
+            <img class="img4 logo-anime-img" id="img4" src="{{asset('images/logo-animate-04.png')}}" width="100%" alt="">
+            <img class="img5 logo-anime-img" id="img5" src="{{asset('images/logo-animate-05.png')}}" width="100%" alt="">
+            <img class="img6 logo-anime-img" id="img6" src="{{asset('images/logo-animate-06.png')}}" width="100%" alt="">
         </a>
         @else
             <a id="back-btn" class="mt-2 mt-lg-0 ml-2 ml-md-3 ml-lg-0 d-inline-block" href="{{url('/')}}">< </a> <a class="d-none d-lg-inline-block" href="{{url('/')}}"> Home</a> <span class="d-none d-lg-inline-block">| @yield('title')</span>
