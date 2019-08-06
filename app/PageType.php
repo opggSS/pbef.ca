@@ -8,7 +8,7 @@ class PageType extends Model
 {
 	protected $table = 'page_types';
 
-    public function pageContents()
+    public function pageContent()
     {
     	return $this->hasMany('App\PageContent');
     }

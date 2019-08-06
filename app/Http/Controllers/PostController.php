@@ -55,12 +55,11 @@ class PostController extends Controller
 
         $this->validate($request, array(
                 'title'         => 'required|max:255',
-                // 'slug'          => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
-       
+                'slug'          => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
                 'content'       => 'required',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',  
-                'description'       => 'max:255',
+                'description'       => 'max:511',
                 'image_title'       => 'max:255',
                 'image_alt'       => 'max:255',
                 'featured_img_alt'       => 'max:255',
@@ -85,6 +84,16 @@ class PostController extends Controller
         $post->video =$request->video;
         if($request->is_published != 'on'){
           $post->is_published = 0;
+        }
+        else{
+          $post->is_published = 1;
+        }
+
+        if($request->ishot != 'on'){
+          $post->ishot = 0;
+        }
+        else{
+          $post->ishot = 1;
         }
 
         if($post->is_published){
@@ -167,7 +176,7 @@ class PostController extends Controller
                 'video'          => 'max:255',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',
-                'description'       => 'max:255',
+                'description'       => 'max:511',
                 'image_title'       => 'max:255',
                 'image_alt'       => 'max:255',
                 'featured_img_alt'       => 'max:255',
@@ -176,13 +185,13 @@ class PostController extends Controller
         } else {
         $this->validate($request, array(
                 'title'         => 'required|max:255',
-                // 'slug'          => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
+                'slug'          => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
                 'category_id'   => 'required|integer',
                 'content'       => 'required',
                 'video'          => 'max:255',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',
-                'description'       => 'max:255',
+                'description'       => 'max:511',
                 'image_title'       => 'max:255',
                 'image_alt'       => 'max:255',
                 'featured_img_alt'       => 'max:255',
@@ -231,6 +240,14 @@ class PostController extends Controller
         else{
           $post->is_published = 1;
         }
+
+        if($request->ishot != 'on'){
+          $post->ishot = 0;
+        }
+        else{
+          $post->ishot = 1;
+        }
+
 
         if($post->is_published){
             $request->published_at = time();

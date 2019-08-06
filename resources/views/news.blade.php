@@ -3,51 +3,70 @@
 
 @section('content')
 
-<div class="news-content container" style="padding:60px;">
+<div class="news-content container" style="padding-top:100px; padding-bottom: 40px;">
   <div class="row">
     <div class="left-block col col-12 col-md-8 d-block d-md-inline-block">
       <div class="row">
         <div class="col col-12">
-          <h5 class="location">Vancouver, BC</h5>
+          <h5 class="location">
+          @if ($post['location'])
+            {{$post['location']}}
+    
+          @endif
+        </h5>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col col-12">
-          <h3>Syria war: 'World shrugs' as 103 civilians killed in 10 days</h3>
+          <h3>{{$post['title']}}</h3>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col col-12">
-          <p>Published 2 hours before</p>
+          <p> Published
+
+          @if($time['years']) 
+          {{$time['years']}} years
+            @if($time['months'])
+              {{$time['months']}} months
+            @endif
+          @elseif ($time['months'])
+            {{$time['months']}} months
+            @if($time['days'])
+              {{($time['days'])}} days
+            @endif
+
+          @elseif ($time['days'])
+            {{$time['days']}} days
+            @if($time['hours'])
+              {{($time['hours'])}} hours
+            @endif
+          @elseif($time['hours'])
+            {{($time['hours'])}} hours
+          @endif
+
+         before</p>
         </div>
       </div>
+
+      
+      
       <div class="row">
         <div class="col col-12 pt-5 border-top">
-          <img class="w-100" src="images/ref-images/TR2.jpg" alt="">
+          <img class="w-100" src="/images/{{$post['image']}}" alt="{{$post['image_alt']}}" title="{{$post['image_title']}}">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row mt3">
         <div class="col col-12 mt-3">
-          <p>While many sports celebrate diversity, Badminton must be given special attention, for no other sport celebrates diversity quite like badminton does. Regardless of age, gender, or income, badminton is a sport that anyone can play nearly anywhere, and have a chance to make it to the top.
-          </p>
+          {!!$post['content'] !!}
         </div>
       </div>
-      <div class="row">
-        <div class="col col-12 mt-3">
-          <h5>Cost of Entry</h5>
-          <p>Every sport has a cost involved with getting started, and Badminton’s is pretty low. Compared to hockey where you need to buy skates, a helmet, pads, gloves, sticks, and pucks, you really only need three things to play badminton. A racket, some birdies, and a good pair of shoes.
-            Starter rackets are pretty affordable. They can start as low as $20 for the budget-conscious, all the way up to $250 for professional-grade adult rackets. If your child keeps good care of their racket, it should last at least 3 years, but you should consider getting it restrung every few months if your child is practicing or playing regularly.
-Proper footwear is also very important in badminton. The average pair of badminton shoes will be about $60 which is no different than footwear from any other sport. Shuttlecocks (or birdies) are also incredibly affordable. At an average of $2/birdie (~$11.99/6), you’re likely to have spent more on Starbucks in a month than you’ll spend on birdies all year.
-</p>
-        </div>
+      {{-- <button type="button" class="btn btn-primary " href="/donate">Explore</button> --}}
+      <div style="text-align:center">
+        <a style="text-align: center;" href="/donate" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Explore</a>
       </div>
-      <div class="row">
-        <div class="col col-12 mt-3">
-          <h5>From pre-school to post-retirement</h5>
-          <p>No matter how old you are, there likely exists a league for you. In Canada, leagues range from Juniors (under 13, 15, 17, and 19), all the way to Seniors with annual Masters Awards given to athletes in their playing ranges as old as 79! This means that at a competitive level, your child can play their entire life if they so desire. With the right introduction, kids will be inspired by the speed of the game and the power of the players. If you ever needed a sport the whole family can play, look no further than Badminton.</p>
-        </div>
-      </div>
-    </div>
+     </div>
 
     <div class="right-block col col-3 offset-1 d-none d-md-inline-block">
       <div class="sub-block hot-block">
@@ -58,24 +77,22 @@ Proper footwear is also very important in badminton. The average pair of badmint
         </div>
         <div class="row mt-3">
           <div class="col col-12">
-            <h5>Come one, Come all!</h5>
+            <h5>{{$hot->title}}</h5>
           </div>
         </div>
+       
         <div class="row mt-1">
           <div class="col col-12">
-            <p>Published 2 hours before</p>
-          </div>
-        </div>
-        <div class="row mt-1">
-          <div class="col col-12">
-            <img class="w-100" src="images/ref-images/home-s3-2.jpg" alt="">
+            <img class="w-100" src="/images/{{$hot->image}}" alt="{{$hot->image_alt}}">
           </div>
         </div>
         <div class="row mt-2">
           <div class="col col-12">
-            <p>No matter how old you are, there likely exists a league for you. In Canada, leagues range from Juniors (under 13, 15, 17, and 19), all the way to Seniors with annual Masters Awards given to athletes in their playing ranges as old as 79! This means that at a competitive level, your child can play their entire life if they so desire. With the right introduction, kids will be inspired by the speed of the game and the power of the players. If you ever needed a sport the whole family can play, look no further than Badminton.</p>
+            <p>{{$hot->description}}</p>
           </div>
         </div>
+
+        
       </div>
 
       <div class="sub-block hot-block mt-5">
@@ -86,22 +103,18 @@ Proper footwear is also very important in badminton. The average pair of badmint
         </div>
         <div class="row mt-3">
           <div class="col col-12">
-            <h5>Come one, Come all!</h5>
+            <h5>{{$recent->title}}</h5>
           </div>
         </div>
+        
         <div class="row mt-1">
           <div class="col col-12">
-            <p>Published 2 hours before</p>
-          </div>
-        </div>
-        <div class="row mt-1">
-          <div class="col col-12">
-            <img class="w-100" src="images/ref-images/home-s3-3.jpeg" alt="">
+            <img class="w-100"  src="/images/{{$recent->image}}" alt="{{$recent->image_alt}}">
           </div>
         </div>
         <div class="row mt-2">
           <div class="col col-12">
-            <p>No matter how old you are, there likely exists a league for you. In Canada, leagues range from Juniors (under 13, 15, 17, and 19), all the way to Seniors with annual Masters Awards given to athletes in their playing ranges as old as 79! This means that at a competitive level, your child can play their entire life if they so desire. With the right introduction, kids will be inspired by the speed of the game and the power of the players. If you ever needed a sport the whole family can play, look no further than Badminton.</p>
+            <p>{{$recent->description}}</p>
           </div>
         </div>
       </div>

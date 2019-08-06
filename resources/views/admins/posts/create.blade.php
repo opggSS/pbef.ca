@@ -5,7 +5,7 @@
   <script src="https://cdn.tiny.cloud/1/sl6j0mvghyx0az1cb2hr37zwalpq4ykv58gbfrwqtry2xvdm/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
   <script type="text/javascript">
     tinymce.init({
-    selector: 'textarea'
+    selector: '#content'
     });
   </script>
   @stop
@@ -39,7 +39,7 @@
 
         </select>
 
-        <textarea rows="20" cols="50" name="content"></textarea> 
+        <textarea rows="20" cols="50" name="content" id="content"></textarea> 
 
         <label for="meta_title">meta_title:</label>
         <input name="meta_title" class="form-control">
@@ -51,7 +51,7 @@
         <input name="keywords" class="form-control">
 
         <label for="description">description:</label>
-        <input name="description" class="form-control">
+        <textarea name="description" class="form-control" rows="5" cols="50"></textarea>
 
         <label for="featured_img">featured_img:</label>
         <input type="file" class="form-control" name="featured_img" accept="image/*">
@@ -72,8 +72,11 @@
         <label for="image_alt">image alt text:</label>
         <input name="image_alt" class="form-control">
 
-        <label for="is_published">publish</label>
-        <input type="checkbox" name="is_published" class="form-control">
+        <label for="is_published">Publish</label>
+        <input type="checkbox" name="is_published" >
+
+        <label for="ishot">Hot</label>
+        <input type="checkbox" name="ishot" >
 
         <input type="submit" value="Create News" class="btn btn-success btn-lg btn-block"> 
       </form>

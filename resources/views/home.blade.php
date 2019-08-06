@@ -41,7 +41,7 @@
                     <div class="offset-md-2 col-md-4">
                         <h1><span class="letter-bold">A</span>BOUT US</h1>
                         <p class="mt-2 mt-md-3 mb-4 mb-md-5">{{$pc['home_content2']}}</p>
-                        <a href="">EXPLORE</a>
+                        <a href="/about_us">EXPLORE</a>
                     </div>
                     <div class="offset-lg-1 col-lg-4 d-none d-xl-block align-top">
                         <div class="img-container" width="500">

@@ -11,7 +11,7 @@ class NewsTableSeeder extends Seeder
      */
     public function run()
     {
-         DB::table('news')->insert([
+         DB::table('posts')->insert([
             'title' => 'my_title',
             'description' => 'this is mh description',
             'image' => 'sdfsdfsf',

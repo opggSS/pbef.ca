@@ -62,7 +62,7 @@
                   <p class="d-inline-block d-md-block float-md-none">{{$pc['community_left1']}}</p >
               </div>
               <div class="offset-2 col-9 offset-md-1 col-md-4 text-right text-md-left">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left2']}}</h5>
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right1']}}</h5>
                   <p class="d-inline-block d-md-block float-md-none">{{$pc['community_right1']}}</p >
               </div>
             </div>
@@ -70,18 +70,18 @@
 
             <div class="row main-content">
               <div class="offset-2 col-9 offset-md-2 col-md-4 text-right">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left3']}}</h5>
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left2']}}</h5>
                   <p class="d-inline-block d-md-block float-md-none">{{$pc['community_left2']}}</p >
               </div>
               <div class="offset-2 col-9 offset-md-1 col-md-4 text-right text-md-left">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right1']}}</h5>
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right2']}}</h5>
                   <p class="d-inline-block d-md-block float-md-none">{{$pc['community_right2']}}</p >
               </div>
             </div>
 
             <div class="row main-content">
               <div class="offset-2 col-9 offset-md-2 col-md-4 text-right">
-                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_right2']}}</h5>
+                  <h5 class="d-inline-block float-right d-md-block float-md-none pl-2 pl-md-0">{{$pc['title_left3']}}</h5>
                   <p class="d-inline-block d-md-block float-md-none">{{$pc['community_left3']}}</p >
               </div>
               <div class="offset-2 col-9 offset-md-1 col-md-4 text-right text-md-left">

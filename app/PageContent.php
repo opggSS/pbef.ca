@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PageContent extends Model
 {
-    public function pageTypes(){
+    public function pageType(){
     	return $this->belongsTo('App\PageType');
     }
 }
