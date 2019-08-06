@@ -5,7 +5,7 @@
   <script src="https://cdn.tiny.cloud/1/sl6j0mvghyx0az1cb2hr37zwalpq4ykv58gbfrwqtry2xvdm/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
   <script type="text/javascript">
     tinymce.init({
-    selector: '#content'
+    selector: '.content'
     });
   </script>
   @stop
@@ -39,7 +39,7 @@
 
         </select>
 
-        <textarea rows="20" cols="50" name="content" id="content"></textarea> 
+        <textarea rows="20" cols="50" name="content" class="content"></textarea> 
 
         <label for="meta_title">meta_title:</label>
         <input name="meta_title" class="form-control">
