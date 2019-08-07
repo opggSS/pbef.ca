@@ -23,6 +23,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/public_info', 'PageController@getPublicInfo');
 	Route::get('/projects', 'PageController@getProjects');
 	Route::get('/news/{slug}', 'PageController@getNews');
+	Route::get('/newslist', 'PageController@getNewsList');
 	Route::get('/about_us', 'PageController@getAboutUs');
 	Route::get('/donate', 'PageController@getDonate');
 

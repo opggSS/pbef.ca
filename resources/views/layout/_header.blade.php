@@ -1,4 +1,6 @@
 <!doctype html>
+
+
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -84,7 +86,7 @@
                 <ul class="dropdown-menu">
                     <li class="mt-2"><a href="{{url('/projects')}}">SCHOOL</a></li>
                     <li class="mt-2"><a href="{{url('/projects')}}">COMMUNITY</a></li>
-                    <li class="mt-2"><a href="{{url('/news')}}">News</a></li>
+                    <li class="mt-2"><a href="{{url('/newslist')}}">News</a></li>
                 </ul>
             </li>
             <li><a class="{{Request::is('gallery') ? 'active' : ''}}" href="{{url('/gallery')}}">GALLERY</a></li>

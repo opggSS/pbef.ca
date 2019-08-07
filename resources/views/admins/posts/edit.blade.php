@@ -62,6 +62,10 @@
 
         <label for="keywords">keywords:</label>
         <input name="keywords" class="form-control" value="{{$post->keywords}}">
+
+        <label for="location">location:</label>
+        <input name="location" class="form-control" value="{{$post->location}}">
+
         <label for="description">description:</label>
         <textarea name="description" class="form-control" rows="5" cols="50">{{$post->description}}</textarea>
 
@@ -99,9 +103,7 @@
             @endif
         >
 
-
-
-        <input type="submit" value="保存" class="btn btn-success btn-lg form-control mt-3"> 
+        <input type="submit" value="Save" class="btn btn-success btn-lg form-control mt-3"> 
       </form>
 
 	  <!-- End of Main Content -->

@@ -59,6 +59,7 @@ class PostController extends Controller
                 'content'       => 'required',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',  
+                'location'       => 'max:255',
                 'description'       => 'max:511',
                 'image_title'       => 'max:255',
                 'image_alt'       => 'max:255',
@@ -71,6 +72,7 @@ class PostController extends Controller
         $post = new Post;
         $post->title = $request->title;
         $post->slug = $request->slug;
+        $post->location = $request->location;
         $post->category_id = $request->category_id;
         // $post->user_id = $user_id;
         $post->content = Purifier::clean($request->content);
@@ -97,7 +99,7 @@ class PostController extends Controller
         }
 
         if($post->is_published){
-            $request->published_at = time();
+            $post->published_at = date('Y-m-d H:i:s');
         }
 
         if ($request->hasFile('featured_img')) {
@@ -176,6 +178,7 @@ class PostController extends Controller
                 'video'          => 'max:255',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',
+                'location'       => 'max:255',
                 'description'       => 'max:511',
                 'image_title'       => 'max:255',
                 'image_alt'       => 'max:255',
@@ -189,6 +192,7 @@ class PostController extends Controller
                 'category_id'   => 'required|integer',
                 'content'       => 'required',
                 'video'          => 'max:255',
+                'location'       => 'max:255',
                 'meta_title'       => 'max:255',
                 'keywords'       => 'max:255',
                 'description'       => 'max:511',
@@ -204,6 +208,7 @@ class PostController extends Controller
 
         $post->title = $request->title;
         $post->slug = $request->slug;
+        $post->location = $request->location;
         $post->category_id = $request->category_id;
         // $post->user_id = $user_id;
         $post->content = Purifier::clean($request->content);
@@ -248,9 +253,8 @@ class PostController extends Controller
           $post->ishot = 1;
         }
 
-
         if($post->is_published){
-            $request->published_at = time();
+            $post->published_at = date('Y-m-d H:i:s');
         }
 
         $post->save();

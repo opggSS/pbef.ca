@@ -54,27 +54,9 @@ class PageController extends Controller
     public function getNews($slug){
 
         $post = Post::where('slug' , $slug)->first();
-        $date1 = new DateTime($post['created_at']);
-        $date2 = new DateTime();
-
         $hot = Post::where('ishot', 1)->where('is_published' , 1)->orderBy('published_at')->first();
         $recent = Post::where('is_published', 1)->orderBy('published_at')->first();
-
-        $diff = $date2->diff($date1);
-        $hours = $diff->h;
-        $days =$diff->d;
-        $months =$diff->m;
-        $years =$diff->y;
-
-        $time = array();
-        $time = [
-            'hours' =>$hours,
-            'days'=>$days,
-            'months'=>$months,
-            'years'=>$years
-        ];
-    
-        return view('news')->withPc($this->pc)->withPost($post)->withTime($time)->withHot($hot)->withRecent($recent);
+        return view('news')->withPc($this->pc)->withPost($post)->withHot($hot)->withRecent($recent);
     }
 
     public function getAboutUs(){
@@ -83,6 +65,56 @@ class PageController extends Controller
 
     public function getDonate(){
         return view('donate')->withPc($this->pc);
+    }
+    public function getNewsList(){
+
+        $hot = Post::where('ishot', 1)->where('is_published' , 1)->orderBy('published_at')->first();
+        $recent = Post::where('is_published', 1)->orderBy('published_at')->first();
+
+        $posts = Post::where('is_published' , 1)->get();
+        return view('newslist')->withPosts($posts)->withHot($hot)->withRecent($recent);
+    }
+
+    public static function published_before($date1){
+       
+
+        $date1 = new DateTime($date1);
+        $date2 = new DateTime();
+
+        $diff = $date2->diff($date1);
+        $hours = $diff->h;
+        $days =$diff->d;
+        $months =$diff->m;
+        $years =$diff->y;
+
+        $string = '';
+        if($years) {
+            $string.= $years.' years ';
+        
+            if($months){
+              $string.= $months.' months ';
+            }
+        }
+        elseif ($months){
+            $string.= $months.' months ';
+            if($days){
+              $string.= $days.' days ';
+            }
+        }    
+        elseif ($days){
+            $string.= $days.' days ';
+            if($hours){
+                $string.= $hours.' hours ';
+            }
+        }
+        elseif ($hours){
+            $string.= $hours. ' hours ';
+        }
+        else {
+            $string = ' 0 hour ';
+        }
+
+        return $string;
     }
 
 }
