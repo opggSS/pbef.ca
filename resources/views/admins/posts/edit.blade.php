@@ -3,10 +3,15 @@
     <!-- Begin Page Content -->
   @section('styles')
 
+  <style type="text/css">
+      label {
+        margin-top: 20px;
+      }
+  </style>
   <script src="https://cdn.tiny.cloud/1/sl6j0mvghyx0az1cb2hr37zwalpq4ykv58gbfrwqtry2xvdm/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
   <script type="text/javascript">
     tinymce.init({
-    selector: 'textarea'
+    selector: '.content'
     });
   </script>
   @stop
@@ -22,7 +27,7 @@
         </ul>
     </div>
   @endif
-    <div class="container-fluid">
+    <div class="container" style="margin-bottom: 50px;">
 
 		<form method="post" action="{{route('news.update', $post->id)}}" enctype="multipart/form-data">
         <input type="hidden" name="user_id" value="">
@@ -45,7 +50,7 @@
 
         </select>
 
-        <textarea rows="20" cols="50" name="content" >
+        <textarea rows="20" cols="50" name="content" class="content">
         	{{ $post->content }}
         </textarea> 
 
@@ -58,8 +63,11 @@
         <label for="keywords">keywords:</label>
         <input name="keywords" class="form-control" value="{{$post->keywords}}">
 
+        <label for="location">location:</label>
+        <input name="location" class="form-control" value="{{$post->location}}">
+
         <label for="description">description:</label>
-        <input name="description" class="form-control" value="{{$post->description}}">
+        <textarea name="description" class="form-control" rows="5" cols="50">{{$post->description}}</textarea>
 
         <label style="display: block;" for="featured_img">featured_img:</label>
         <img src="/images/{{$post->featured_img}}" style="max-width: 600px">
@@ -81,13 +89,21 @@
         <label for="image_alt">image alt text:</label>
         <input name="image_alt" class="form-control" value="{{$post->image_alt}}">
 
-        <label for="is_published">publish</label>
-        <input type="checkbox" name="is_published" class="form-control" 
+        <label for="is_published">Publish</label>
+        <input type="checkbox" name="is_published" 
         	@if($post->is_published)
         		checked 
         	@endif
         >
-        <input type="submit" value="保存" class="btn btn-success btn-lg "> 
+
+        <label for="ishot">Hot</label>
+        <input type="checkbox" name="ishot"
+            @if($post->ishot)
+                checked 
+            @endif
+        >
+
+        <input type="submit" value="Save" class="btn btn-success btn-lg form-control mt-3"> 
       </form>
 
 	  <!-- End of Main Content -->

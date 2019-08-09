@@ -13,27 +13,19 @@
 
 Route::group(['middleware' => ['web']], function () {
 	Route::get('/' ,'PageController@index');
-	Route::get('/about_us', function () {
-	    return view('about_us');
-	});
-	Route::get('/donate', function () {
-	    return view('donate');
-	});
+
 
 	Route::post('/donate', 'MessageController@store');
 
 
 	Route::get('/gallery' ,'PageController@getGallery');
 
-	Route::get('/public_info', function () {
-	    return view('public_info');
-	});
-	Route::get('/projects', function(){
-	    return view('projects');
-	});
-	Route::get('/news', function(){
-	    return view('news');
-	});
+	Route::get('/public_info', 'PageController@getPublicInfo');
+	Route::get('/projects', 'PageController@getProjects');
+	Route::get('/news/{slug}', 'PageController@getNews');
+	Route::get('/newslist', 'PageController@getNewsList');
+	Route::get('/about_us', 'PageController@getAboutUs');
+	Route::get('/donate', 'PageController@getDonate');
 
 
 	

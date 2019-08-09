@@ -2,10 +2,16 @@
     <!-- Begin Page Content -->
   @section('styles')
 
+    <style type="text/css">
+      label {
+        margin-top: 20px;
+      }
+  </style>
+
   <script src="https://cdn.tiny.cloud/1/sl6j0mvghyx0az1cb2hr37zwalpq4ykv58gbfrwqtry2xvdm/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
   <script type="text/javascript">
     tinymce.init({
-    selector: 'textarea'
+    selector: '.content'
     });
   </script>
   @stop
@@ -20,10 +26,10 @@
         </ul>
     </div>
   @endif
-    <div class="container">
+    <div class="container" style="margin-bottom: 50px;">
       <!-- Page Heading -->
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">添加新闻</h1>
+        <h1 class="h3 mb-0 text-gray-800">Add News</h1>
       </div>
       <form method="post" action="{{route('news.store')}}" enctype="multipart/form-data">
         <input type="hidden" name="user_id" value="">
@@ -39,7 +45,7 @@
 
         </select>
 
-        <textarea rows="20" cols="50" name="content"></textarea> 
+        <textarea rows="20" cols="50" name="content" class="content"></textarea> 
 
         <label for="meta_title">meta_title:</label>
         <input name="meta_title" class="form-control">
@@ -50,8 +56,11 @@
         <label for="keywords">keywords:</label>
         <input name="keywords" class="form-control">
 
+        <label for="location">location:</label>
+        <input name="location" class="form-control">
+
         <label for="description">description:</label>
-        <input name="description" class="form-control">
+        <textarea name="description" class="form-control" rows="5" cols="50"></textarea>
 
         <label for="featured_img">featured_img:</label>
         <input type="file" class="form-control" name="featured_img" accept="image/*">
@@ -72,8 +81,11 @@
         <label for="image_alt">image alt text:</label>
         <input name="image_alt" class="form-control">
 
-        <label for="is_published">publish</label>
-        <input type="checkbox" name="is_published" class="form-control">
+        <label for="is_published">Publish</label>
+        <input type="checkbox" name="is_published" >
+
+        <label for="ishot">Hot</label>
+        <input type="checkbox" name="ishot" >
 
         <input type="submit" value="Create News" class="btn btn-success btn-lg btn-block"> 
       </form>

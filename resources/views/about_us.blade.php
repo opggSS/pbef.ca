@@ -9,17 +9,20 @@
             <div class="row">
                 <div class="offset-2 col-8 col-md-3">
                     <h4>Grow Path</h4>
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['grow_path_p1']}}</p >
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['grow_path_p2']}}</p >
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['grow_path_p3']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['grow_path_p1']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['grow_path_p2']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['grow_path_p3']}}</p >
                 </div>
                 <div class="col-md-3 grow-path-middleimg d-none d-md-block mr-md-3">
                     <img class="h-100" src="{{url('/images/ref-images/aboutus-s1-1.jpg')}}" alt="">
                 </div>
                 <div class="offset-2 offset-md-0 col-8 col-md-3 mt-2 mt-sm-0">
                     <h4>Message from President</h4>
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['president_p1']}}</p >
-                    <p class="mt-1 mb-3 mt-lg-5 mb-lg-0">{{$pc['president_p2']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['president_p1']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['president_p2']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['president_p3']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['president_p4']}}</p >
+                    <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['president_p5']}}</p >
                     <div class="president-image-container d-none d-md-block">
                         <img src="{{url('/images/ref-images/aboutus-s1-2.jpg')}}" alt="" width="100%">
                     </div>
@@ -71,8 +74,8 @@
     function initMap() {
         // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 40.674, lng: -73.945},
-            zoom: 12,
+            center: {lat: 49.184196, lng: -123.135901},
+            zoom: 8,
             styles: [
                 {
                     "featureType": "water",

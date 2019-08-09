@@ -1,49 +1,51 @@
 @extends('layout.layout')
-@section('title', 'Home')
+@section('title', 'News Lists')
 
 @section('content')
 
-<div class="news-content container" style="padding-top:100px; padding-bottom: 40px;">
+
+<div class="news-content container " style="margin-top: 100px;">
+  <div class="row mb-5">
+    <div class="col col">
+      <h3>All News</h3>
+    </div>
+  </div>
   <div class="row">
     <div class="left-block col col-12 col-md-8 d-block d-md-inline-block">
-      <div class="row">
-        <div class="col col-12">
-          <h5 class="location">
-            {{$post['location']}}
-        </h5>
+      @foreach($posts as $post)
+      <a href="/news/{{$post->slug}}">
+        <div class="row">
+          <div class="col col-12">
+            <h5 class="location">{{$post->location}}</h5>
+          </div>
         </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col col-12">
-          <h3>{{$post['title']}}</h3>
+        <div class="row mt-3">
+          <div class="col col-12">
+            <h3 class="text-dark arrow-behind">{{$post->title}}</h3>
+          </div>
         </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col col-12">
-          <p> Published
-          {{\App\Http\Controllers\PageController::published_before($post->published_at)}}
-         before</p>
+        <div class="row mt-1">
+          <div class="col col-12">
+            <img class="w-100" src="/images/{{$post->image}}" alt="{{$post->alt}}" title="{{$post->title}}">
+          </div>
         </div>
-      </div>
 
-      
-      
-      <div class="row">
-        <div class="col col-12 pt-5 border-top">
-          <img class="w-100" src="/images/{{$post['image']}}" alt="{{$post['image_alt']}}" title="{{$post['image_title']}}">
+        <div class="row mt-1">
+          <div class="col col-12">
+            <p class="text-dark arrow-behind">{{$post->description}}</p>
+          </div>
         </div>
-      </div>
 
-      <div class="row mt3">
-        <div class="col col-12 mt-3">
-          {!!$post['content'] !!}
+        <div class="row my-3 border-bottom">
+          <div class="col col-12">
+            <p>Published 
+              {{\App\Http\Controllers\PageController::published_before($post->published_at)}}before</p>
+          </div>
         </div>
-      </div>
-      {{-- <button type="button" class="btn btn-primary " href="/donate">Explore</button> --}}
-      <div style="text-align:center">
-        <a style="text-align: center;" href="/donate" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Explore</a>
-      </div>
-     </div>
+      </a>
+      @endforeach
+
+    </div>
 
     <div class="right-block col col-3 offset-1 d-none d-md-inline-block">
       <div class="sub-block hot-block">
@@ -60,7 +62,7 @@
        
         <div class="row mt-1">
           <div class="col col-12">
-            <img class="w-100" src="/images/{{$hot->image}}" alt="{{$hot->image_alt}}">
+            <img class="w-100" src="/images/{{$hot->image}}" alt="{{$hot->alt}}">
           </div>
         </div>
         <div class="row mt-2">
@@ -68,8 +70,6 @@
             <p>{{$hot->description}}</p>
           </div>
         </div>
-
-        
       </div>
 
       <div class="sub-block hot-block mt-5">
@@ -83,10 +83,10 @@
             <h5>{{$recent->title}}</h5>
           </div>
         </div>
-        
+       
         <div class="row mt-1">
           <div class="col col-12">
-            <img class="w-100"  src="/images/{{$recent->image}}" alt="{{$recent->image_alt}}">
+            <img class="w-100" src="/images/{{$recent->image}}" alt="{{$recent->alt}}">
           </div>
         </div>
         <div class="row mt-2">
@@ -103,5 +103,4 @@
 </div>
 
 @stop
-
 
