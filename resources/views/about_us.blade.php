@@ -8,7 +8,7 @@
         <div class="grow-path-container">
             <div class="row">
                 <div class="offset-2 col-8 col-md-3">
-                    <h4>Grow Path</h4>
+                    <h4>Grow Path </h4>
                     <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['grow_path_p1']}}</p >
                     <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['grow_path_p2']}}</p >
                     <p class="mt-1 mb-1 mt-lg-3 mb-lg-0">{{$pc['grow_path_p3']}}</p >
