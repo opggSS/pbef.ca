@@ -8,27 +8,76 @@ $col-md: 992px;
 $col-lg: 1200px;
 
 @font-face{
-  font-family: 'raleway-light';
-  src : url('../font/raleway-light.ttf');
+  font-family: 'Raleway-Light';
+  src : url('../font/Raleway-Light.ttf');
 }
 
 @font-face{
-  font-family: 'raleway-regular';
-  src : url('../font/raleway-regular.ttf');
+  font-family: 'Raleway-Regular';
+  src : url('../font/Raleway-Regular.ttf');
 }
 
 @font-face{
-  font-family: 'raleway-bold';
-  src : url('../font/raleway-bold.ttf');
+  font-family: 'Raleway-Bold';
+  src : url('../font/Raleway-Bold.ttf');
 }
 
 @font-face{
-  font-family: 'raleway-black';
-  src : url('../font/raleway-black.ttf');
+  font-family: 'Raleway-Black';
+  src : url('../font/Raleway-Black.ttf');
+}
+
+.fromBottom.nV {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  opacity: 0;
+}
+.fromBottom {
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+.fromBottom-late {
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  opacity: 1;
+  transition-delay: 1s;
+}
+.preloader {
+  animation: fadeOut .5s ease-out forwards;
+  animation-delay: 3s;
+
+  .img1 {
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
+    animation-delay: .8s;
+  }
+  .img2 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+  }
+  .img3 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+    animation-delay: .2s;
+  }
+  .img4 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+    animation-delay: .4s;
+  }
+  .img5 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+    animation-delay: .6s;
+  }
+  .img6 {
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
+    animation-delay: 1.5s;
+  }
 }
 
 //******************************************************************************
-//                              global css
+//                              Global CSS
 //******************************************************************************
 .fp-enabled,body,html {
   overflow-x: hidden!important;
@@ -37,7 +86,7 @@ $col-lg: 1200px;
 body{
 
   h1{
-    font-family: 'raleway-light';
+    font-family: 'Raleway-Light';
     color: $main-color-b;
     font-size: 60px;
     letter-spacing: 8px;
@@ -49,9 +98,9 @@ body{
   }
 
   p{
-    font-family: 'raleway-light';
+    font-family: 'Raleway-Light';
     color: $main-color-text;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   a {
@@ -66,7 +115,7 @@ body{
 
   position: fixed;
   z-index: 1000;
-  font-family: raleway-light;
+  font-family: Raleway-Light;
   font-size: 1.3em;
   text-align: center;
   width: 102%;
@@ -224,7 +273,7 @@ body{
   }
 }
 
-/*full page js style pagination*/
+/*Full page js style pagination*/
 #fp-nav{
   left: 3.5vw!important;
   margin-left: 10px;
@@ -237,12 +286,12 @@ body{
 
 
 //******************************************************************************
-//                          home page css
+//                          Home Page CSS
 //******************************************************************************
 .homepage{
-  //slider 1
+  //Slider 1
   .home-section-1{
-    .fp-tablecell{
+    .fp-tableCell{
       vertical-align: top;
       padding-top: 180px;
     }
@@ -267,14 +316,14 @@ body{
       }
     }
   }
-  //slider 2
+  //Slider 2
   .home-section-2{
     @media screen and (max-width: $col-sm) {
       height: auto!important;
       background: #f3f3f3;
     }
 
-    .fp-tablecell{
+    .fp-tableCell{
       vertical-align: top;
       padding-top: 180px;
 
@@ -308,7 +357,7 @@ body{
         border: $main-color-r solid 1px;
         border-radius: 20px;
         color: $main-color-r;
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         letter-spacing: 2px;
         padding: 8px 30px;
 
@@ -343,8 +392,8 @@ body{
             width: 300px;
           }
           @media screen and (max-width: $col-sm) {
-            width: 250px;
-            height: 160px;
+            width: 300px;
+            height: 180px;
           }
         }
       }
@@ -384,7 +433,7 @@ body{
       height: auto!important;
     }
 
-    .fp-tablecell{
+    .fp-tableCell{
       vertical-align: top;
       padding-top: 140px;
 
@@ -605,7 +654,7 @@ body{
       height: auto!important;
     }
 
-    .fp-tablecell {
+    .fp-tableCell {
       vertical-align: top;
       padding-top: 140px;
 
@@ -645,7 +694,7 @@ body{
         padding: 10px 20px;
         border-radius: 20px;
         letter-spacing: 4px;
-        font-family: raleway-light;
+        font-family: Raleway-Light;
 
         &:hover{
           opacity: 0.5;
@@ -661,7 +710,7 @@ body{
         box-shadow: $light-grey 2px 2px 5px;
         margin-top: 40px;
         padding: 35px 0 40px 35px;
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         box-shadow: $light-grey 0 10px 13px;
         border-radius: 10px;
 
@@ -696,7 +745,7 @@ body{
       }
 
       h3{
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         color: $main-color-text;
       }
 
@@ -717,7 +766,7 @@ body{
       right: 50px;
       bottom: 20px;
       a{
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -726,7 +775,7 @@ body{
 }
 
 //******************************************************************************
-//                       about us page css
+//                       About Us Page CSS
 //******************************************************************************
 .nonhome-menubar{
   // margin-top: 25px !important;
@@ -741,7 +790,7 @@ body{
 }
 .aboutuspage{
   .grow-path{
-    .fp-tablecell {
+    .fp-tableCell {
       vertical-align: top;
       padding-top: 180px;
 
@@ -751,7 +800,7 @@ body{
     }
 
     h4{
-      font-family: raleway-light;
+      font-family: Raleway-Light;
       font-size: 25px;
       color: $main-color-text;
 
@@ -784,19 +833,19 @@ body{
       margin-top: 40px;
     }
 
-    #tonextslide{
+    #toNextSlide{
       position: absolute;
       right: 50px;
       bottom: 20px;
       a{
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         font-size: 25px;
         color: $main-color-r;
       }
     }
   }
   .contact-us{
-    .fp-tablecell {
+    .fp-tableCell {
       vertical-align: top;
       padding-top: 140px;
     }
@@ -828,7 +877,7 @@ body{
 
       .contact-info{
         color: $main-color-text;
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         font-size: 12px;
         margin-bottom: 25px;
 
@@ -867,7 +916,7 @@ body{
       right: 50px;
       bottom: 20px;
       a{
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -876,12 +925,12 @@ body{
 }
 
 //******************************************************************************
-//                       school page css
+//                       School Page CSS
 //******************************************************************************
 .aboutuspage{
 
   .school-project{
-    .fp-tablecell {
+    .fp-tableCell {
       vertical-align: top;
       padding-top: 140px;
     }
@@ -921,7 +970,7 @@ body{
             color: white;
             padding: 5px 100px 5px 20px;
             display: inline-block;
-            font-family: raleway-regular;
+            font-family: Raleway-Regular;
             font-size: 50px;
             position: absolute;
             top: 120px;
@@ -965,7 +1014,7 @@ body{
             }
           }
           h5{
-            font-family: raleway-light;
+            font-family: Raleway-Light;
             color: $main-color-b;
             font-size: 20px;
             margin: 15px 0;
@@ -996,7 +1045,7 @@ body{
         .progress-nonexpanded{
           h5{
             color: $main-color-text;
-            font-family: raleway-light;
+            font-family: Raleway-Light;
             font-size: 20px;
           }
         }
@@ -1043,12 +1092,12 @@ body{
         }
       }
     }
-    #tonextslide{
+    #toNextSlide{
       position: absolute;
       right: 50px;
       bottom: 20px;
       a{
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -1056,7 +1105,7 @@ body{
   }
 
   .community-project{
-    .fp-tablecell {
+    .fp-tableCell {
       vertical-align: top;
       padding-top: 120px;
     }
@@ -1099,7 +1148,7 @@ body{
 
       p{
         color: $main-color-text;
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         overflow: hidden;
         display: -webkit-box!important;
         -webkit-line-clamp: 5;
@@ -1118,7 +1167,7 @@ body{
 
       h5{
         color: $main-color-r;
-        font-family: raleway-bold;
+        font-family: Raleway-bold;
         font-size: 16px;
 
         @media screen and (max-width: $col-sm) {
@@ -1132,7 +1181,7 @@ body{
       right: 50px;
       bottom: 20px;
       a{
-        font-family: raleway-light;
+        font-family: Raleway-Light;
         font-size: 25px;
         color: $main-color-r;
       }
@@ -1141,7 +1190,7 @@ body{
 }
 
 //******************************************************************************
-//                       gallery page css
+//                       Gallery Page CSS
 //******************************************************************************
 .gallery-menubar{
   background-color: white;
@@ -1153,7 +1202,7 @@ body{
 .gallerypage{
   overflow: scroll;
 
-  .fp-tablecell {
+  .fp-tableCell {
     vertical-align: top;
     padding-top: 120px;
   }
@@ -1189,10 +1238,10 @@ body{
 
 
 //******************************************************************************
-//                       public info page css
+//                       Public Info Page CSS
 //******************************************************************************
 .publicinfopage{
-  .fp-tablecell {
+  .fp-tableCell {
     vertical-align: top;
     padding-top: 180px;
 
@@ -1202,7 +1251,7 @@ body{
   }
 
   h5{
-    font-family: raleway-light;
+    font-family: Raleway-Light;
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -1231,7 +1280,7 @@ body{
     .donate-card{
       box-shadow: $light-grey 0px 10px 13px;
       padding: 20px 0 25px 35px;
-      font-family: raleway-light;
+      font-family: Raleway-Light;
       border-radius: 10px;
 
       .donate-number{
@@ -1248,7 +1297,7 @@ body{
   .total-donate-data{
 
     h4{
-      font-family: raleway-light;
+      font-family: Raleway-Light;
       font-size: 45px;
 
       span{
@@ -1260,7 +1309,7 @@ body{
 
   .final-donate-data{
     padding: 0;
-    font-family: raleway-light;
+    font-family: Raleway-Light;
 
     div{
       padding: 0;
@@ -1270,7 +1319,7 @@ body{
           line-height: 1.6rem;
         }
         #money-unit{
-          font-family: raleway-bold;
+          font-family: Raleway-Bold;
           color: $main-color-r;
           font-size: 14px;
         }
@@ -1292,15 +1341,15 @@ body{
 }
 
 //******************************************************************************
-//                       donate page css
+//                       Donate Page CSS
 //******************************************************************************
 .donatepage{
-  .fp-tablecell {
+  .fp-tableCell {
     vertical-align: top;
     padding-top: 180px;
   }
 
-  font-family: raleway-light;
+  font-family: Raleway-Light;
 
   h2{
     color: white;
@@ -1366,13 +1415,13 @@ body{
   }
 
   .bg {
-    /* the image used */
+    /* The image used */
     background-image: url("../image/donating-bg.png");
 
-    /* full height */
+    /* Full height */
     height: 100%;
 
-    /* center and scale the image nicely */
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1395,30 +1444,26 @@ body{
   }
 }
 
-
-
 //******************************************************************************
-//                           loader css
+//                       News Page CSS
 //******************************************************************************
+.news-content {
+  margin-top: 200px;
 
-.loader{
+  .location, .sort-tit {
+    color: #666;
+  }
 
-  .loader-container{
+  .arrow-behind {
+    position: relative;
 
-    .loader-content{
-
-      .loader-logo-image{
-        img{
-          width: 200px !important;
-        }
-
-      }
-
-      .loader-green-tail{
-        position: absolute;
-
-      }
+    &:before {
+      content: '>';
+      display: inline-block;
+      position: absolute;
+      right: -1rem;
+      font-weight: 100;
+      color: #999;
     }
   }
 }
-

@@ -14,6 +14,48 @@
   font-family: "raleway-black";
   src: url("../fonts/raleway-black.ttf");
 }
+.fromBottom.nV {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  opacity: 0; }
+
+.fromBottom {
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  opacity: 1; }
+
+.fromBottom-late {
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  opacity: 1;
+  transition-delay: 1s; }
+
+.preloader {
+  animation: fadeOut .5s ease-out forwards;
+  animation-delay: 3s; }
+  .preloader .img1 {
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
+    animation-delay: .8s; }
+  .preloader .img2 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s; }
+  .preloader .img3 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+    animation-delay: .2s; }
+  .preloader .img4 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+    animation-delay: .4s; }
+  .preloader .img5 {
+    animation: fadeIn .2s ease-in forwards, pulse .5s;
+    animation-delay: .6s; }
+  .preloader .img6 {
+    animation: fadeIn .5s ease-in forwards, pulse .5s;
+    animation-delay: 1.5s; }
+
+
 .fp-enabled, body, html {
   overflow-x: hidden !important;
 }

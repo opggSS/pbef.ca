@@ -24,10 +24,11 @@
                     <!-- <img class="w-100 position-absolute" src="{{asset('storage/images/foundation-home-bg1-top.png')}}" alt="" id="human-swing"> -->
                     </div>
                 </div>
+
                 <div class="row position-absolute ani fromBottom nV home-ani-2">
                     <div class="col-7 offset-5">
                     <!-- <img class="w-100 position-absolute" src="{{asset('images/foundation-home-bg1.png')}}" alt="particle background"> -->
-                        <img class="w-100" src="{{asset('images/foundation-home-bg1-top.png')}}" alt="" id="human-swing">
+                        <img class="w-100" style="float:right; max-width: 1000px;" src="{{asset('images/foundation-home-bg1-top.jpg')}}" alt="" id="human-swing">
                     </div>
                 </div>
             </div>
@@ -58,12 +59,12 @@
                             <img src="{{asset('images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 d-block d-xl-none align-bottom">
+                    <div class="col-12 col-md-6 d-block d-xl-none align-bottom ani fromBottom nV">
                         <div class="img-container d-none d-md-block">
                             <img src="{{asset('images/ref-images/home-s2-1.jpg')}}" alt="sample-img">
                         </div>
                         <div class="video-container mt-5 offset-md-0 mt-md-3 text-left text-md-left">
-                            <video controls>
+                            <video width="400" height="200" controls>
                             <!-- <source data-src="{{asset('images/ref-images/sample-video.mp4')}}" type="video/mp4"> -->
                             </video>
                         </div>
