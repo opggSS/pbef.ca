@@ -21,7 +21,6 @@
             $('#img4').removeClass('img4');
             $('#img5').removeClass('img5');
             $('#img6').removeClass('img6');
-            $('.preloader').hide();
         }, 3500);
         setInterval(function () {
             $('#img1').addClass('img1');

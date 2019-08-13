@@ -24,6 +24,7 @@
     </title>
 </head>
 <body>
+@yield('loader')
 {{--****************************************** Loader **************************************************--}}
 {{--<div class="loader">--}}
     {{--<div class="loader-container">--}}
@@ -46,14 +47,6 @@
         {{--</div>--}}
     {{--</div>--}}
 {{--</div>--}}
-<div class="preloader position-fixed" style="top:0;left: 0;right:0;bottom:0;z-index:9999;background:#fff;">
-    <img class="img1 position-absolute" src="{{asset('images/logo-animate-01.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
-    <img class="img2 position-absolute" src="{{asset('images/logo-animate-02.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
-    <img class="img3 position-absolute" src="{{asset('images/logo-animate-03.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
-    <img class="img4 position-absolute" src="{{asset('images/logo-animate-04.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
-    <img class="img5 position-absolute" src="{{asset('images/logo-animate-05.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
-    <img class="img6 position-absolute" src="{{asset('images/logo-animate-06.png')}}" width="300" alt="" style="top:35%;left:50%;margin-left:-150px;opacity:0;">
-</div>
 
 {{--****************************************** Content **************************************************--}}
 <div id="menubar" class="row">
