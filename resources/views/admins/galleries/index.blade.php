@@ -61,7 +61,6 @@
                                     {{ csrf_field() }}
                                     <input type="submit" value="Delete" class="btn btn-danger btn-block btn-h1-spacing" action="{{route('galleries.destroy',$gallery->id)}}">
                                 </form>
-                                
                             </td>
                         </tr>
                     </form>

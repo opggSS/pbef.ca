@@ -42,31 +42,34 @@ Route::group(['middleware' => ['web']], function () {
 // Route::group(['middleware' => 'admin'], function () {
 
 	// Route::get('/add_news', 'PostController@create');
-	Route::resource('admin/news' , 'PostController');
-	Route::resource('admin/categories' , 'CategoryController');
-	Route::resource('admin/galleries' , 'GalleryController');
-	Route::resource('admin/partners' , 'PartnerController');
 
-	Route::get('admin/pageContents/{slug}' , 'PageContentController@pages');
-	Route::resource('admin/pageContents' , 'PageContentController');
-
-	Route::get('admin/messages', 'MessageController@index');
-	Route::get('admin/messages/unread', 'MessageController@unread');
-	Route::get('admin/messages/view/{id}', 'MessageController@view');
-	Route::post('admin/reply/{id}', 'MessageController@sendEmail');
 
 
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('admin')->group(function(){
+
+	Route::resource('/news' , 'PostController');
+	Route::resource('/categories' , 'CategoryController');
+	Route::resource('/galleries' , 'GalleryController');
+	Route::resource('/partners' , 'PartnerController');
+
+	Route::get('/pageContents/{slug}' , 'PageContentController@pages');
+	Route::resource('/pageContents' , 'PageContentController');
+
+	Route::get('/messages', 'MessageController@index');
+	Route::get('/messages/unread', 'MessageController@unread');
+	Route::get('/messages/view/{id}', 'MessageController@view');
+	Route::post('/reply/{id}', 'MessageController@sendEmail');
+
+
 	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 	Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 	
 	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
-	
-
 	Route::get('/' ,'AdminController@index')->name('admin.dashboard');
+	Route::resource('/users' ,'AdminManageController');
 
 });

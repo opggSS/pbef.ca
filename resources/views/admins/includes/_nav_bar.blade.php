@@ -77,13 +77,14 @@
         </a>
       </li>
 
+
+    @if (Auth()->user()->level == 1)
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{url('admin/users')}}" >
           <span>Admin Management</span>
         </a>
       </li>
-
-
+    @endif
 
       <!-- Divider -->
       <hr class="sidebar-divider">

@@ -13,7 +13,6 @@
 @stop
 @section('content')
 
-
     <div id="fullpage" class="homepage">
         <!--First Page-->
         <div class="section home-section-1">

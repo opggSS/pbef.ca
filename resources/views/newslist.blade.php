@@ -44,7 +44,6 @@
         </div>
       </a>
       @endforeach
-
     </div>
 
     <div class="right-block col col-3 offset-1 d-none d-md-inline-block">

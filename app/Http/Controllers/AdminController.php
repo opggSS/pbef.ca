@@ -25,4 +25,8 @@ class AdminController extends Controller
     {
         return view('admins.pages.index');
     }
+
+    
+
+    
 }
