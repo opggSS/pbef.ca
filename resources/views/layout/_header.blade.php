@@ -1,6 +1,4 @@
 <!doctype html>
-
-
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -68,7 +66,7 @@
     @if (!Request::is('donate') )
     <div class="col-10 d-none d-lg-inline-block">
         <ul class="nav nav-tabs">
-            <li><a class="{{Request::is('home') ? 'active' : ''}}" href="{{url('/')}}">HOME</a></li>
+            <li><a class="{{Request::is('/') ? 'active' : ''}}" href="{{url('/')}}">HOME</a></li>
             <li class="dropdown"><a class="{{Request::is('about_us') ? 'active' : ''}}" data-toggle="dropdown" href="#" onclick="switchActive(this)">ABOUT US</a>
                 <ul class="dropdown-menu">
                     <li class="mt-2"><a href="{{url('/about_us')}}">OUR JOURNEY</a></li>

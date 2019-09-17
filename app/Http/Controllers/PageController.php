@@ -34,7 +34,6 @@ class PageController extends Controller
     	$partners = Partner::all();
         $posts = Post::orderBy('created_at')->take(5)->get();
         return view('home')->withPosts($posts)->withPartners($partners)->withPc($this->pc);
-
     }
 
     public function getGallery(){
