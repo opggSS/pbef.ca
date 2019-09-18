@@ -27,15 +27,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $pageTypes = PageType::all();
+        // $pageTypes = PageType::all();
 
       
-        $unread_count = Message::getUnread();
+        // $unread_count = Message::getUnread();
 
-        View::share([
-            'pageTypes'=> $pageTypes,
-            'unread_count'=> $unread_count,
-        ]);
+        // View::share([
+        //     'pageTypes'=> $pageTypes,
+        //     'unread_count'=> $unread_count,
+        // ]);
     }
 
 
