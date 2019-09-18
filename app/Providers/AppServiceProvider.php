@@ -30,6 +30,7 @@ class AppServiceProvider extends ServiceProvider
         // $pageTypes = PageType::all();
 
       
+      
         // $unread_count = Message::getUnread();
 
         // View::share([
