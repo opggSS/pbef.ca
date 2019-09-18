@@ -7,6 +7,7 @@ use App\PageType;
 use App\PageContent;
 use View;
 use App\Message;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
