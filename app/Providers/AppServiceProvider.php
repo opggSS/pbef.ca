@@ -27,10 +27,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
         // $pageTypes = PageType::all();
 
       
-      
+
         // $unread_count = Message::getUnread();
 
         // View::share([
