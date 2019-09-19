@@ -30,7 +30,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         // $pageTypes = PageType::all();
-
       
 
         // $unread_count = Message::getUnread();
