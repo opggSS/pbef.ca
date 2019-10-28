@@ -139,6 +139,9 @@ class GalleryController extends Controller
     public function destroy($id)
     {
         $gallery = gallery::find($id);
+        $title  = $gallery->title;
+        $image = $gallery->image;
+        File::delete('images/'.$image);
         $gallery->delete();
         Session::flash('success', 'Gallery has been removed');
         return redirect()->route('galleries.index');   
